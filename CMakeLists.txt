@@ -89,18 +89,26 @@ set(CRYPTONOTE_SOURCES
   cryptonote/src/crypto/keccak.c
   cryptonote/src/crypto/random.c
   cryptonote/src/crypto/tree-hash.c
-  cryptonote/src/crypto/aux_hash.c 
-  cryptonote/src/crypto/cryptonight.cpp 
-  cryptonote/src/crypto/pow_hash/arm8_neon.hpp
-  cryptonote/src/crypto/pow_hash/arm_vfp.hpp
-  cryptonote/src/crypto/pow_hash/aux_hash.c
-  cryptonote/src/crypto/pow_hash/aux_hash.h
-  cryptonote/src/crypto/pow_hash/cn_slow_hash_hard_arm.cpp
-  cryptonote/src/crypto/pow_hash/cn_slow_hash_hard_intel.cpp
-  cryptonote/src/crypto/pow_hash/cn_slow_hash.hpp
-  cryptonote/src/crypto/pow_hash/cn_slow_hash_intel_avx2.cpp
-  cryptonote/src/crypto/pow_hash/cn_slow_hash_soft.cpp
-  cryptonote/src/crypto/pow_hash/hw_detect.hpp
+  cryptonote/src/crypto/blake256.c
+  cryptonote/src/crypto/chacha8.c
+  cryptonote/src/crypto/crypto-ops-data.c
+  cryptonote/src/crypto/crypto-ops.c
+  cryptonote/src/crypto/crypto.cpp
+  cryptonote/src/crypto/groestl.c
+  cryptonote/src/crypto/hash-extra-blake.c
+  cryptonote/src/crypto/hash-extra-groestl.c
+  cryptonote/src/crypto/hash-extra-jh.c
+  cryptonote/src/crypto/hash-extra-skein.c
+  cryptonote/src/crypto/hash.c
+  cryptonote/src/crypto/jh.c
+  cryptonote/src/crypto/keccak.c
+  cryptonote/src/crypto/oaes_lib.c
+  cryptonote/src/crypto/random.c
+  cryptonote/src/crypto/skein.c
+  cryptonote/src/crypto/slow-hash.c
+  cryptonote/src/crypto/slow-hash.cpp
+  cryptonote/src/crypto/tree-hash.c
+  cryptonote/src/crypto/aesb.c
   cryptonote/src/CryptoNoteCore/BlockchainIndices.cpp
   cryptonote/src/CryptoNoteCore/BlockchainMessages.cpp
   cryptonote/src/CryptoNoteCore/BlockIndex.cpp
@@ -290,8 +298,8 @@ endif(Qt5Charts_FOUND)
 
 set(CPACK_PACKAGE_NAME ${CN_PROJECT_NAME})
 set(CPACK_PACKAGE_VERSION ${CN_VERSION})
-set(CPACK_PACKAGE_VENDOR "The Circle Foundation")
-set(CPACK_PACKAGE_CONTACT "https://github.com/TheCircleFoundation/")
+set(CPACK_PACKAGE_VENDOR "Fandom Gold Society")
+set(CPACK_PACKAGE_CONTACT "https://github.com/fandomgold/")
 set(CPACK_STRIP_FILES ON)
 if (APPLE)
     set(CPACK_GENERATOR DragNDrop)
@@ -311,25 +319,14 @@ elseif (UNIX)
         set(CPACK_GENERATOR DEB)
         set(CPACK_DEBIAN_PACKAGE_NAME ${CPACK_PACKAGE_NAME})
         set(CPACK_SYSTEM_NAME amd64)
-        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <krypt0x@gmx.com>")
+        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <fandomgold@pm.me>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Conceal GUI Wallet
- Conceal is a decentrilized privacy protected peer-to-peer
- cryptocurrency and untraceable encrypted messaging system. Conceal is
- open-source; its design is public, nobody owns or controls Conceal and
- everyone can take part.
- .
- Features of the Conceal wallet listed bellow:
- * Classic Bitcoin alike appearance in CryptoNote based cryptocurrency,
-   made with QT and open-source.
- * Instant anonymous CCX transfers and transfers notifications
- * Instant untraceable encrypted messages transfers and notifications
- * Safe and secure, full Conceal network node in wallet, fast network
-   syncronization.
- * Wallet encryption
- * Fast and hardware optimized
- * Open and easy. Private keys can be exported into other clients.")
+        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Fango Wallet
+ Fango is a decentrilized privacy protected peer-to-peer
+ untraceable cryptocurrency. Fango is
+ open-source; its design is public, nobody owns or controls the network and
+ everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}.${CPACK_SYSTEM_NAME}")
 	else ()
         set(CPACK_GENERATOR RPM)
@@ -338,23 +335,12 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_LICENSE "GPL3")
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
-        set(CPACK_RPM_PACKAGE_SUMMARY "Conceal GUI Wallet")
-        set(CPACK_RPM_PACKAGE_DESCRIPTION "Open-source Conceal GUI wallet
- Conceal is a decentrilized privacy protected peer-to-peer
- cryptocurrency and untraceable encrypted messaging system. Conceal is
- open-source; its design is public, nobody owns or controls Conceal and
- everyone can take part.
-
- Features of the Conceal wallet listed bellow:
- *Classic Bitcoin alike appearance in CryptoNote based cryptocurrency,
-    made with QT and open-source.
- *Instant anonymous Conceal transfers and transfers notifications
- *Instant untraceable encrypted messages transfers and notifications
- *Safe and secure, full Conceal network node in wallet, fast network
-    syncronization.
- *Wallet encryption
- *Fast and hardware optimized
- *Open and easy. Private keys can be exported into other clients.")
+        set(CPACK_RPM_PACKAGE_SUMMARY "Fango Wallet")
+        set(CPACK_RPM_PACKAGE_DESCRIPTION "Open-source Fango wallet
+ Fango is a decentrilized privacy protected peer-to-peer
+ untraceable cryptocurrency. Fango is
+ open-source; its design is public, nobody owns or controls the network and
+ everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}.${CPACK_SYSTEM_NAME}")
     endif ()
 elseif (WIN32)

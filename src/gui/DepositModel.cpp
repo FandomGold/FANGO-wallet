@@ -81,7 +81,7 @@ QVariant DepositModel::headerData(int _section, Qt::Orientation _orientation, in
       return tr("Status");
     case COLUMN_AMOUNT:
       return tr("Amount");
-    case COLUMN_INTEREST:
+   case COLUMN_INTEREST:
       return tr("Interest");
     case COLUMN_SUM:
       return tr("Sum");
@@ -158,7 +158,7 @@ QModelIndex DepositModel::parent(const QModelIndex& _index) const {
 
 qreal DepositModel::calculateRate(quint64 _amount, quint64 _interest) {
   return (static_cast<qreal>(_interest)) / _amount;
-}
+} 
 
 QVariant DepositModel::getDisplayRole(const QModelIndex& _index) const {
   switch(_index.column()) {
@@ -203,10 +203,10 @@ QVariant DepositModel::getDisplayRole(const QModelIndex& _index) const {
     if (term % 64800 == 0) {
       return QString("Investment");
     }
-    if (term % 21900 == 0) {
+    if (term % 80 == 0) {
       return QString("Deposit");
     }
-    if (term % 5040 == 0) {
+    if (term % 80 == 0) {
       return QString("Deposit");
     }
   }

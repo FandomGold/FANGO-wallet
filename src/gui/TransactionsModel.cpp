@@ -303,7 +303,7 @@ namespace WalletGui
     case COLUMN_AMOUNT:
     {
       qint64 amount = _index.data(ROLE_AMOUNT).value<qint64>();
-      QString amountStr = CurrencyAdapter::instance().formatAmount(qAbs(amount)) + " CCX";
+      QString amountStr = CurrencyAdapter::instance().formatAmount(qAbs(amount)) + " XFG";
       return (amount < 0 ? "-" + amountStr : amountStr);
     }
 
@@ -463,10 +463,10 @@ namespace WalletGui
       }
       else if (_transaction.totalAmount < 0)
       {
-        return "Sent CCX";
+        return "Sent XFG";
       }
 
-      return "Received CCX";
+      return "Received XFG";
     }
 
     case ROLE_HASH:

@@ -263,7 +263,7 @@ namespace WalletGui
   QStringList Settings::getPriorityNodes() const
   {
     Q_ASSERT(m_cmdLineParser != nullptr);
-    return m_cmdLineParser->getPiorityNodes();
+    return m_cmdLineParser->getPriorityNodes();
   }
 
   QStringList Settings::getExclusiveNodes() const
@@ -653,6 +653,6 @@ namespace WalletGui
     }
   }
 
-  QString Settings::getDefaultWalletPath() const { return QDir::homePath() + "/conceal.wallet"; }
+  QString Settings::getDefaultWalletPath() const { return QDir::homePath() + "/fango.wallet"; }
 
 } // namespace WalletGui

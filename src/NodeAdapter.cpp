@@ -152,7 +152,7 @@ bool NodeAdapter::init()
   /* First get the connection type */
   QString connection = Settings::instance().getConnection();
 
-  /* Autoremote is a the remote node conection which retrieves a random for-fee remoten node
+  /* Autoremote is a the remote node conection which retrieves a random for-fee remote node
      from the node pool on the explorer. */
   if (connection.compare("autoremote") == 0)
   {
@@ -160,7 +160,7 @@ bool NodeAdapter::init()
     /* Pull a random node from the node pool list */
     auto *nam = new QNetworkAccessManager(this);
     connect(nam, &QNetworkAccessManager::finished, this, &NodeAdapter::downloadFinished);
-    const QUrl url = QUrl::fromUserInput("https://explorer.conceal.network/pool/random?hasFeeAddr=true&isReachable=true&isSynced=true");
+    const QUrl url = QUrl::fromUserInput("https://fangotango.hopto.org/pool/random?hasFeeAddr=true&isReachable=true&isSynced=true");
     QNetworkRequest request(url);
     nam->get(request);
   }

@@ -1,6 +1,6 @@
-![image](https://github.com/ConcealNetwork/conceal-imagery/blob/master/logos/splash.png)
+![image](https://github.com/ConcealNetwork/conceal-imagery/blob/master/tqRGU34m_400x400.jpg)
 
-# Conceal Desktop (GUI Wallet)
+# Fango Desktop (GUI Wallet)
 
 Latest Release: v6.4.8
 
@@ -58,12 +58,12 @@ sudo apt install git gcc make cmake libboost-all-dev qt5-default
 To acquire the source via git and build the release version, run the following commands:
 
 ```bash
-git clone https://github.com/ConcealNetwork/conceal-desktop
-cd conceal-desktop
+git clone https://github.com/FandomGold/fango-desktop
+cd fango-desktop
 rm -rf cryptonote
-git clone https://github.com/ConcealNetwork/conceal-core cryptonote
+git clone https://github.com/FandomGold/fango cryptonote
 make build-release
-mkdir bin && mv build/release/CONCEAL-GUI bin/
+mkdir bin && mv build/release/Fango-GUI bin/
 make clean
 ```
 

@@ -49,11 +49,11 @@ inline void newLogString(const QString& _string)
 
 int main(int argc, char* argv[])
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
+/*#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
   QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-#endif
+#endif*/
   QApplication app(argc, argv);
-  QApplication::setApplicationName("Conceal Desktop");
+  QApplication::setApplicationName("Fango Desktop Wallet");
   QApplication::setApplicationVersion(Settings::instance().getVersion());
   QApplication::setQuitOnLastWindowClosed(false);
 
@@ -116,13 +116,13 @@ int main(int argc, char* argv[])
   if (splashScreen == nullptr)
   {
     splashScreen = new SplashScreen();
-    splashScreen->centerOnScreen(&app);
+   splashScreen->centerOnScreen(&app);
   }
 
   splashScreen->show();
 
   LogFileWatcher* logWatcher = new LogFileWatcher(
-      Settings::instance().getDataDir().absoluteFilePath("Concealwallet.log"), &app);
+      Settings::instance().getDataDir().absoluteFilePath("Fangowallet.log"), &app);
   QObject::connect(logWatcher, &LogFileWatcher::newLogStringSignal, &app, &newLogString);
 
   QApplication::processEvents();

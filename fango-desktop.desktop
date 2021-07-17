@@ -1,0 +1,20 @@
+# This file is an example of how to add Fango Desktop in Applications list.
+# Edit this file and copy it to ~/.local/share/applications
+# Once copied you will be able to find Fango Desktop in Applications list.
+# If you are not able to find Fango Desktop check that Exec and Icon are correct.
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Conceal Desktop
+Comment=Conceal Desktop
+# Change the Exec value to match Fango-GUI path
+# example : Exec=/home/conceal/apps/conceal/Fango-GUI
+Exec=<change-this-value>
+Terminal=false
+Type=Application
+# Change the Icon value to match fango icon path
+# example : Icon=/home/conceal/apps/conceal/icon/fango.png
+Icon=icon/conceal.png
+MimeType=x-scheme-handler/concealwallet;
+Categories=Office;Finance;Cryptocurrency;
+Name[en_US]=fango-desktop.desktop

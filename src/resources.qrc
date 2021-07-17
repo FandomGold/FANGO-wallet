@@ -48,6 +48,7 @@
         <file alias="clock">images/clock.gif</file>
         <file alias="lock">images/lock.png</file>
         <file alias="qr">images/qr.png</file>
+        <file alias="banner">images/fangobanner.png</file>
     </qresource>
     <qresource prefix="/images/flags">
         <file alias="en">images/en.png</file>

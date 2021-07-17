@@ -76,7 +76,7 @@ border: none;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">border: 0px; color: #aaa; 
-background-color: #282d31;</string>
+background-color: #000;</string>
      </property>
      <property name="title">
       <string/>
@@ -132,7 +132,7 @@ background-color: #282d31;</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;
+            <string notr="true">color: #ddd;
 background: transparent;
 border: none;
 text-align: left;
@@ -397,7 +397,7 @@ text-align: left;
          </size>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: #282d31; border-right: 1px solid #444;</string>
+         <string notr="true">background-color: #000; border-right: 1px solid #333;</string>
         </property>
         <property name="title">
          <string/>
@@ -480,18 +480,17 @@ border:none;</string>
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
-
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -539,7 +538,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -547,10 +546,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -598,7 +597,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -606,10 +605,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -657,7 +656,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -665,10 +664,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -716,7 +715,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -724,10 +723,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -775,7 +774,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -783,10 +782,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -828,7 +827,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -836,10 +835,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -894,7 +893,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -902,10 +901,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 223, 255), stop:1 rgba(255, 0, 216, 255));
 }</string>
            </property>
            <property name="text">
@@ -943,7 +942,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -951,10 +950,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: black; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 223, 255), stop:1 rgba(255, 0, 216, 255));
 }</string>
            </property>
            <property name="text">
@@ -998,7 +997,7 @@ background-color: #333;
            <property name="styleSheet">
             <string notr="true">QPushButton {
 text-align: left; 
-color: #fff; 
+color: #ddd; 
 padding-left: 20px;
 font-weight: normal;
 border: none;
@@ -1006,10 +1005,10 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: orange; 
+text-align: left; color: #333; 
 padding-left: 20px;
 border: none;
-background-color: #333;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 223, 255), stop:1 rgba(255, 0, 216, 255));
 }</string>
            </property>
            <property name="text">
@@ -1071,7 +1070,7 @@ background-color: #333;
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;   font-weight: bold;
+            <string notr="true">color: #ddd;   font-weight: bold;
 border: none;
 padding-left: 5px</string>
            </property>
@@ -1096,7 +1095,7 @@ padding-left: 5px</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;   font-weight: bold;
+            <string notr="true">color: #ddd;   font-weight: bold;
 border: none;
 padding-left: 5px</string>
            </property>
@@ -1166,7 +1165,7 @@ padding-left: 5px</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff;   font-weight: bold;
+               <string notr="true">color: #ddd;   font-weight: bold;
 border: none;
 padding-left: 5px</string>
               </property>
@@ -1206,7 +1205,7 @@ padding-left: 5px</string>
               </property>
               <property name="styleSheet">
                <string notr="true">border: 1px solid #aaa;
-color: white;
+color: #fff;
 border-radius: 2px;</string>
               </property>
               <property name="text">
@@ -1321,7 +1320,7 @@ border-radius: 2px;</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;   font-weight: bold;
+            <string notr="true">color: #ddd;   font-weight: bold;
 border: none;
 padding-left: 5px</string>
            </property>
@@ -1477,7 +1476,7 @@ padding-left: 5px</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;   font-weight: bold;
+            <string notr="true">color: #ddd;   font-weight: bold;
 border: none;
 padding-left: 5px</string>
            </property>
@@ -1641,7 +1640,7 @@ padding-left: 5px</string>
 border: none;</string>
            </property>
            <property name="text">
-            <string notr="true">Fee: 0.001000 CCX</string>
+            <string notr="true">Fee: 0.008 XFG</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1673,7 +1672,7 @@ border: none;</string>
 border: none;</string>
            </property>
            <property name="text">
-            <string notr="true">Available Balance: 0.000000 CCX</string>
+            <string notr="true">Available Balance: 0.0000000 XFG</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1728,9 +1727,9 @@ border: none;</string>
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>-152</y>
+                 <y>0</y>
                  <width>722</width>
-                 <height>15009</height>
+                 <height>15042</height>
                 </rect>
                </property>
                <property name="sizePolicy">
@@ -1751,7 +1750,7 @@ border: none;</string>
     </string>
                </property>
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LEGAL DISCLAIMER&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Conceal is an open source experimental project, which means that there is no company behind it. This project is supported by the community, meaning there is no stable, full-time team and no physical headquarters from which the projects runs its operations. &lt;/p&gt;&lt;p&gt;Conceal is distributed in the hope that it will be useful to mankind, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANT ABILITY or FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;&lt;p&gt;Copyright Notice &lt;/p&gt;&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: &lt;/p&gt;&lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. &lt;/p&gt;&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;&lt;p&gt;Copyright 2018-2021 - Conceal.Network&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LEGAL DISCLAIMER&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Fango is an open source experimental project, which means that there is no company behind it. This project is supported by the community, meaning there is no stable, full-time team and no physical headquarters from which the projects runs its operations. &lt;/p&gt;&lt;p&gt;Fango is distributed in the hope that it will be useful to mankind, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANT ABILITY or FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;&lt;p&gt;Copyright Notice &lt;/p&gt;&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: &lt;/p&gt;&lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. &lt;/p&gt;&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;&lt;p&gt;Copyright 2018-2021 - Fandom Gold Society&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SOFTWARE LICENSES&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;QtCharts&lt;/span&gt;&lt;/p&gt;
@@ -2609,7 +2608,7 @@ Public License instead of this License.  But first, please read
                  <x>0</x>
                  <y>0</y>
                  <width>468</width>
-                 <height>245</height>
+                 <height>233</height>
                 </rect>
                </property>
                <property name="sizePolicy">
@@ -2642,7 +2641,7 @@ Public License instead of this License.  But first, please read
   border-radius: 5px;</string>
                </property>
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ABOUT CONCEAL&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Conceal.Network is a decentralized blockchain bank, with deposits and investments paying interest rates, without involvement of financial institutions, powered by 100% open source code. Conceal.Network enables untraceable and anonymous messaging, and a secure way to transfer funds. Using a distributed public ledger, the sender and receiver are kept anonymous.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffa500;&quot;&gt;https://opensource.org/licenses/MIT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://conceal.network/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffa500;&quot;&gt;https://conceal.network/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ABOUT FANGO&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Fango is a decentralized P2P blockchain network, with deposits and investments paying interest rates, without involvement of financial institutions, powered by 100% open source code. Using a distributed public ledger, Fango also allows for value to be transferred with sender and receiver information kept private.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffa500;&quot;&gt;https://opensource.org/licenses/MIT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://fango.money/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffa500;&quot;&gt;http://fango.money/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="textFormat">
                 <enum>Qt::RichText</enum>
@@ -2707,7 +2706,7 @@ border-radius: 5px;</string>
 font-weight:bold;</string>
                   </property>
                   <property name="text">
-                   <string>ABOUT CONCEAL DESKTOP</string>
+                   <string>ABOUT FANGO WALLET</string>
                   </property>
                  </widget>
                 </item>
@@ -2720,7 +2719,7 @@ font-weight:bold;</string>
                    <item>
                     <widget class="QLabel" name="label_21">
                      <property name="text">
-                      <string>This software is using Qt</string>
+                      <string>This software uses Qt</string>
                      </property>
                     </widget>
                    </item>
@@ -2781,7 +2780,7 @@ font-weight:bold;</string>
                       </sizepolicy>
                      </property>
                      <property name="text">
-                      <string>This software is using QtCharts</string>
+                      <string>This software uses QtCharts</string>
                      </property>
                     </widget>
                    </item>
@@ -2930,7 +2929,7 @@ font-weight:bold;</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;
+            <string notr="true">color: #ddd;
 background: transparent;
 
 
@@ -3062,7 +3061,7 @@ text-align: left;
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;
+            <string notr="true">color: #ddd;
 
 
 font-weight: bold;
@@ -3104,7 +3103,7 @@ padding-left: 5px</string>
 border: none;</string>
            </property>
            <property name="text">
-            <string notr="true">Fee: 0.001000 CCX</string>
+            <string notr="true">Fee: 0.008 XFG</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -3179,7 +3178,7 @@ border: none;</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;
+            <string notr="true">color: #ddd;
 
 
 font-weight: bold;
@@ -3302,7 +3301,7 @@ p, li { white-space: pre-wrap; }
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff;   font-weight: bold;
+               <string notr="true">color: #ddd;   font-weight: bold;
 border: none;
 padding-left: 5px</string>
               </property>
@@ -3411,10 +3410,10 @@ border: none;</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QSlider::groove:horizontal#m_ttlSlider {
-    border: 1px solid orange;
+    border: 1px solid #ffcb00;
     border-radius: 5px;
     height: 11px;
-    background: #282d31;
+    background: #333;
 }
 
 QSlider::handle:horizontal#m_ttlSlider {
@@ -3426,7 +3425,7 @@ QSlider::handle:horizontal#m_ttlSlider {
 }
 
 QSlider::sub-page:horizontal#m_ttlSlider {
-    background: orange;
+    background: #ffcb00;
     border-radius: 5px;
 }</string>
            </property>
@@ -3558,7 +3557,7 @@ QSlider::sub-page:horizontal#m_ttlSlider {
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;  
+            <string notr="true">color: #ddd;  
 border: none;</string>
            </property>
            <property name="text">
@@ -3913,7 +3912,7 @@ border: none;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff;
+               <string notr="true">color: #ddd;
 background: transparent;
 border: none;
 text-align: left;
@@ -4063,7 +4062,7 @@ padding: 0px;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: #fff;
+                  <string notr="true">color: #ddd;
             background: transparent;
             
             
@@ -4102,7 +4101,7 @@ padding: 0px;</string>
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">CCX</string>
+                  <string notr="true">XFG</string>
                  </property>
                 </widget>
                </item>
@@ -4126,7 +4125,7 @@ padding: 0px;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: #fff;
+                  <string notr="true">color: #ddd;
             background: transparent;
             
             
@@ -4158,7 +4157,7 @@ padding: 0px;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: #fff;
+                  <string notr="true">color: #ddd;
             background: transparent;
             
             
@@ -4192,7 +4191,7 @@ padding: 0px;</string>
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">0.000000</string>
+                  <string notr="true">0.0000000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -4226,7 +4225,7 @@ padding: 0px;</string>
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">CCX</string>
+                  <string notr="true">XFG</string>
                  </property>
                 </widget>
                </item>
@@ -4251,7 +4250,7 @@ padding: 0px;</string>
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">0.000000</string>
+                  <string notr="true">0.0000000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -4285,7 +4284,7 @@ padding: 0px;</string>
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">CCX</string>
+                  <string notr="true">XFG</string>
                  </property>
                 </widget>
                </item>
@@ -4309,7 +4308,7 @@ padding: 0px;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: #fff;
+                  <string notr="true">color: #ddd;
             background: transparent;
             
             
@@ -4348,7 +4347,7 @@ padding: 0px;</string>
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">CCX</string>
+                  <string notr="true">XFG</string>
                  </property>
                 </widget>
                </item>
@@ -4373,7 +4372,7 @@ padding: 0px;</string>
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">0.000000</string>
+                  <string notr="true">0.0000000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -4400,7 +4399,7 @@ padding: 0px;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: #fff;
+                  <string notr="true">color: #ddd;
             background: transparent;
             
             
@@ -4433,7 +4432,7 @@ padding: 0px;</string>
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">0.000000</string>
+                  <string notr="true">0.0000000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -4470,7 +4469,7 @@ padding: 0px;</string>
                <item row="0" column="0">
                 <widget class="QLabel" name="title_recent">
                  <property name="styleSheet">
-                  <string notr="true">color: #fff;
+                  <string notr="true">color: #ddd;
             background: transparent;
             
             
@@ -4664,7 +4663,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -4743,7 +4742,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -4777,7 +4776,7 @@ color: orange;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff;
+               <string notr="true">color: #ddd;
 background: transparent;
 
 
@@ -4874,7 +4873,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -5005,7 +5004,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -5123,7 +5122,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -5161,7 +5160,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -5239,7 +5238,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -5277,7 +5276,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -5368,7 +5367,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -5459,7 +5458,7 @@ text-align: left;
 }
 
 QPushButton:hover{
-color: orange;
+color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -5492,12 +5491,11 @@ color: orange;
             </property>
             <property name="font">
              <font>
-              <family>Poppins</family>
               <pointsize>-1</pointsize>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">color: orange;
+             <string notr="true">color: #ffcb00;
 background: transparent;
 font-size: 18px;
 </string>
@@ -5561,7 +5559,7 @@ font-size: 18px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff;
+               <string notr="true">color: #ddd;
 background: transparent;
 
 
@@ -5761,7 +5759,7 @@ border: none;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff;
+               <string notr="true">color: #ddd;
 background: transparent;
 
 border: none;
@@ -5820,7 +5818,7 @@ text-align: left;
 border: none;</string>
                  </property>
                  <property name="text">
-                  <string>How much do you want to deposit?</string>
+                  <string>How much would you like to deposit?</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5866,10 +5864,10 @@ border-radius: 5px;
                   <number>0</number>
                  </property>
                  <property name="minimum">
-                  <double>1.000000000000000</double>
+                  <double>0.000000000000000</double>
                  </property>
                  <property name="maximum">
-                  <double>20000000.000000000000000</double>
+                  <double>8000000.000000000000000</double>
                  </property>
                 </widget>
                </item>
@@ -6031,10 +6029,10 @@ margin: 0px;</string>
                   </size>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: #fff; 
+                  <string notr="true">color: #ddd; 
 font-weight: normal; 
 border-radius: 7px;
-background-color: #212429;
+background-color: blue;
 padding: 5px;</string>
                  </property>
                  <property name="title">
@@ -6075,7 +6073,7 @@ padding: 5px;</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: #fff;  font-weight: normal; border: none; </string>
+                     <string notr="true">color: #ddd;  font-weight: normal; border: none; </string>
                     </property>
                     <property name="text">
                      <string>Fees for this deposit:</string>
@@ -6116,7 +6114,7 @@ padding: 5px;</string>
                      <string notr="true">color: #ccc;  font-weight: normal; border: none; </string>
                     </property>
                     <property name="text">
-                     <string>0.001000 CCX</string>
+                     <string>0.008000 XFG</string>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -6145,7 +6143,7 @@ padding: 5px;</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: #fff;  font-weight: normal; border: none; </string>
+                     <string notr="true">color: #ddd;  font-weight: normal; border: none; </string>
                     </property>
                     <property name="text">
                      <string>Interest rate:</string>
@@ -6177,7 +6175,7 @@ padding: 5px;</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: #fff;  font-weight: normal; border: none; </string>
+                     <string notr="true">color: #ddd;  font-weight: normal; border: none; </string>
                     </property>
                     <property name="text">
                      <string>Length on the blockchain:</string>
@@ -6241,7 +6239,7 @@ padding: 5px;</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: #fff;  font-weight: normal; border: none; </string>
+                     <string notr="true">color: #ddd;  font-weight: normal; border: none; </string>
                     </property>
                     <property name="text">
                      <string>Rewards you will earn:</string>
@@ -6276,7 +6274,7 @@ padding: 5px;</string>
                      <string notr="true">color: #ccc;  font-weight: normal; border: none; </string>
                     </property>
                     <property name="text">
-                     <string>21900 blocks</string>
+                     <string>80 blocks</string>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -6343,7 +6341,7 @@ padding: 5px;</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: #fff;
+                     <string notr="true">color: #ddd;
 background: transparent;
 
 
@@ -6517,7 +6515,7 @@ text-align: left;
         </property>
         <property name="styleSheet">
          <string notr="true">border: 0px; color: #aaa; 
-background-color: #282d31;</string>
+background-color: #333;</string>
         </property>
         <property name="title">
          <string/>
@@ -6693,7 +6691,7 @@ font-size: 16px;</string>
            </property>
            <property name="styleSheet">
             <string notr="true">border: none;
-color: #fff;
+color: #ddd;
 font-size: 30px;</string>
            </property>
            <property name="text">
@@ -6732,22 +6730,22 @@ font-size: 30px;</string>
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <pointsize>-1</pointsize>
              <weight>50</weight>
              <bold>false</bold>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;
+            <string notr="true">color: #ddd;
         background: transparent;
         font-size: 28px;
-        
+        font-family: orbitron;
         font-weight: normal;
   		 border: none;</string>
            </property>
            <property name="text">
-            <string>CONCEAL.NETWORK</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/banner&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
@@ -7030,7 +7028,7 @@ color: #aaa;</string>
                <string notr="true">color: #aaa; border: none;  </string>
               </property>
               <property name="text">
-               <string>Custom Remote Node</string>
+               <string>C&amp;ustom Remote Node</string>
               </property>
               <property name="checked">
                <bool>false</bool>
@@ -7120,7 +7118,7 @@ color: #aaa;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 </string>
               </property>
@@ -7155,7 +7153,7 @@ border: 0px;
                <string notr="true">color: #aaa; border: none;  </string>
               </property>
               <property name="text">
-               <string>Built-in Node</string>
+               <string>Bui&amp;lt-in Node</string>
               </property>
               <property name="checked">
                <bool>false</bool>
@@ -7193,12 +7191,11 @@ border: 0px;
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 font-size: 18px;
  border: 0px;</string>
               </property>
@@ -7291,7 +7288,7 @@ font-size: 18px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 </string>
               </property>
@@ -7394,7 +7391,7 @@ border: 0px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 </string>
               </property>
@@ -7459,7 +7456,7 @@ border: 0px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 
  border: 0px;</string>
               </property>
@@ -7512,12 +7509,11 @@ border: 0px;
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 font-size: 18px;
  border: 0px;</string>
               </property>
@@ -7610,12 +7606,12 @@ font-size: 18px;
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">color: #fff; 
+                 <string notr="true">color: #ddd; 
 
  border: 0px;</string>
                 </property>
                 <property name="text">
-                 <string>English</string>
+                 <string>En&amp;glish</string>
                 </property>
                 <property name="icon">
                  <iconset resource="../../resources.qrc">
@@ -7655,12 +7651,12 @@ font-size: 18px;
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">color: #fff; 
+                 <string notr="true">color: #ddd; 
 
  border: 0px;</string>
                 </property>
                 <property name="text">
-                 <string>Turkish</string>
+                 <string>&amp;Turkish</string>
                 </property>
                 <property name="icon">
                  <iconset resource="../../resources.qrc">
@@ -7700,7 +7696,7 @@ font-size: 18px;
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">color: #fff; 
+                 <string notr="true">color: #ddd; 
 
  border: 0px;</string>
                 </property>
@@ -7745,7 +7741,7 @@ font-size: 18px;
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">color: #fff; 
+                 <string notr="true">color: #ddd; 
 
  border: 0px;</string>
                 </property>
@@ -7805,7 +7801,7 @@ font-size: 18px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 background: transparent;</string>
               </property>
@@ -7876,7 +7872,7 @@ background: transparent;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 </string>
               </property>
@@ -7969,7 +7965,7 @@ color: #aaa;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 padding-left: 5px;
  border: 0px;</string>
               </property>
@@ -8004,7 +8000,7 @@ padding-left: 5px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 background: transparent;</string>
               </property>
@@ -8067,12 +8063,11 @@ color: #aaa;</string>
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 font-size: 18px;
  border: 0px;</string>
               </property>
@@ -8098,7 +8093,7 @@ font-size: 18px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 padding-left: 5px;
  border: 0px;</string>
               </property>
@@ -8121,7 +8116,7 @@ padding-left: 5px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 padding-left: 5px;
  border: 0px;</string>
               </property>
@@ -8159,7 +8154,7 @@ padding-left: 5px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 padding-left: 5px;
  border: 0px;</string>
               </property>
@@ -8309,7 +8304,7 @@ padding-left: 5px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 </string>
               </property>
@@ -8401,7 +8396,7 @@ border: 0px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 </string>
               </property>
@@ -8576,12 +8571,11 @@ border: 0px;
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 font-size: 18px;
  border: 0px;</string>
               </property>
@@ -8619,7 +8613,7 @@ font-size: 18px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #fff; 
+               <string notr="true">color: #ddd; 
 border: 0px;
 </string>
               </property>
@@ -8683,7 +8677,7 @@ border: 0px;
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #fff;
+            <string notr="true">color: #ddd;
 background: transparent;
 
 
@@ -8852,7 +8846,7 @@ text-align: left;
            </property>
            <property name="styleSheet">
             <string notr="true">border:none;
-color: orange;
+color: #ffcb00;
 font-size: 14px;</string>
            </property>
            <property name="text">
@@ -8918,7 +8912,6 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -8928,7 +8921,7 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
            <property name="styleSheet">
             <string notr="true">
 border:none;
-color: orange;
+color: #ffcb00;
 font-size: 14px;</string>
            </property>
            <property name="text">
@@ -8962,7 +8955,7 @@ font-size: 14px;</string>
            <property name="styleSheet">
             <string notr="true">
 border:none;
-color: orange;
+color: #ffcb00;
 font-size: 14px;</string>
            </property>
            <property name="text">
@@ -9029,7 +9022,7 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
            <property name="styleSheet">
             <string notr="true">
 border:none;
-color: orange;
+color: rgb(115, 210, 22);
 font-size: 14px;</string>
            </property>
            <property name="text">
@@ -9099,7 +9092,7 @@ color: white;
 QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;}</string>
            </property>
            <property name="text">
-            <string>Portfolio (CCX)</string>
+            <string>Portfolio (XFG)</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -9128,7 +9121,6 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -9138,13 +9130,13 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
            <property name="styleSheet">
             <string notr="true">
 border:none;
-color: orange;
+color: #ffcb00;
 font-size: 14px;
 
 QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;}</string>
            </property>
            <property name="text">
-            <string>CCX TOTAL</string>
+            <string>XFG TOTAL</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -10472,7 +10464,7 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
   <slot>openSslLicenseClicked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

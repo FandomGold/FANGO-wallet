@@ -88,7 +88,7 @@ namespace WalletGui
                      "QHeaderView::section"
                      "{"
                      "font-size: %1 px;"
-                     "background-color: #282d31;"
+                     "background-color: black;"
                      "color: #fff;"
                      "font-weight: bold;"
                      "height: 37px;"
@@ -103,13 +103,13 @@ namespace WalletGui
                      "}"
                      "QTreeView::item:selected"
                      "{"
-                     "background-color: orange;"
+                     "background-color: #ffcb00;"
                      "color: black;"
                      "}"
                      "QTreeView"
                      "{"
-                     "alternate-background-color: #212529;"
-                     "background: #282d31"
+                     "alternate-background-color: #282d31;"
+                     "background: black"
                      "}")
                      .arg(baseFontSize);
     b1Style = QString(
@@ -117,31 +117,31 @@ namespace WalletGui
                   "{"
                   "font-size: %1 px;"
                   "color:#fff;"
-                  "border:1px solid orange;"
+                  "border:1px solid #ffcb00;"
                   "border-radius:5px;"
                   "padding: 5px;"
                   "}"
                   "QPushButton:hover"
                   "{"
-                  "color:orange;"
+                  "color:#ffcb00;"
                   "}")
                   .arg(baseLargeButtonSize);
     b2Style = QString(
                   "QPushButton"
                   "{"
                   "font-size: %1 px;"
-                  "color: orange;"
-                  "border:1px solid orange;"
+                  "color: #ffcb00;"
+                  "border:1px solid #ffcb00;"
                   "border-radius: 5px"
                   "}"
                   "QPushButton:hover"
                   "{"
-                  "color: gold;"
+                  "color: #ffcb00;"
                   "}")
                   .arg(baseSmallButtonSize);
     fontStyle = QString("font-size: %1 px;").arg(baseFontSize);
-    darkFontStyle = QString("font-size: %1 px; color: #999;").arg(baseFontSize);
-    orangeFontStyle = QString("font-size: %1 px; color: orange;").arg(baseFontSize);
+    darkFontStyle = QString("font-size: %1 px; color: #888;").arg(baseFontSize);
+    orangeFontStyle = QString("font-size: %1 px; color: #ffcb00;").arg(baseFontSize);
 
     widgets = getWidgets();
     foreach (QWidget *widget, widgets)

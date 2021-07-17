@@ -83,15 +83,15 @@ namespace WalletGui
   Q_DECL_CONSTEXPR int MIN_TTL = 5 * MINUTE_SECONDS;
   Q_DECL_CONSTEXPR int MAX_TTL = 14 * HOUR_SECONDS;
   Q_DECL_CONSTEXPR int TTL_STEP = 5 * MINUTE_SECONDS;
-  Q_DECL_CONSTEXPR int BASE_FEE = 1000;
-  Q_DECL_CONSTEXPR int REMOTE_FEE = 100000;
+  Q_DECL_CONSTEXPR int BASE_FEE = 80000;
+  Q_DECL_CONSTEXPR int REMOTE_FEE = 800000;
 
   /* Convert months to the number of blocks */
   QString monthsToBlocks(int _months)
   {
 
     int maxPeriod = 13;
-    uint32_t blocksPerDeposit = 21900;
+    uint32_t blocksPerDeposit = 80;
 
     QString resTempate("%1 %2");
     if (_months < maxPeriod)
@@ -549,7 +549,7 @@ namespace WalletGui
 #ifdef HAVE_CHART
 
     link = QString(
-               "https://api.coingecko.com/api/v3/coins/conceal/market_chart?vs_currency=%1&days=30")
+               "https://api.coingecko.com/api/v3/coins/fango/market_chart?vs_currency=%1&days=30")
                .arg(currency);
 #else
 
@@ -557,41 +557,41 @@ namespace WalletGui
     int width = size.width();
     int height = size.height();
 
-    link = "https://explorer.conceal.network/services/charts/price.png?vsCurrency=" + currency +
+    link = "https://fangotango.hopto.org/api/charts/price.png?vsCurrency=" + currency +
            "&days=30&priceDecimals=2&xPoints=24&width=1170&height=560&dateFormat=MM-DD";
 
     /** 1280 x 720 or smaller is the default */
     if (width < 1363)
     {
-      link = "https://explorer.conceal.network/services/charts/price.png?vsCurrency=" + currency +
+      link = "https://fangotango.hopto.org/api/charts/price.png?vsCurrency=" + currency +
              "&days=7&priceDecimals=2&xPoints=12&width=526&height=273&dateFormat=MM-DD";
     }
 
     /** 1365 x 768 */
     if ((width == 1363) && (height == 750))
     {
-      link = "https://explorer.conceal.network/services/charts/price.png?vsCurrency=" + currency +
+      link = "https://fangotango.hopto.org/api/charts/price.png?vsCurrency=" + currency +
              "&days=7&priceDecimals=2&xPoints=12&width=618&height=297&dateFormat=MM-DD";
     }
 
     /** 1440 x 900 */
     if ((width == 1438) && (height == 868))
     {
-      link = "https://explorer.conceal.network/services/charts/price.png?vsCurrency=" + currency +
+      link = "https://fangotango.hopto.org/api/charts/price.png?vsCurrency=" + currency +
              "&days=7&priceDecimals=2&xPoints=12&width=695&height=416&dateFormat=MM-DD";
     }
 
     /** 1680 x 1050 */
     if ((width == 1678) && (height == 1008))
     {
-      link = "https://explorer.conceal.network/services/charts/price.png?vsCurrency=" + currency +
+      link = "https://fangotango.hopto.org/api/charts/price.png?vsCurrency=" + currency +
              "&days=14&priceDecimals=2&xPoints=12&width=927&height=555&dateFormat=MM-DD";
     }
 
     /** This should cover 1920 and above */
     if (width > 1599)
     {
-      link = "https://explorer.conceal.network/services/charts/price.png?vsCurrency=" + currency +
+      link = "https://fangotango.hopto.org/api/charts/price.png?vsCurrency=" + currency +
              "&days=30&priceDecimals=2&xPoints=24&width=1170&height=560&dateFormat=MM-DD";
     }
 #endif
@@ -623,7 +623,7 @@ namespace WalletGui
 
     QPen seriesPen;
     seriesPen.setWidth(2);
-    seriesPen.setColor("orange");
+    seriesPen.setColor("#ffef00");
     series->setPen(seriesPen);
 
     if (!documentAsObject["prices"].isArray())
@@ -713,7 +713,7 @@ namespace WalletGui
   void OverviewFrame::actualBalanceUpdated(quint64 _balance)
   {
     m_ui->m_actualBalanceLabel->setText(CurrencyAdapter::instance().formatAmount(_balance));                   // Overview screen
-    m_ui->m_balanceLabel->setText("Available Balance: " + CurrencyAdapter::instance().formatAmount(_balance) + " CCX"); // Send funds screen
+    m_ui->m_balanceLabel->setText("Available Balance: " + CurrencyAdapter::instance().formatAmount(_balance) + " XFG"); // Send funds screen
     m_actualBalance = _balance;
     quint64 actualBalance = WalletAdapter::instance().getActualBalance();
     quint64 pendingBalance = WalletAdapter::instance().getPendingBalance();
@@ -757,7 +757,7 @@ namespace WalletGui
       if (unlockedFunds > 0)
       {
         m_ui->m_unlockedDeposits->setStyleSheet(
-            "color: orange; background: transparent; border: none;");
+            "color: #ffcb00; background: transparent; border: none;");
       }
       else
       {
@@ -785,7 +785,7 @@ namespace WalletGui
       if (unlockedFunds > 0)
       {
         m_ui->m_unlockedDeposits->setStyleSheet(
-            "color: orange; background: transparent; border: none;");
+            "color: #ffcb00; background: transparent; border: none;");
       }
       else
       {
@@ -842,7 +842,7 @@ namespace WalletGui
 
     double currency = result[selectedCurrency].toDouble();
     ccxfiat = (float)currency;
-    QString ccx = QLocale(QLocale::system()).toString(currency, 'f', 2);
+    QString ccx = QLocale(QLocale::system()).toString(currency, 'f', 3);
     double market_cap = result[marketCapCurrency].toDouble();
     QString ccx_market_cap = QLocale(QLocale::system()).toString(market_cap, 'f', 2);
     double c24h_volume = result[volumeCurrency].toDouble();
@@ -863,13 +863,13 @@ namespace WalletGui
     exchangeName = _exchange;
   }
 
-  /* Update the total portfolio in CCX and Fiat on the top left hand corner */
+  /* Update the total portfolio in CCX and Fiat in bottom corner */
   void OverviewFrame::updatePortfolio()
   {
     QString currentCurrency = Settings::instance().getCurrentCurrency();
     float total = 0;
     total = ccxfiat * (float)OverviewFrame::totalBalance;
-    m_ui->ccxTotal->setText(CurrencyAdapter::instance().formatAmount(OverviewFrame::totalBalance) + " CCX ");
+    m_ui->ccxTotal->setText(CurrencyAdapter::instance().formatAmount(OverviewFrame::totalBalance) + " XFG ");
     m_ui->fiatTotal->setText(CurrencyAdapter::instance().formatCurrencyAmount(total / 10000) + " " + currentCurrency);
     m_ui->fiatLabel->setText("Portfolio (" + currentCurrency + ")");
   }
@@ -886,7 +886,7 @@ namespace WalletGui
 
     if (walletSynced == true)
     {
-      m_ui->m_myConcealWalletTitle->setText(tr("BANKING"));
+      m_ui->m_myConcealWalletTitle->setText(tr("COLD BANKING"));
       m_ui->m_titleIcon->setPixmap(QPixmap(":/icons/icon-banking"));
       m_ui->bankingBox->raise();
     }
@@ -907,7 +907,7 @@ namespace WalletGui
   void OverviewFrame::dashboardClicked()
   {
     m_ui->darkness->hide();
-    m_ui->m_myConcealWalletTitle->setText(tr("CONCEAL.NETWORK"));
+    m_ui->m_myConcealWalletTitle->setText(tr("FANGO.MONEY"));
     m_ui->m_titleIcon->setPixmap(QPixmap(":/icons/icon-home"));
     m_ui->overviewBox->raise();
     m_ui->lm_newTransferButton->show();
@@ -1118,10 +1118,10 @@ namespace WalletGui
       Settings::instance().setCurrentFeeAddress(_address);
       calculateFee();
       QString fee =
-          QString("Fee: %1 CCX").arg(CurrencyAdapter::instance().formatAmount(m_actualFee));
+          QString("Fee: %1 XFG").arg(CurrencyAdapter::instance().formatAmount(m_actualFee));
       m_ui->m_sendFee->setText(fee);
       m_ui->m_messageFee->setText(fee);
-      m_ui->m_depositFeeLabel->setText(QString::number(m_actualFee / (double)1000000, 'f', 6) + " CCX");
+      m_ui->m_depositFeeLabel->setText(QString::number(m_actualFee / (double)1000000, 'f', 7) + " XFG");
     }
   }
 
@@ -1132,7 +1132,7 @@ namespace WalletGui
     m_ui->m_addressEdit->clear();
     m_ui->m_addressLabel->clear();
     m_ui->m_messageEdit->clear();
-    m_ui->m_amountEdit->setText("0.000000");
+    m_ui->m_amountEdit->setText("0.0000000");
   }
 
   /* Set the amount to 25% of available funds */
@@ -1222,7 +1222,7 @@ namespace WalletGui
         std::vector<std::string> records;
         if (!Common::fetch_dns_txt(address.toStdString(), records))
         {
-          QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Failed to lookup Conceal ID"), QtCriticalMsg));
+          QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Failed to lookup ID"), QtCriticalMsg));
         }
         std::string realAddress;
         for (const auto &record : records)
@@ -1238,7 +1238,7 @@ namespace WalletGui
 
     catch (std::exception &)
     {
-      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Could not check Conceal ID"), QtCriticalMsg));
+      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Could not check ID"), QtCriticalMsg));
       return;
     }
 
@@ -1471,7 +1471,7 @@ namespace WalletGui
         std::vector<std::string> records;
         if (!Common::fetch_dns_txt(address.toStdString(), records))
         {
-          QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Failed to lookup Conceal ID"), QtCriticalMsg));
+          QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Failed to lookup ID"), QtCriticalMsg));
         }
         std::string realAddress;
         for (const auto &record : records)
@@ -1487,7 +1487,7 @@ namespace WalletGui
 
     catch (std::exception &)
     {
-      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Could not check Conceal ID"), QtCriticalMsg));
+      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Could not check ID"), QtCriticalMsg));
       return;
     }
 
@@ -1585,7 +1585,7 @@ namespace WalletGui
       return;
     }
 
-    uint32_t blocksPerDeposit = 21900;
+    uint32_t blocksPerDeposit = 80;
     quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
 
     /* Warn the user */
@@ -1637,7 +1637,7 @@ namespace WalletGui
 
   void OverviewFrame::depositParamsChanged()
   {
-    uint32_t blocksPerDeposit = 21900;
+    uint32_t blocksPerDeposit = 80;
     quint64 amount = CurrencyAdapter::instance().parseAmount(m_ui->m_amountSpin->cleanText());
     quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
     quint64 interest = CurrencyAdapter::instance().calculateInterest(amount, term, NodeAdapter::instance().getLastKnownBlockHeight());
@@ -2050,12 +2050,12 @@ namespace WalletGui
 
   void OverviewFrame::discordClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://discord.conceal.network/", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("http://discord.fandom.gold/", QUrl::TolerantMode));
   }
 
   void OverviewFrame::twitterClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://twitter.com/ConcealNetwork", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://twitter.com/FandomGold", QUrl::TolerantMode));
   }
 
   void OverviewFrame::telegramClicked()

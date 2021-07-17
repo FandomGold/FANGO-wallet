@@ -211,7 +211,7 @@ bool CurrencyAdapter::processServerAliasResponse(const std::string& s, std::stri
 		//   
 		// Courtesy of Monero Project
 			  // make sure the txt record has "oa1:ccx" and find it
-		auto pos = s.find("oa1:ccx");
+		auto pos = s.find("oa1:xfg");
 		if (pos == std::string::npos)
 			return false;
 		// search from there to find "recipient_address="
@@ -224,9 +224,9 @@ bool CurrencyAdapter::processServerAliasResponse(const std::string& s, std::stri
 		if (pos2 != std::string::npos)
 		{
 			// length of address == 95, we can at least validate that much here
-			if (pos2 - pos == 98)
+			if (pos2 - pos == 99)
 			{
-				address = s.substr(pos, 98);
+				address = s.substr(pos, 99);
 			}
 			else {
 				return false;

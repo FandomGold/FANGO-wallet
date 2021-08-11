@@ -2,27 +2,23 @@
 
 # Fango Desktop (GUI Wallet)
 
-Fango is a private decentralized blockchain bank powered by 100% open source code - without involvement of financial institutions. All Fango transactions and messages are private by default. 
+Fango-Desktop is a decentralized blockchain bank & private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a secure way to transfer funds and private messages using a distributed public ledger which keeps sender & receiver anonymous to the public- a key concern in a post Snowden world.  All Fango transactions and messages are private by default.
 
-Enabling a secure way to transfer funds and private messages using a distributed public ledger which keeps sender & receiver anonymous to the public - a key concern in a post Snowden world.
+Fango-Desktop is powered by Fango (XFG) which is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology to operate with no central authority. Allowing you the freedom of full control over the private keys to your funds.
 
-Fango (XFG) is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology to operate with no central authority. You control the private keys to your funds.
-
-Fango is an open-source, community driven, and truly decentralized public network - accessible by anyone in the world regardless of their geographic location or status.
-
-No one person, company, or corporation owns the Fango network and anyone can take part.
+Fango is an open-source, community driven, and truly decentralized public network - accessible by anyone in the world regardless of their geographic location or status. No one person, company, or corporation owns the Fango network and anyone can take part.
 
 ## Resources
 
 -   Web: <https://fandom.gold>
 -   GitHub: <https://github.com/fandomgold>
--   Discord: <https://discord.gg/YbpHVSd>
+-   Discord: <https://discord.gg/5UJcJJg>
 -   Twitter: <https://twitter.com/fandomgold>
 -   Reddit: <https://www.reddit.com/r/Fango>
 -   Medium: <https://medium.com/@fandomgold>
 -   Bitcoin Talk: <https://bitcointalk.org/index.php?topic=4515873>
 
-## Compiling Fango from source
+## Compiling Fango-Desktop from source
 
 ### Linux / Ubuntu
 

@@ -1,7 +1,10 @@
 ![image](https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/9b0d4ba4-1ece-4b2c-bcb8-3bce1426a4fc.png)
 
-# Fango Desktop (GUI Wallet)
+# Fango Desktop (GUI Banking & Private Messenger Wallet)
+Latest Release: v4.0.0 (Dragonbourne)
 
+<b><sub>Maintained by Fandom Gold Society</sub></b>
+__________________________________________________
 Fango-Desktop is a decentralized blockchain bank & private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a secure way to transfer funds and private messages using a distributed public ledger which keeps sender & receiver anonymous to the public- a key concern in a post Snowden world.  All Fango transactions and messages are private by default.
 
 Fango-Desktop is powered by Fango (XFG) which is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology to operate with no central authority. Allowing you the freedom of full control over the private keys to your funds.

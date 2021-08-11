@@ -1,4 +1,4 @@
-![image](https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/9b0d4ba4-1ece-4b2c-bcb8-3bce1426a4fc.png)
+![image](https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/fangobgs.png)
 
 # Fango Desktop (GUI Banking & Private Messenger Wallet)
 Latest Release: v4.0.0 (Dragonbourne)
@@ -50,12 +50,10 @@ git clone https://github.com/FandomGold/fango-desktop
 cd fango-desktop
 rm -rf cryptonote
 git clone https://github.com/FandomGold/fango cryptonote
-make build-release
-mkdir bin && mv build/release/Fango-GUI bin/
-make clean
+make 
 ```
 
-If the build is successful the binary will be in the `bin` folder.
+If the build is successful the binary will be in the `build/release` folder.
 
 ### Windows 10
 

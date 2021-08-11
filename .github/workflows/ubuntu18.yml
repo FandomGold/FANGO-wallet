@@ -14,22 +14,22 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt update -y
-          sudo apt install -y qt5-default qttools5-dev qttools5-dev-tools libqt5charts5-dev libboost-all-dev
+          apt update -y
+          apt install -y qt5-default qttools5-dev qttools5-dev-tools libqt5charts5-dev libboost-all-dev
 
       - name: Clone conceal-core
         run: |
           rm -rf cryptonote
-          git clone https://github.com/ConcealNetwork/conceal-core.git cryptonote
+          git clone https://github.com/FandomGold/fango.git cryptonote
 
       - name: Build
         id: build
         run: |
           ccx_version=$(echo "$GITHUB_REF" | sed 's|refs/tags/||')
-          release_name=ccx-desktop-ubuntu-1804-v"$ccx_version"
+          release_name=fango-desktop-ubuntu-1804-v"$ccx_version"
           build_folder="build/release"
 
-          make -j4 build-release
+          make -j1 build-release
           mkdir $release_name
           mkdir -p $release_name/icon
           mv $build_folder/CONCEAL-GUI $release_name

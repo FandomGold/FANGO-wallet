@@ -1,39 +1,28 @@
-![image](https://github.com/ConcealNetwork/conceal-imagery/blob/master/tqRGU34m_400x400.jpg)
+![image](https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/9b0d4ba4-1ece-4b2c-bcb8-3bce1426a4fc.png)
 
 # Fango Desktop (GUI Wallet)
 
-Latest Release: v6.4.8
+Fango is a private decentralized blockchain bank powered by 100% open source code - without involvement of financial institutions. All Fango transactions and messages are private by default. 
 
-Maintained by Fandom Gold Society.
+Enabling a secure way to transfer funds and private messages using a distributed public ledger which keeps sender & receiver anonymous to the public - a key concern in a post Snowden world.
 
-## Information
+Fango (XFG) is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology to operate with no central authority. You control the private keys to your funds.
 
-Conceal.Network is a decentralized blockchain bank, with deposits and investments paying interest rates, without involvement of financial institutions, powered by 100% open source code.
+Fango is an open-source, community driven, and truly decentralized public network - accessible by anyone in the world regardless of their geographic location or status.
 
-Conceal.Network enables untraceable and anonymous messaging, and a secure way to transfer funds. Using a distributed public ledger, the sender and receiver are kept anonymous, a key concern in a post Snowden world. Hackers cannot trace money or messages when the messages are sent across public networks.
-
-Conceal Cryptocurrency (₡CCX) is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology to operate with no central authority. You control the private keys to your funds.
-
-Conceal is accessible by anyone in the world regardless of their geographic location or status. Our blockchain is resistant to any kind of analysis. All your CCX transactions and messages are anonymous. Conceal avoids many concerns, e.g. technological, environment impact, reputational and security, of Bitcoin, and provides a glimpse of the future.
-
-Conceal is open-source, community driven and truly decentralized.
-
-No one owns Conceal, everyone can take part.
+No one person, company, or corporation owns the Fango network and anyone can take part.
 
 ## Resources
 
--   Web: <https://conceal.network>
--   GitHub: <https://github.com/ConcealNetwork/conceal-core>
+-   Web: <https://fandom.gold>
+-   GitHub: <https://github.com/fandomgold>
 -   Discord: <https://discord.gg/YbpHVSd>
--   Twitter: <https://twitter.com/ConcealNetwork>
--   Telegram Official (News Feed): <https://t.me/concealnetwork>
--   Telegram User Group (Chat Group): <https://t.me/concealnetworkusers>
--   Medium: <https://medium.com/@ConcealNetwork>
--   Reddit: <https://www.reddit.com/r/ConcealNetwork>
+-   Twitter: <https://twitter.com/fandomgold>
+-   Reddit: <https://www.reddit.com/r/Fango>
+-   Medium: <https://medium.com/@fandomgold>
 -   Bitcoin Talk: <https://bitcointalk.org/index.php?topic=4515873>
--   Paperwallet: <https://conceal.network/paperwallet>
 
-## Compiling Conceal from source
+## Compiling Fango from source
 
 ### Linux / Ubuntu
 
@@ -83,14 +72,14 @@ If the build is successful the binary will be in the `bin` folder.
 
 -   From the start menu, open 'x64 Native Tools Command Prompt for vs2017' or run "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\Tools\\VsMSBuildCmd.bat" from any command prompt.
 -   Edit the CMakeLists.txt file and set the path to QT cmake folder. For example: set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\").
--   `git clone https://github.com/ConcealNetwork/conceal-core`
--   `git clone https://github.com/ConcealNetwork/conceal-desktop`
--   Copy the contents of the conceal-core folder into conceal-wallet\\cryptonote
--   `cd conceal-desktop`
+-   `git clone https://github.com/FandomGold/fango`
+-   `git clone https://github.com/FandomGold/fango-desktop`
+-   Copy the contents of fango folder into fango-wallet\\cryptonote
+-   `cd fango-desktop`
 -   `mkdir build`
 -   `cd build`
 -   `cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..` (Or your boost installed dir.)
--   `msbuild CONCEAL-GUI.sln /p:Configuration=Release`
+-   `msbuild FANGO-GUI.sln /p:Configuration=Release`
 
 If the build is successful the binaries will be in the `Release` folder.
 
@@ -98,9 +87,9 @@ If the build is successful the binaries will be in the `Release` folder.
 
 #### Prerequisites
 
-First, we need to install the same dependencies as [conceal-core](https://github.com/ConcealNetwork/conceal-core#macos).
+First, we need to install the same dependencies as [fango](https://github.com/FandomGold/fango#macos).
 
-Once conceal-core dependencies are installed, we need to install Qt5, open a Terminal and run the following commands:
+Once fango dependencies are installed, we need to install Qt5, open a Terminal and run the following commands:
 
 ```bash
 brew install qt5
@@ -109,26 +98,26 @@ export PATH="/usr/local/opt/qt/bin:$PATH"
 
 #### Building
 
-When all dependencies are installed, build Conceal Desktop with the following commands: 
+When all dependencies are installed, build Fango Desktop with the following commands: 
 
 ```bash
-git clone https://github.com/ConcealNetwork/conceal-desktop
-cd conceal-desktop
+git clone https://github.com/FandomGold/fango-desktop
+cd fango-desktop
 rm -rf cryptonote
-git clone https://github.com/ConcealNetwork/conceal-core cryptonote
+git clone https://github.com/FandomGold/fango cryptonote
 make build-release
 ```
 
-If the build is successful the binary will be `build/release/CONCEAL-GUI.app`
+If the build is successful the binary will be `build/release/FANGO-GUI.app`
 
 It is also possible to deploy the application as a `.dmg` by using these commands after the build:
 
 ```bash
 cd build/release
-macdeployqt CONCEAL-GUI.app
+macdeployqt FANGO-GUI.app
 cpack
 ```
 
 ## Special Thanks
 
-Special thanks goes out to the developers from Cryptonote, Bytecoin, Monero, Forknote, TurtleCoin, and Masari.
+Special thanks goes to developers from Cryptonote, Bytecoin, Conceal, Karbo, Monero, Forknote, XDN, TurtleCoin, and Masari.

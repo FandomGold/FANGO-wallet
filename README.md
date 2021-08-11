@@ -19,7 +19,7 @@ Fango is an open-source, community driven, and truly decentralized public networ
 -   Twitter: <https://twitter.com/fandomgold>
 -   Reddit: <https://www.reddit.com/r/Fango>
 -   Medium: <https://medium.com/@fandomgold>
--   Bitcoin Talk: <https://bitcointalk.org/index.php?topic=4515873>
+-   Bitcoin Talk: <https://bitcointalk.org/index.php?topic=2712001>
 
 ## Compiling Fango-Desktop from source
 

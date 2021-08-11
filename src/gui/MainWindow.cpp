@@ -22,6 +22,7 @@
 #include <QTranslator>
 #include <QAction>
 #include <QMenu>
+#include <QFontDatabase>
 #include <boost/lexical_cast.hpp>
 #include <boost/program_options.hpp>
 #include <boost/algorithm/string.hpp>
@@ -80,6 +81,36 @@ MainWindow::MainWindow() : QMainWindow(), m_ui(new Ui::MainWindow), m_trayIcon(n
   connectToSignals();
   initUi();
   walletClosed();
+
+  int id1 = QFontDatabase::addApplicationFont(":/fonts/Cinzel");
+  QFont font1;
+  font1.setFamily("Cinzel");
+  font1.setPixelSize(14);
+  int id2 = QFontDatabase::addApplicationFont(":/fonts/Lato");
+  QFont font2;
+  font2.setFamily("Lato");
+  font2.setPixelSize(14);
+  int id3 = QFontDatabase::addApplicationFont(":/fonts/Orbitron");
+  QFont font3;
+  font3.setFamily("Orbitron");
+  font3.setPixelSize(12);
+  int id4 = QFontDatabase::addApplicationFont(":/fonts/Capsuula");
+  QFont font4;
+  font4.setFamily("Capsuula");
+  font4.setPixelSize(12);
+  int id5 = QFontDatabase::addApplicationFont(":/fonts/Unique");
+  QFont font5;
+  font5.setFamily("Unique");
+  font5.setPixelSize(12);
+  int id6 = QFontDatabase::addApplicationFont(":/fonts/GothamB");
+  QFont font6;
+  font6.setFamily("GothamB");
+  font6.setPixelSize(12);
+  int id7 = QFontDatabase::addApplicationFont(":/fonts/GothamL");
+  QFont font7;
+  font7.setFamily("GothamL");
+  font7.setPixelSize(12);
+
 }
 
 MainWindow::~MainWindow()
@@ -150,7 +181,7 @@ void MainWindow::initUi()
     QAction* showAction = new QAction(tr("Show"), this);
     connect(showAction, &QAction::triggered, this, &MainWindow::restoreFromTray);
 
-    QAction* quitAction = new QAction(tr("Quit Conceal Desktop"), this);
+    QAction* quitAction = new QAction(tr("Quit Fango Desktop"), this);
     connect(quitAction, &QAction::triggered, qApp, &QCoreApplication::quit);
 
     QMenu* trayIconMenu = new QMenu(this);
@@ -817,7 +848,7 @@ void MainWindow::importSeed()
     {
       QMessageBox::warning(
           &MainWindow::instance(), QObject::tr("Error"),
-          tr("The wallet file already exists. Please change the wallet name and try again."));
+          tr("This wallet filename already exists. Please change the wallet name and try again."));
       return;
     }
 
@@ -899,7 +930,7 @@ void MainWindow::importTracking()
     {
       QMessageBox::warning(
           &MainWindow::instance(), QObject::tr("Error"),
-          tr("The wallet file already exists. Please change the wallet name and try again."));
+          tr("This wallet filename already exists. Please change the wallet name and try again."));
       return;
     }
 

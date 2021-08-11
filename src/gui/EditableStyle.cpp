@@ -30,33 +30,25 @@ namespace WalletGui
     int id = -2;
 
     QString fontName = Settings::instance().getFont();
-    if (fontName == "Poppins")
+    if (fontName == "orbitron")
     {
-      id = QFontDatabase::addApplicationFont(":/fonts/Poppins-Regular.ttf");
+      id = QFontDatabase::addApplicationFont(":/fonts/orbitron.ttf");
     }
-    else if (fontName == "Lekton")
+    else if (fontName == "cinzel")
     {
-      id = QFontDatabase::addApplicationFont(":/fonts/Lekton-Regular.ttf");
+      id = QFontDatabase::addApplicationFont(":/fonts/Cinzel-Regular.ttf");
     }
-    else if (fontName == "Roboto")
+    else if (fontName == "GothamL")
     {
-      id = QFontDatabase::addApplicationFont(":/fonts/RobotoSlab-Regular.ttf");
+      id = QFontDatabase::addApplicationFont(":/fonts/GothamLight.ttf");
     }
-    else if (fontName == "Montserrat")
+    else if (fontName == "Lato")
     {
-      id = QFontDatabase::addApplicationFont(":/fonts/Montserrat-Regular.ttf");
-    }
-    else if (fontName == "Open Sans")
-    {
-      id = QFontDatabase::addApplicationFont(":/fonts/OpenSans-Regular.ttf");
-    }
-    else if (fontName == "Oswald")
-    {
-      id = QFontDatabase::addApplicationFont(":/fonts/Oswald-Regular.ttf");
+      id = QFontDatabase::addApplicationFont(":/fonts/Lato-Regular.ttf");
     }
     else
     {
-      id = QFontDatabase::addApplicationFont(":/fonts/Lato-Regular.ttf");
+      id = QFontDatabase::addApplicationFont(":/fonts/GothamBook.ttf");
     }
 
     currentFont.setFamily(fontName);
@@ -89,7 +81,7 @@ namespace WalletGui
                      "{"
                      "font-size: %1 px;"
                      "background-color: black;"
-                     "color: #fff;"
+                     "color: #ddd;"
                      "font-weight: bold;"
                      "height: 37px;"
                      "border: 1px solid #444;"
@@ -97,7 +89,7 @@ namespace WalletGui
                      "}"
                      "QTreeView::item"
                      "{"
-                     "color: #ccc;"
+                     "color: #bbb;"
                      "height: 37px;"
                      "outline: none;"
                      "}"
@@ -108,7 +100,7 @@ namespace WalletGui
                      "}"
                      "QTreeView"
                      "{"
-                     "alternate-background-color: #282d31;"
+                     "alternate-background-color: #080808;"
                      "background: black"
                      "}")
                      .arg(baseFontSize);
@@ -116,7 +108,7 @@ namespace WalletGui
                   "QPushButton"
                   "{"
                   "font-size: %1 px;"
-                  "color:#fff;"
+                  "color:#ddd;"
                   "border:1px solid #ffcb00;"
                   "border-radius:5px;"
                   "padding: 5px;"

@@ -1,18 +1,23 @@
-// Copyright (c) 2011-2017 The Cryptonote Developers
-// Copyright (c) 2017-2018 The Circle Foundation & Conceal Devs
-// Copyright (c) 2018-2019 Conceal Network & Conceal Devs
+// Copyright (c) 2019-2021 Fango Developers
 // Copyright (c) 2018-2021 Fandom Gold Society
+// Copyright (c) 2018-2019 Conceal Network & Conceal Devs
+// Copyright (c) 2014-2018 The Monero project
+// Copyright (c) 2014-2018 The Forknote developers
+// Copyright (c) 2016-2019 The Karbowanec developers
+// Copyright (c) 2012-2018 The CryptoNote developers
+// Copyright (c) 2018-2019 The Ryo Currency developers
 //
-// Fango is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// Fango is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Lesser General Public License for more details.
-// You should have received a copy of the GNU Lesser General Public License
-// along with Fango.  If not, see <http://www.gnu.org/licenses/>.
+// This file is part of Fango.
+//
+// Fango is free software distributed in the hope that it
+// will be useful, but WITHOUT ANY WARRANTY; without even the
+// implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+// PURPOSE. You can redistribute it and/or modify it under the terms
+// of the GNU General Public License v3 or later versions as published
+// by the Free Software Foundation. Fango includes elements written 
+// by third parties. See file labeled LICENSE for more details.
+// You should have received a copy of the GNU General Public License
+// along with Fango. If not, see <https://www.gnu.org/licenses/>.
 
 #pragma once
 
@@ -70,8 +75,8 @@ namespace CryptoNote
 		static_assert(2 * DIFFICULTY_CUT <= DIFFICULTY_WINDOW - 2, "Bad DIFFICULTY_WINDOW or DIFFICULTY_CUT");
 
 		const uint64_t DEPOSIT_MIN_AMOUNT = 8 * COIN;
-		const uint32_t DEPOSIT_MIN_TERM = 80;				 /* one month = 5480 */
-		const uint32_t DEPOSIT_MAX_TERM = 1 * 12 * 80;  		 /* one year */
+		const uint32_t DEPOSIT_MIN_TERM = 8;  //test term 		 /* one month=5480 ( 3 months (16440) for release ) OverviewFrame::depositParamsChanged */ 
+		const uint32_t DEPOSIT_MAX_TERM = 1 * 12 * 80;  		 /* one year | use 3 month min/max */
 
 		static_assert(DEPOSIT_MIN_TERM > 0, "Bad DEPOSIT_MIN_TERM");
 		static_assert(DEPOSIT_MIN_TERM <= DEPOSIT_MAX_TERM, "Bad DEPOSIT_MAX_TERM");
@@ -80,13 +85,13 @@ namespace CryptoNote
 		static constexpr uint64_t POISSON_CHECK_DEPTH = 60;   // Main-chain depth of poisson check. The attacker will have to tamper 50% of those blocks
 		static constexpr double POISSON_LOG_P_REJECT = -75.0; // Reject reorg if probability of timestamps being genuine is less than e^x, -75 = 10^-33
 
-		const size_t   MAX_BLOCK_SIZE_INITIAL                        = 800000;  //update to 2MB
+		const size_t   MAX_BLOCK_SIZE_INITIAL                        = 800000;  
 		const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR         = 100 * 1024;
 		const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_DENOMINATOR       = 365 * 24 * 60 * 60 / DIFFICULTY_TARGET;
 
 		const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS     = 1;
 		const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS    = DIFFICULTY_TARGET_DRGL * CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS;
-		const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS_V2 = DIFFICULTY_TARGET * CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS;		    /* !!!!!!!!!!!!*/
+		const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS_V2 = DIFFICULTY_TARGET * CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS;		   
 
 		const size_t CRYPTONOTE_MAX_TX_SIZE_LIMIT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT - CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE; /* maximum transaction size */
 		const size_t CRYPTONOTE_OPTIMIZE_SIZE=  100;		/* proportional to CRYPTONOTE_MAX_TX_SIZE_LIMIT */
@@ -105,7 +110,7 @@ namespace CryptoNote
 		const uint32_t UPGRADE_HEIGHT_V5                             = 324819; //{Ironborn}  CN7  (variant1) 
 		const uint32_t UPGRADE_HEIGHT_V6                             = 345678; //{Ice&fire}  CN8  (variant2)
 		const uint32_t UPGRADE_HEIGHT_V7                             = 657000; //Fandomgold
-		const uint32_t UPGRADE_HEIGHT_V8                             = 800000; //Fango Emission
+		const uint32_t UPGRADE_HEIGHT_V8                             = 800000; //Dragonbourne (emission|deposits)
 		const unsigned UPGRADE_VOTING_THRESHOLD = 90; // percent
 		const size_t UPGRADE_VOTING_WINDOW = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;
 		const size_t UPGRADE_WINDOW = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;
@@ -177,8 +182,8 @@ namespace CryptoNote
 	const std::initializer_list<const char *> SEED_NODES = {
 		"104.236.0.16:10808",
 		"188.226.177.187:10808",
-		"178.128.164.245:10808",
-		"176.223.134.27:10808"
+		"fangotango.hopto.org:10808",
+		"fango.money:10808"
 	};
 
 	struct CheckpointData
@@ -232,7 +237,13 @@ namespace CryptoNote
 			{ 657002, "29952d93e156602008c03070089d6ba6375e770dda5d31603d7493eec23e8618" },
 			{ 657025, "b654644cc363120a88f15e044cbe04935f7a0e347a72901a46d1db88348a7392" },
 			{ 690000, "294f9c92ec345d23543ce7dfb7d2487cb6d3b3c64e6d0158b165bf9f530aef30" },
-			{ 696969, "da78f75378ca0d84108f636119cb228ba7185f953f36511c4c80812d77664050" }
+			{ 696969, "da78f75378ca0d84108f636119cb228ba7185f953f36511c4c80812d77664050" },
+			{ 700000, "1ffc42a47c84a82a2a050d1607bbd5a4524c3b47099f6cf61f8dab5b24abbf2a" },
+			{ 710000, "c7493d9721e3d5ebd196f035d8bb74bd5485443181840b05f62dd0b7709a14c4" },
+			{ 720000, "673574f7b28a84ef81fb00f072d378fca271ba48e77250f225748c35ce873619" },
+			{ 730000, "25020873d7851cd0b0787d8dd6a5eb758eb5c531bc793837e9399d9f05e0a4a4" },
+			{ 740000, "5c1b20e346df61f719a6d39cef03ca53d6978f4b00915b61ce139a67a5ea5d8d" },
+			{ 750000, "4fe3b7759428705b39f725ef1f5a9ce1b501c983de5e3079d30bc497f587242f" }
 		};
 
 } // namespace CryptoNote

@@ -1,84 +1,81 @@
-![image](https://github.com/ConcealNetwork/conceal-imagery/blob/master/tqRGU34m_400x400.jpg)
+<img title="Unlock the Power of Fandom" src="https://raw.githubusercontent.com/FandomGold/XFG-data/master/Fango_gif01.GIF"><img/>
+### Fango is open-source decentralized P2P privacy cryptocurrency built by sound money advocates and fandom enthusiasts.
 
-![](https://github.com/bomb-on/conceal-core/workflows/Ubuntu%2016.04/badge.svg) ![](https://github.com/bomb-on/conceal-core/workflows/Ubuntu%2018.04/badge.svg) ![](https://github.com/bomb-on/conceal-core/workflows/Windows/badge.svg) ![](https://github.com/bomb-on/conceal-core/workflows/macOS/badge.svg) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4b47060713f444b8afb5f5284d4b9716)](https://www.codacy.com/manual/cryptokatz/conceal-core?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cryptokatz/conceal-core&amp;utm_campaign=Badge_Grade)
+Based on the CryptoNote protocol & philosophy.
 
-# Conceal Core (CLI)
-Latest Release: v6.4.8
-Maintained by Conceal Developers.
+* <p align="left"><a href="https://fandom.gold">Website</a><p align="left">
+* <p align="left"><a href="http://explorer.fandom.gold">Explorer</a><p align="left">
+* <p align="left"><a href="https://fangotango.hopto.org">Explorer</a><p align="left">
+ 
 
-## Information
-Conceal is a decentralized banking platform with encrypted messages and own privacy protected cryptocurrency.
-
-Conceal is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology to operate with no central authority. You control your private keys to your funds, you control your destiny. Conceal Network is accessible by anyone in the world regardless of his/her geographic location or status. Our blockchain is resistant to any kind of analysis. All your CCX transactions and messages are anonymous. Conceal Network provides an instant secure, untraceable and unlinkable way of encrypted communication - crypto messages.
-
-Conceal is open-source, community driven and truly decentralized. No one owns it, everyone can take part.
-
-## Resources
-- Web: [https://conceal.network](https://conceal.network/)
-- GitHub: [https://github.com/ConcealNetwork/conceal-core](https://github.com/ConcealNetwork/conceal-core)
-- Wiki: [https://conceal.network/wiki](https://conceal.network/wiki/doku.php)
-- Explorer: [https://explorer.conceal.network](https://explorer.conceal.network)
-- Paperwallet: [https://conceal.network/paperwallet](https://conceal.network/paperwallet/)
-- Discord: [https://discord.gg/YbpHVSd](https://discord.gg/YbpHVSd)
-- Twitter: [https://twitter.com/ConcealNetwork](https://twitter.com/ConcealNetwork)
-- Medium: [https://medium.com/@ConcealNetwork](https://medium.com/@ConcealNetwork)
-- Reddit: [https://www.reddit.com/r/ConcealNetwork/](https://www.reddit.com/r/ConcealNetwork/)
-- Bitcoin Talk: [https://bitcointalk.org/index.php?topic=4515873](https://bitcointalk.org/index.php?topic=4515873)
+ ______________________________
+ 
 
 
-## Compiling Conceal from source
+##### Master Status   
 
-### System Memory
+[![Build Status](https://travis-ci.org/FandomGold/fandomgold.svg?branch=master)](https://travis-ci.org/FandomGold/fandomgold) 
 
-The build process can consume upto 13GB of memory and may fail if enough resources are not available.
-In some build scenarios it may be necessary to increase the size of the SWAP to compensate for less RAM.
+<sup>"Working software is the primary measure of progress." [‣]</sup>
 
-For example if you have 8GB of RAM, then your SWAP size should be 5GB
 
-- Ubuntu / Linux
-	```bash
-	sudo fallocate -l 5G /swapfile
-	sudo chmod 600 /swapfile
-	sudo mkswap /swapfile
-	sudo swapon /swapfile
-	```
+[‣]:http://agilemanifesto.org/
 
-- Rasberry Pi OS
-	```bash
-	sudo dphys-swapfile swapoff
-	sudo nano /etc/dphys-swapfile
-	CONF_SWAPSIZE=5120
-	sudo nano /sbin/dphys-swapfile
-	#CONF_MAXSWAP=2048
-	sudo dphys-swapfile setup
-	sudo dphys-swapfile swapon
-	```
+#### Building On *nix
 
-### Linux / Ubuntu
+1. Dependencies: GCC 4.7.3 or later, CMake 2.8.6 or later, and Boost 1.55.
 
-#### Prerequisites
+You may download them from:
 
-- You will need the following dependencies to build the Conceal CLI: boost, cmake, git, gcc, g++, python, and make.
-- On Ubuntu: `sudo apt-get install -y build-essential python-dev gcc g++ git cmake libboost-all-dev`
+* http://gcc.gnu.org/
+* http://www.cmake.org/
+* http://www.boost.org/
 
-#### Building
 
-- `git clone https://github.com/ConcealNetwork/conceal-core`
-- `cd conceal-core`
-- `mkdir build && cd $_`
-- `cmake ..`
-- `make`
+*** Alternatively, it may be possible to install them using a package manager by
+executing the following command.
+ ```
+ sudo apt-get install build-essential git cmake libboost-all-dev
+```
 
-If the build is successful the binaries will be in the `src` folder.
+2. Clone Fango repository
+```
+git clone https://github.com/FandomGold/fango
 
-### Raspberry Pi / ARM
+```
+3. Open folder with copied repository
+```
+cd fango
+```
+4. Building (Compiling)
+    (resulting programs will be found in build/release/src)
 
-Tested on a Raspberry Pi 4 with Raspberry Pi OS (32/64bit) images.
+```
+make
+```
 
-Other ARM CPU/OS combinations should be possible if the CPU supports Neon/AES.
+5. Starting Fango daemon
+```
+cd fango/build/release/src `
+./fangod
+````
+try --help from within dæmon for a full list of available commands
+or <code>./fangod --help</code> when outside of dæmon 
+_________________________________________________________
+For the most user-friendly graphical interface experience
 
-- Follow the Linux / Ubuntu procedure to build.
+see [Fango Desktop Wallet](https://github.com/fandomgold/fango-desktop). 
+_________________________________________________________
 
+_________________________________________________________
+**Advanced options:**
+
+* Parallel build: run `make -j<number of threads>` instead of `make`.
+* Debug build: run `make build-debug`.
+* Test suite: run `make test-release` to run tests in addition to building. Running `make test-debug` will do the same to the debug version.
+* Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++` before running `make`.
+
+**************************************************************************************************
 ### Windows 10
 
 #### Prerequisites
@@ -93,11 +90,11 @@ Other ARM CPU/OS combinations should be possible if the CPU supports Neon/AES.
 From the start menu, open 'x64 Native Tools Command Prompt for vs2019' or run "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsMSBuildCmd.bat" from any command prompt.
 
 ```bash
-git clone https://github.com/ConcealNetwork/conceal-core
-cd conceal-core
+git clone https://github.com/FandomGold/fango
+cd fango
 mkdir build
 cmake .. -G "Visual Studio 16 2019" -A x64 -DBOOST_LIBRARYDIR="c:\local\boost_1_73_0\lib64-msvc-14.2"
-msbuild concealX.sln /p:Configuration=Release /m
+msbuild fangoX.sln /p:Configuration=Release /m
 ```
 
 If the build is successful the binaries will be in the `src/Release` folder.
@@ -123,17 +120,19 @@ $ brew install git python cmake gcc boost
 
 #### Building
 
-When all dependencies are installed, build Conceal Core binaries:
+When all dependencies are installed, build Fango core binaries:
 
 ```bash
-$ git clone https://github.com/ConcealNetwork/conceal-core
-$ cd conceal-core
+$ git clone https://github.com/FandomGold/fango
+$ cd fango
 $ mkdir build && cd $_
 $ cmake ..
 $ make
 ```
 
 If the build is successful the binaries will be located in `src` directory.
+*******************************
 
-#### Special Thanks
-Special thanks goes out to the developers from Cryptonote, Bytecoin, Monero, Forknote, TurtleCoin, Karbo and Masari.
+Join our ever-growing community of Fango holders. 
+Social channels include Discord, Reddit, or Twitter.
+

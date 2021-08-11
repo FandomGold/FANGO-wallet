@@ -1,28 +1,17 @@
 sudo: true
 language: cpp
-
+compiler: gcc
+env:
+- CXXFLAGS="-std=gnu++11"
 matrix:
   include:
-
-  # Ubuntu, g++-6
   - os: linux
-    dist: xenial
-    compiler: gcc
     addons:
-        apt:
-          update: true
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - libboost-all-dev
-            - g++-6
+      apt:
+        sources:
+        - ubuntu-toolchain-r-test
     env:
-    - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
-    - LABEL="linux"
-    - _DEPLOY="true"
-
-script:
-  - mkdir build
-  - cd build
-  - cmake -DCMAKE_BUILD_TYPE=Release -DSTATIC=true ..
-  - make
+    - MATRIX_EVAL="CC=gcc && CXX=g++
+before_install: sudo apt-get install build-essential git cmake libboost-all-dev
+install:
+script: sudo make -j4

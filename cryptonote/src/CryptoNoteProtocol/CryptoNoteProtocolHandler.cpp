@@ -686,7 +686,7 @@ bool CryptoNoteProtocolHandler::on_connection_synchronized()
     logger(Logging::INFO, Logging::BRIGHT_CYAN)
       << "**********************************************************************" << ENDL
       << "You are synchronized with the Fango network." << ENDL
-      << "XFG-wallet is now at your service, m'Lorde." << ENDL
+      << "fango-wallet-cli is at your service, m'lorde." << ENDL
       << "Type \"help\" to see Fango daemon commands." << ENDL
       << ENDL
       << "Please note, the blockchain will only be saved after" << ENDL

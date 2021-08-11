@@ -47,7 +47,6 @@ color: #ddd;</string>
     <widget class="QLabel" name="label">
      <property name="font">
       <font>
-       <family>Poppins</family>
        <pointsize>-1</pointsize>
       </font>
      </property>
@@ -97,7 +96,6 @@ font-size: 22px;</string>
           <widget class="QLabel" name="label_7">
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -134,7 +132,6 @@ font-size: 19px;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -170,7 +167,6 @@ p, li { white-space: pre-wrap; }
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -214,7 +210,6 @@ QPushButton#m_copySeedButton:hover
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -264,7 +259,6 @@ QPushButton#m_backButton_2:hover
           <widget class="QLabel" name="label_10">
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -329,7 +323,6 @@ QPushButton#m_backButton_2:hover
                  </property>
                  <property name="font">
                   <font>
-                   <family>Poppins</family>
                    <pointsize>-1</pointsize>
                   </font>
                  </property>
@@ -352,7 +345,6 @@ margin-left: 3em;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Poppins</family>
                    <pointsize>-1</pointsize>
                   </font>
                  </property>
@@ -375,7 +367,6 @@ margin-left: 3em;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Poppins</family>
                    <pointsize>-1</pointsize>
                   </font>
                  </property>
@@ -398,7 +389,6 @@ margin-left: 3em;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Poppins</family>
                    <pointsize>-1</pointsize>
                   </font>
                  </property>
@@ -436,7 +426,6 @@ margin-left: 3em;</string>
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -480,7 +469,6 @@ QPushButton#m_showSeed:hover
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -548,7 +536,6 @@ QPushButton#m_backButton:hover
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -592,7 +579,6 @@ QPushButton#m_showPrivate:hover
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -670,7 +656,6 @@ QPushButton#m_showGUI:hover
           <widget class="QLabel" name="label_2">
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -711,7 +696,6 @@ QPushButton#m_showGUI:hover
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -755,7 +739,6 @@ p, li { white-space: pre-wrap; }
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -805,7 +788,6 @@ QPushButton#m_copyGUIKeyButton:hover
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -852,7 +834,6 @@ QPushButton#m_backButton_3:hover
           <widget class="QLabel" name="label_5">
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -877,7 +858,6 @@ QPushButton#m_backButton_3:hover
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -898,7 +878,6 @@ p, li { white-space: pre-wrap; }
           <widget class="QLabel" name="label_6">
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -923,7 +902,6 @@ p, li { white-space: pre-wrap; }
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -959,7 +937,6 @@ p, li { white-space: pre-wrap; }
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -967,7 +944,7 @@ p, li { white-space: pre-wrap; }
                <string notr="true">QPushButton#m_copySpendKeyButton
 {
     color: #fff;
-    border: 1px solid orange;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
     
@@ -975,11 +952,11 @@ p, li { white-space: pre-wrap; }
 
 QPushButton#m_copySpendKeyButton:hover
 {
-    color: orange;
-    border: 1px solid orange;
+    color: black;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
-    
+    background-color: #ffcb00;
 }</string>
               </property>
               <property name="text">
@@ -1003,7 +980,6 @@ QPushButton#m_copySpendKeyButton:hover
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -1011,7 +987,7 @@ QPushButton#m_copySpendKeyButton:hover
                <string notr="true">QPushButton#m_copyViewKeyButton
 {
     color: #fff;
-    border: 1px solid orange;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
     
@@ -1019,10 +995,11 @@ QPushButton#m_copySpendKeyButton:hover
 
 QPushButton#m_copyViewKeyButton:hover
 {
-    color: orange;
-    border: 1px solid orange;
+    color: black;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
+    background-color: #ffcb00;
     
 }</string>
               </property>
@@ -1047,7 +1024,6 @@ QPushButton#m_copyViewKeyButton:hover
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
                 <pointsize>-1</pointsize>
                </font>
               </property>
@@ -1055,7 +1031,7 @@ QPushButton#m_copyViewKeyButton:hover
                <string notr="true">QPushButton#m_backButton_4
 {
     color: #fff;
-    border: 1px solid orange;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
     
@@ -1063,10 +1039,11 @@ QPushButton#m_copyViewKeyButton:hover
 
 QPushButton#m_backButton_4:hover
 {
-    color: orange;
-    border: 1px solid orange;
+    color: black;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
+    background-color: #ffcb00;
     
 }</string>
               </property>

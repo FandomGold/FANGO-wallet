@@ -90,7 +90,7 @@
       <string notr="true">QPushButton#m_cancelButton
 {
     color: #fff;
-    border: 1px solid orange;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
     
@@ -98,10 +98,11 @@
 
 QPushButton#m_cancelButton:hover
 {
-    color: orange;
-    border: 1px solid orange;
+    color: black;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
+    background-color: #ffcb00;
     
 }</string>
      </property>
@@ -125,7 +126,7 @@ QPushButton#m_cancelButton:hover
       <string notr="true">QPushButton#m_okButton
 {
     color: #fff;
-    border: 1px solid orange;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
     
@@ -133,10 +134,11 @@ QPushButton#m_cancelButton:hover
 
 QPushButton#m_okButton:hover
 {
-    color: orange;
-    border: 1px solid orange;
+    color: black;
+    border: 1px solid #ffcb00;
     font-size: 12px;
     border-radius: 5px;
+    background-color: #ffcb00;
     
 }</string>
      </property>

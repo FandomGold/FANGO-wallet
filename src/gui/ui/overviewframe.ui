@@ -472,7 +472,7 @@ border:none;</string>
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>Orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -487,10 +487,11 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: black; 
+text-align: left; 
+color: black; 
 padding-left: 20px;
 border: none;
-	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
+background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -530,7 +531,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -589,7 +590,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -648,7 +649,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -707,7 +708,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>Orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -719,7 +720,6 @@ color: #ddd;
 padding-left: 20px;
 font-weight: normal;
 border: none;
-
 }
 
 QPushButton:hover {
@@ -766,7 +766,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -819,7 +819,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -835,10 +835,11 @@ border: none;
 }
 
 QPushButton:hover {
-text-align: left; color: black; 
+text-align: left;
+color: black; 
 padding-left: 20px;
 border: none;
-	background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
+background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.617, fx:0.500025, fy:0.5, stop:0.268657 rgba(255, 239, 0, 255), stop:0.437811 rgba(255, 203, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }</string>
            </property>
            <property name="text">
@@ -885,7 +886,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -934,7 +935,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -989,7 +990,7 @@ border: none;
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>orbitron</family>
              <weight>50</weight>
              <bold>false</bold>
             </font>
@@ -4593,7 +4594,7 @@ font-size: 10pt;</string>
             <property name="rightMargin">
              <number>0</number>
             </property>
-            <item row="2" column="6">
+   <!--         <item row="2" column="6">
              <widget class="QLabel" name="mediumIcon">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
@@ -4711,7 +4712,7 @@ margin-left: 10px;</string>
                <pixmap resource="../../resources.qrc">:/icons/telegram</pixmap>
               </property>
              </widget>
-            </item>
+            </item> -->
             <item row="2" column="4">
              <widget class="QPushButton" name="sm_redditButton">
               <property name="sizePolicy">
@@ -4843,7 +4844,7 @@ margin-left: 10px;</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="10">
+        <!--    <item row="2" column="10">
              <widget class="QPushButton" name="sm_tradeogreButton">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
@@ -4880,7 +4881,7 @@ color: #ffcb00;
                <string>TradeOgre</string>
               </property>
              </widget>
-            </item>
+            </item>  -->
             <item row="2" column="3">
              <widget class="QLabel" name="m_redditIcon">
               <property name="sizePolicy">
@@ -5048,11 +5049,11 @@ border: none;</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap resource="../../resources.qrc">:/icons/stex</pixmap>
+               <pixmap resource="../../resources.qrc">:/icons/finex</pixmap>
               </property>
              </widget>
             </item>
-            <item row="2" column="12">
+     <!--       <item row="2" column="12">
              <widget class="QLabel" name="hotbitIcon">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
@@ -5091,7 +5092,7 @@ border: none;</string>
                <pixmap resource="../../resources.qrc">:/icons/hotbit</pixmap>
               </property>
              </widget>
-            </item>
+            </item>  -->
             <item row="1" column="4">
              <widget class="QPushButton" name="sm_twitterButton">
               <property name="sizePolicy">
@@ -5131,7 +5132,7 @@ color: #ffcb00;
              </widget>
             </item>
             <item row="1" column="13">
-             <widget class="QPushButton" name="sm_stexButton">
+             <widget class="QPushButton" name="sm_finexButton">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
                 <horstretch>0</horstretch>
@@ -5164,7 +5165,7 @@ color: #ffcb00;
 }</string>
               </property>
               <property name="text">
-               <string>STEX</string>
+               <string>Finexbox</string>
               </property>
              </widget>
             </item>
@@ -5246,7 +5247,7 @@ color: #ffcb00;
               </property>
              </widget>
             </item>
-            <item row="2" column="13">
+      <!--      <item row="2" column="13">
              <widget class="QPushButton" name="sm_hotbitButton">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
@@ -5296,7 +5297,7 @@ color: #ffcb00;
                </size>
               </property>
              </spacer>
-            </item>
+            </item>  -->
             <item row="2" column="9">
              <widget class="QLabel" name="m_depositsUnlockedTitle_18">
               <property name="sizePolicy">
@@ -5332,12 +5333,12 @@ border: none;</string>
               <property name="text">
                <string/>
               </property>
-              <property name="pixmap">
+       <!--       <property name="pixmap">
                <pixmap resource="../../resources.qrc">:/icons/tradeogre</pixmap>
-              </property>
+              </property> -->
              </widget>
             </item>
-            <item row="1" column="10">
+      <!--      <item row="1" column="10">
              <widget class="QPushButton" name="sm_wikiButton">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
@@ -5465,7 +5466,7 @@ color: #ffcb00;
                <string>Medium</string>
               </property>
              </widget>
-            </item>
+            </item> -->
             <item row="1" column="14">
              <spacer name="horizontalSpacer_5">
               <property name="orientation">
@@ -7061,7 +7062,7 @@ color: #aaa;</string>
                <string notr="true">color: #aaa; border: none;  </string>
               </property>
               <property name="text">
-               <string>Automatic Remote Node</string>
+               <string>Automatic Remote &amp;Node</string>
               </property>
               <property name="checked">
                <bool>false</bool>
@@ -8847,7 +8848,7 @@ text-align: left;
            <property name="styleSheet">
             <string notr="true">border:none;
 color: #ffcb00;
-font-size: 14px;</string>
+font: 14px;</string>
            </property>
            <property name="text">
             <string>STATUS</string>
@@ -9020,10 +9021,11 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
             </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">
+            <string notr="true">color: rgb(255, 203, 0);
+
 border:none;
-color: rgb(115, 210, 22);
-font-size: 14px;</string>
+
+</string>
            </property>
            <property name="text">
             <string>FIAT TOTAL</string>
@@ -9128,10 +9130,9 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
             <enum>Qt::LeftToRight</enum>
            </property>
            <property name="styleSheet">
-            <string notr="true">
+            <string notr="true">font-size:14px;
 border:none;
 color: #ffcb00;
-font-size: 14px;
 
 QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;}</string>
            </property>
@@ -9843,10 +9844,10 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
    </hints>
   </connection>
   <connection>
-   <sender>sm_telegramButton</sender>
+<!--   <sender>sm_telegramButton</sender> -->
    <signal>clicked()</signal>
    <receiver>OverviewFrame</receiver>
-   <slot>telegramClicked()</slot>
+<!--   <slot>telegramClicked()</slot> -->
    <hints>
     <hint type="sourcelabel">
      <x>326</x>
@@ -9891,10 +9892,10 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
    </hints>
   </connection>
   <connection>
-   <sender>sm_mediumButton</sender>
+<!--   <sender>sm_mediumButton</sender>-->
    <signal>clicked()</signal>
    <receiver>OverviewFrame</receiver>
-   <slot>mediumClicked()</slot>
+<!--   <slot>mediumClicked()</slot> -->
    <hints>
     <hint type="sourcelabel">
      <x>1076</x>
@@ -10441,20 +10442,20 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
   <slot>discordClicked()</slot>
   <slot>githubClicked()</slot>
   <slot>redditClicked()</slot>
-  <slot>telegramClicked()</slot>
+<!--  <slot>telegramClicked()</slot> -->
   <slot>twitterClicked()</slot>
   <slot>setPercentage25()</slot>
   <slot>setPercentage50()</slot>
   <slot>setPercentage100()</slot>
-  <slot>mediumClicked()</slot>
+<!--  <slot>mediumClicked()</slot> -->
   <slot>lockWallet()</slot>
   <slot>unlockWallet()</slot>
   <slot>encryptWalletClicked()</slot>
   <slot>addressChanged(QString)</slot>
-  <slot>hotbitClicked()</slot>
-  <slot>tradeogreClicked()</slot>
-  <slot>stexClicked()</slot>
-  <slot>wikiClicked()</slot>
+<!--  <slot>hotbitClicked()</slot>
+  <slot>tradeogreClicked()</slot> -->
+  <slot>finexClicked()</slot>
+<!--  <slot>wikiClicked()</slot> -->
   <slot>helpClicked()</slot>
   <slot>exportCSV()</slot>
   <slot>startMaximizedClicked()</slot>
@@ -10464,7 +10465,7 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
   <slot>openSslLicenseClicked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_3"/>
  </buttongroups>
 </ui>

@@ -70,25 +70,25 @@
        </property>
        <property name="font">
         <font>
-         <family>Poppins</family>
          <pointsize>-1</pointsize>
         </font>
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton#m_okButton
 {
-    color: orange; ;
-    border: 1px solid orange;
+    color: #ffcb00; 
+    border: 1px solid #ffcb00;
     font-size: 16px;
     border-radius: 5px; 
 }
 
 QPushButton#m_okButton:hover
 {
-    color:#FFD700; ;
-    border: 1px solid orange;
+    color: black;
+    border: 1px solid #ffcb00;
     font-size: 16px;
     border-radius: 5px;
+    background-color: #ffcb00;
     
 }</string>
        </property>

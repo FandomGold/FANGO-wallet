@@ -1,9 +1,21 @@
 // Copyright (c) 2011-2017 The Cryptonote developers
 // Copyright (c) 2014-2017 XDN developers
 // Copyright (c) 2016-2017 BXC developers
-// Copyright (c) 2017 UltraNote developers
-// Distributed under the MIT/X11 software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2017-2017 UltraNote developers
+// Copyright (c) 2016-2019 The Karbowanec developers
+// Copyright (c) 2018-2021 Fandom Gold Society
+// Copyright (c) 2019-2021 Fango Developers
+//
+// This file is part of Fango.
+//
+// Fango is free software distributed in the hope that it 
+// will be useful- but WITHOUT ANY WARRANTY; without even the
+// implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+// PURPOSE. You are encouraged to redistribute it and/or modify it
+// under the terms of the GNU General Public License v3 or later
+// versions as published by the Free Software Foundation.
+// You should receive a copy of the GNU General Public License
+// along with Fango. If not, see <https://www.gnu.org/licenses/>
 
 #pragma once
 

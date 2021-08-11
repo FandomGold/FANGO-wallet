@@ -676,7 +676,7 @@ bool Blockchain::storeCache() {
     logger(ERROR, BRIGHT_RED) << "Failed to save blockchain cache";
     return false;
   }
-    logger(INFO, BRIGHT_GREEN) << "The Blockchain was successfully saved.";
+    logger(INFO, BRIGHT_GREEN) << "Fango blockchain was successfully saved.";
   return true;
 }
 

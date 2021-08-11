@@ -165,7 +165,7 @@ void WelcomeFrame::nextValidate()
     QMessageBox::warning(
         &MainWindow::instance(), QObject::tr("Error"),
         tr("You must confirm that you have safely stored the mnemonic seed and understand that the "
-           "Conceal Team cannot restore this wallet and is not responsible for loss of funds."));
+           "Fango Dev Team cannot restore this wallet and is not responsible for loss of funds."));
     return;
   }
   QString walletSeed = m_ui->mnemonicSeed->text();

@@ -77,7 +77,7 @@ namespace WalletGui
   Q_DECL_CONSTEXPR quint64 MESSAGE_AMOUNT = 100;
   Q_DECL_CONSTEXPR quint64 MESSAGE_CHAR_PRICE = 10;
   Q_DECL_CONSTEXPR quint64 MINIMAL_MESSAGE_FEE = 10;
-  Q_DECL_CONSTEXPR int DEFAULT_MESSAGE_MIXIN = 4;
+  Q_DECL_CONSTEXPR int DEFAULT_MESSAGE_MIXIN = 2;
   Q_DECL_CONSTEXPR quint32 MINUTE_SECONDS = 60;
   Q_DECL_CONSTEXPR quint32 HOUR_SECONDS = 60 * MINUTE_SECONDS;
   Q_DECL_CONSTEXPR int MIN_TTL = 5 * MINUTE_SECONDS;
@@ -169,13 +169,11 @@ namespace WalletGui
     m_ui->m_size->addItem("18");
     m_ui->m_size->addItem("19");
 
-    m_ui->m_font->addItem("Poppins");
-    m_ui->m_font->addItem("Roboto");
-    m_ui->m_font->addItem("Lekton");
-    m_ui->m_font->addItem("Montserrat");
-    m_ui->m_font->addItem("Open Sans");
+    m_ui->m_font->addItem("orbitron");
+    m_ui->m_font->addItem("cinzel");
+    m_ui->m_font->addItem("GothamB");
+    m_ui->m_font->addItem("GothamL");
     m_ui->m_font->addItem("Lato");
-    m_ui->m_font->addItem("Oswald");
 
     /* Add the currencies we support to the combobox */
     m_ui->m_language->addItem("USD");
@@ -489,8 +487,8 @@ namespace WalletGui
   {
     OverviewFrame::wallet_address = _address;
     std::string theAddress = _address.toStdString();
-    std::string start = theAddress.substr(0, 6);
-    std::string end = theAddress.substr(92, 6);
+    std::string start = theAddress.substr(0, 8);
+    std::string end = theAddress.substr(91, 8);
     m_ui->m_copyAddressButton_3->setText("Address: " + QString::fromStdString(start) + "......" + QString::fromStdString(end));
 
     /* Show/hide the encrypt wallet button */
@@ -863,7 +861,7 @@ namespace WalletGui
     exchangeName = _exchange;
   }
 
-  /* Update the total portfolio in CCX and Fiat in bottom corner */
+  /* Update the total portfolio in XFG and Fiat in bottom corner */
   void OverviewFrame::updatePortfolio()
   {
     QString currentCurrency = Settings::instance().getCurrentCurrency();
@@ -1165,7 +1163,7 @@ namespace WalletGui
     /* Check if its a tracking wallet */
     if (Settings::instance().isTrackingMode())
     {
-      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThis action is not available."));
+      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThat action is not available."));
       return;
     }
 
@@ -1450,7 +1448,7 @@ namespace WalletGui
 
     if (Settings::instance().isTrackingMode())
     {
-      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThis action is not available."));
+      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThat action is not available."));
       return;
     }
 
@@ -1567,7 +1565,7 @@ namespace WalletGui
 
     if (Settings::instance().isTrackingMode())
     {
-      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThis action is not available."));
+      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThat action is not available."));
       return;
     }
 
@@ -1725,7 +1723,7 @@ namespace WalletGui
   {
     if (Settings::instance().isTrackingMode())
     {
-      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThis action is not available."));
+      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThat action is not available."));
       return;
     }
 
@@ -1752,7 +1750,7 @@ namespace WalletGui
   {
     if (Settings::instance().isTrackingMode())
     {
-      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThis action is not available."));
+      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThat action is not available."));
     }
     else
     {
@@ -1775,7 +1773,7 @@ namespace WalletGui
   {
     if (Settings::instance().isTrackingMode())
     {
-      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThis action is not available."));
+      Q_EMIT notifySignal(tr("This is a tracking wallet.\nThat action is not available."));
     }
     else
     {
@@ -2050,44 +2048,44 @@ namespace WalletGui
 
   void OverviewFrame::discordClicked()
   {
-    QDesktopServices::openUrl(QUrl("http://discord.fandom.gold/", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://discord.gg/5UJcJJg", QUrl::TolerantMode));
   }
 
   void OverviewFrame::twitterClicked()
   {
     QDesktopServices::openUrl(QUrl("https://twitter.com/FandomGold", QUrl::TolerantMode));
   }
-
+/*
   void OverviewFrame::telegramClicked()
   {
     QDesktopServices::openUrl(QUrl("https://t.co/55klBHKGUR", QUrl::TolerantMode));
-  }
+  } */
 
   void OverviewFrame::githubClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://github.com/ConcealNetwork", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://github.com/FandomGold", QUrl::TolerantMode));
   }
 
   void OverviewFrame::redditClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://www.reddit.com/r/ConcealNetwork/", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://www.reddit.com/r/Fango/", QUrl::TolerantMode));
   }
 
-  void OverviewFrame::mediumClicked()
+/*  void OverviewFrame::mediumClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://medium.com/@ConcealNetwork", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://medium.com/@FandomGold", QUrl::TolerantMode));
   }
 
   void OverviewFrame::hotbitClicked()
   {
     QDesktopServices::openUrl(QUrl("https://www.hotbit.io/exchange?symbol=CCX_BTC", QUrl::TolerantMode));
   }
-
-  void OverviewFrame::stexClicked()
+*/
+  void OverviewFrame::finexClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://app.stex.com/en/basic-trade/pair/BTC/CCX", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://www.finexbox.com/market/pair/XFG-USDT", QUrl::TolerantMode));
   }
-
+/*
   void OverviewFrame::tradeogreClicked()
   {
     QDesktopServices::openUrl(QUrl("https://tradeogre.com/exchange/BTC-CCX", QUrl::TolerantMode));
@@ -2096,11 +2094,11 @@ namespace WalletGui
   void OverviewFrame::wikiClicked()
   {
     QDesktopServices::openUrl(QUrl("https://conceal.network/wiki/doku.php?id=start", QUrl::TolerantMode));
-  }
+  }*/
 
   void OverviewFrame::helpClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://conceal.network/wiki/doku.php?id=start", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://discord.gg/2wQAgAqdUM", QUrl::TolerantMode));
   }
 
   /* Initiate a password prompt meant for critical tasks like sending funds etc */

@@ -7,7 +7,7 @@
         <file alias="twitter">icons/twitter.png</file>
         <file alias="github">icons/github.png</file>
         <file alias="reddit">icons/reddit.png</file>
-        <file alias="stex">icons/stex.png</file>
+        <file alias="finex">icons/finexbox.png</file>
         <file alias="wiki">icons/wiki.png</file>
         <file alias="tradeogre">icons/tradeogre.png</file>
         <file alias="hotbit">icons/hotbit.png</file>
@@ -43,7 +43,7 @@
         <file alias="folder">icons/folder.png</file>
     </qresource>
     <qresource prefix="/images">
-        <file alias="conceal-logo">images/conceal.png</file>
+        <file alias="conceal-logo">images/fango.png</file>
         <file alias="splash">images/splash.png</file>
         <file alias="clock">images/clock.gif</file>
         <file alias="lock">images/lock.png</file>
@@ -56,14 +56,12 @@
         <file alias="cn">images/cn.png</file>
         <file alias="tr">images/tr.png</file>
     </qresource>
-    <qresource prefix="/">
-        <file>fonts/Poppins-Regular.ttf</file>
-        <file>fonts/Lekton-Regular.ttf</file>
-        <file>fonts/Montserrat-Regular.ttf</file>
-        <file>fonts/RobotoSlab-Regular.ttf</file>
-        <file>fonts/OpenSans-Regular.ttf</file>
-        <file>fonts/Lato-Regular.ttf</file>
-        <file>fonts/Oswald-Regular.ttf</file>
+    <qresource prefix="/fonts">
+        <file alias="Orbitron">fonts/Orbitron-Light.ttf</file>
+        <file alias="Gothamb">fonts/GothamBook.ttf</file>
+        <file alias="Gothaml">fonts/GothamLight.ttf</file>
+        <file alias="Cinzel">fonts/Cinzel-Regular.ttf</file>
+        <file alias="Lato">fonts/Lato-Regular.ttf</file>
     </qresource>
     <qresource prefix="/translations">
         <file alias="cn">languages/cn.qm</file>

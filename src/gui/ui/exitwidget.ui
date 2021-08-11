@@ -30,11 +30,13 @@ border: 0px;</string>
     <widget class="QLabel" name="m_label">
      <property name="font">
       <font>
+       <family>orbitron</family>
        <pointsize>-1</pointsize>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">font-size: 15px;</string>
+      <string notr="true">font-size: 15px;
+font-family:orbitron;</string>
      </property>
      <property name="text">
       <string>%1 wallet is saving data.

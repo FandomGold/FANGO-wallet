@@ -66,7 +66,7 @@
       <string notr="true">color: #ddd; background: transparent;</string>
      </property>
      <property name="text">
-      <string>WELCOME TO THE CONCEAL WALLET</string>
+      <string>WELCOME TO FANGO DESKTOP WALLET</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -303,7 +303,7 @@
 </string>
               </property>
               <property name="text">
-               <string>Import an existing wallet with the secret seed phrase and access your CCX</string>
+               <string>Import an existing wallet with the secret seed phrase and access your XFG</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -363,7 +363,6 @@
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -549,7 +548,6 @@ font-size: 20px;</string>
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -688,7 +686,7 @@ margin-left: 3em;</string>
               </property>
               <property name="font">
                <font>
-                <family>Poppins</family>
+                <family>Cinzel</family>
                </font>
               </property>
               <property name="styleSheet">
@@ -1077,7 +1075,7 @@ font-size: 20px;</string>
              <widget class="QLabel" name="label_11">
               <property name="font">
                <font>
-                <family>Poppins</family>
+                <family>Cinzel</family>
                 <weight>75</weight>
                 <bold>true</bold>
                </font>
@@ -1342,7 +1340,7 @@ border-radius: 2px;</string>
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>I have safely stored the mnemonic seed and I understand that the Conceal Team cannot restore this wallet and is not responsible for loss of funds.</string>
+                  <string>I have safely stored the mnemonic seed and I understand that Fango Developers cannot restore this wallet and are not responsible for loss of funds.</string>
                  </property>
                  <property name="wordWrap">
                   <bool>true</bool>
@@ -1520,7 +1518,7 @@ border-radius: 2px;</string>
 margin-left: 3em;</string>
            </property>
            <property name="text">
-            <string>■  Conceal is a decentralized blockchain bank.</string>
+            <string>■  Fango is a decentralized blockchain bank.</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1545,7 +1543,7 @@ margin-left: 3em;</string>
 margin-left: 3em;</string>
            </property>
            <property name="text">
-            <string>■  The Conceal Wallet is a free, open-source interface.</string>
+            <string>■  The Fango Wallet is a free, open-source interface.</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1570,7 +1568,7 @@ margin-left: 3em;</string>
 margin-left: 3em;</string>
            </property>
            <property name="text">
-            <string>■  The wallet allows access to all Conceal services.</string>
+            <string>■  The wallet allows access to all Fango services.</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1697,7 +1695,6 @@ margin-left: 3em;</string>
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
@@ -1706,7 +1703,7 @@ margin-left: 3em;</string>
 font-size: 20px;</string>
            </property>
            <property name="text">
-            <string>How does the Conceal Wallet work?</string>
+            <string>How does the Fango Wallet work?</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -1827,7 +1824,7 @@ margin-left: 3em;</string>
 margin-left: 3em;</string>
            </property>
            <property name="text">
-            <string>■  If you send your public address to someone then they can send you CCX.</string>
+            <string>■  If you send your public address to someone then they can send you messages and XFG.</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1953,7 +1950,7 @@ margin-left: 3em;</string>
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>Cinzel</family>
             </font>
            </property>
            <property name="styleSheet">
@@ -1961,7 +1958,7 @@ margin-left: 3em;</string>
 margin-left: 3em;</string>
            </property>
            <property name="text">
-            <string>■  The developers of Conceal have no access to your password, your keys, </string>
+            <string>■  The developers of Fango have no access to your password, your keys, </string>
            </property>
            <property name="textFormat">
             <enum>Qt::AutoText</enum>
@@ -1996,7 +1993,7 @@ margin-left: 3em;</string>
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>Cinzel</family>
             </font>
            </property>
            <property name="styleSheet">
@@ -2033,7 +2030,7 @@ margin-left: 3em;</string>
            </property>
            <property name="font">
             <font>
-             <family>Poppins</family>
+             <family>Cinzel</family>
             </font>
            </property>
            <property name="styleSheet">

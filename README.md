@@ -4,7 +4,7 @@
 
 Latest Release: v6.4.8
 
-Maintained by Conceal Devs.
+Maintained by Fandom Gold Society.
 
 ## Information
 

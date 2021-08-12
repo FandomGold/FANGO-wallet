@@ -5,16 +5,16 @@
 
 [Desktop Entry]
 Encoding=UTF-8
-Name=Conceal Desktop
-Comment=Conceal Desktop
+Name=Fango Desktop
+Comment=Fango Desktop
 # Change the Exec value to match Fango-GUI path
-# example : Exec=/home/conceal/apps/conceal/Fango-GUI
+# example : Exec=/home/fango/apps/fango/Fango-GUI
 Exec=<change-this-value>
 Terminal=false
 Type=Application
 # Change the Icon value to match fango icon path
-# example : Icon=/home/conceal/apps/conceal/icon/fango.png
-Icon=icon/conceal.png
-MimeType=x-scheme-handler/concealwallet;
+# example : Icon=/home/fango/apps/fango/icon/fango.png
+Icon=icon/fango.png
+MimeType=x-scheme-handler/fangowallet;
 Categories=Office;Finance;Cryptocurrency;
 Name[en_US]=fango-desktop.desktop

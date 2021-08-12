@@ -76,7 +76,7 @@ jobs:
           cd "$build_folder"
 
           cmake -G "Visual Studio 15 2017 Win64" ..
-          msbuild FANGO-GUI.sln /p:Configuration=Release /m:2
+          msbuild Fango-Wallet.sln /p:Configuration=Release /m:2
 
           echo "::set-output name=build_folder::${build_folder}"
           echo "::set-output name=release_folder::${release_folder}"

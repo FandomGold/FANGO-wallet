@@ -34,7 +34,7 @@ jobs:
           make -j4 build-release
           mkdir $release_name
           mkdir -p $release_name/icon
-          mv build/release/FANGO-GUI $release_name
+          mv build/release/Fango-Wallet $release_name
           cp fango-desktop.desktop $release_name
           cp src/images/fango.png $release_name/icon
           tar -czf "$release_name".tar.gz "$release_name"

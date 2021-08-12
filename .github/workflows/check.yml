@@ -122,7 +122,7 @@ jobs:
         run: |
           sudo apt-get purge '*boost*'
           sudo apt update -y
-          sudo apt install -y qt5-default qttools5-dev qttools5-dev-tools libboost-all-dev
+          sudo apt install -y qt5-default qttools5-dev qttools5-dev-tools libboost-all-dev git
 
       - name: Clone fango
         run: |
@@ -204,7 +204,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update -y
-          sudo apt install -y qt5-default qttools5-dev qttools5-dev-tools libqt5charts5-dev libboost-all-dev
+          sudo apt install -y qt5-default qttools5-dev qttools5-dev-tools libqt5charts5-dev libboost-all-dev git
 
       - name: Clone fango
         run: |
@@ -262,7 +262,7 @@ jobs:
           build_folder="build/release"
           xfg_ver=${GITHUB_SHA::7}
           release_name="fango-desktop-macOS-dev-$xfg_ver"
-          app_name="FANGO-GUI.app"
+          app_name="Fango-Wallet.app"
 
           make -j4 build-release
           cd "$build_folder"

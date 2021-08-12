@@ -10,7 +10,7 @@
 !define VERSION "06.01.02.00"
 !define COPYRIGHT "Fandom Gold Society 2021"
 !define DESCRIPTION "Fango Wallet"
-!define MAIN_APP_EXE "Fango-GUI.exe"
+!define MAIN_APP_EXE "Fango-Wallet.exe"
 !define INSTALL_TYPE "SetShellVarContext all"
 !define REG_ROOT "HKLM"
 !define REG_APP_PATH "Software\Microsoft\Windows\CurrentVersion\App Paths\${MAIN_APP_EXE}"
@@ -92,7 +92,7 @@ ${INSTALL_TYPE}
 SetOverwrite ifnewer
 SetOutPath "$INSTDIR"
 File /r ".\build\Release\Final\*"
-File /r ".\build\Release\Fango-GUI.exe"
+File /r ".\build\Release\Fango-Wallet.exe"
 SectionEnd
 
 ######################################################################
@@ -143,7 +143,7 @@ SectionEnd
 
 Section Uninstall
 ${INSTALL_TYPE}
-Delete "$INSTDIR\Fango-GUI.exe"
+Delete "$INSTDIR\Fango-Wallet.exe"
 Delete "$INSTDIR\Qt5Core.dll"
 Delete "$INSTDIR\Qt5Gui.dll"
 Delete "$INSTDIR\Qt5Network.dll"

@@ -185,7 +185,7 @@ QVariant DepositModel::getDisplayRole(const QModelIndex& _index) const {
     quint64 interest = _index.data(ROLE_DEPOSIT_INTEREST).value<quint64>();
     quint32 term = _index.data(ROLE_DEPOSIT_TERM).value<quint32>();
     qreal termRate = calculateRate(amount, interest);
-    return QString("%1 %").arg(QString::number(termRate * 100, 'f', 6));
+    return QString("%1 %").arg(QString::number(termRate * 100, 'f', 7));
   }
   case COLUMN_TERM:
     return _index.data(ROLE_DEPOSIT_TERM);

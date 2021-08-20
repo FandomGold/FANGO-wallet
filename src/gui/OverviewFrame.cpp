@@ -621,7 +621,7 @@ namespace WalletGui
 
     QPen seriesPen;
     seriesPen.setWidth(2);
-    seriesPen.setColor("#ffef00");
+    seriesPen.setColor("#ffcb00");
     series->setPen(seriesPen);
 
     if (!documentAsObject["prices"].isArray())
@@ -662,15 +662,16 @@ namespace WalletGui
     chart->addAxis(axisY, Qt::AlignLeft);
     series->attachAxis(axisY);
 
-    QColor chartColor = QRgb(0x999999);
+    QColor chartColor = QRgb(0x696969);
+    QColor chartColor2 = QRgb(0x222222);
 
     axisX->setLabelsColor(chartColor);
     axisX->setLinePenColor(chartColor);
-    axisX->setGridLineColor(chartColor);
+    axisX->setGridLineColor(chartColor2);
 
     axisY->setLabelsColor(chartColor);
     axisY->setLinePenColor(chartColor);
-    axisY->setGridLineColor(chartColor);
+    axisY->setGridLineColor(chartColor2);
 
     m_chartView->setChart(chart);
 #else
@@ -840,9 +841,9 @@ namespace WalletGui
 
     double currency = result[selectedCurrency].toDouble();
     ccxfiat = (float)currency;
-    QString ccx = QLocale(QLocale::system()).toString(currency, 'f', 3);
+    QString ccx = QLocale(QLocale::system()).toString(currency, 'f', 2);
     double market_cap = result[marketCapCurrency].toDouble();
-    QString ccx_market_cap = QLocale(QLocale::system()).toString(market_cap, 'f', 2);
+    QString ccx_market_cap = QLocale(QLocale::system()).toString(market_cap, 'f', 0);
     double c24h_volume = result[volumeCurrency].toDouble();
     QString ccx_24h_volume = QLocale(QLocale::system()).toString(c24h_volume, 'f', 2);
     double c24h_change = result[changeCurrency].toDouble();
@@ -868,7 +869,7 @@ namespace WalletGui
     float total = 0;
     total = ccxfiat * (float)OverviewFrame::totalBalance;
     m_ui->ccxTotal->setText(CurrencyAdapter::instance().formatAmount(OverviewFrame::totalBalance) + " XFG ");
-    m_ui->fiatTotal->setText(CurrencyAdapter::instance().formatCurrencyAmount(total / 10000) + " " + currentCurrency);
+    m_ui->fiatTotal->setText(CurrencyAdapter::instance().formatCurrencyAmount(total / 100000) + " " + currentCurrency);
     m_ui->fiatLabel->setText("Portfolio (" + currentCurrency + ")");
   }
 
@@ -2053,7 +2054,7 @@ namespace WalletGui
 
   void OverviewFrame::twitterClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://twitter.com/FandomGold", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://www.reddit.com/r/Fango/", QUrl::TolerantMode));
   }
 /*
   void OverviewFrame::telegramClicked()
@@ -2065,13 +2066,13 @@ namespace WalletGui
   {
     QDesktopServices::openUrl(QUrl("https://github.com/FandomGold", QUrl::TolerantMode));
   }
-
+/*
   void OverviewFrame::redditClicked()
   {
     QDesktopServices::openUrl(QUrl("https://www.reddit.com/r/Fango/", QUrl::TolerantMode));
-  }
-
-/*  void OverviewFrame::mediumClicked()
+  }*/
+/*
+  void OverviewFrame::mediumClicked()
   {
     QDesktopServices::openUrl(QUrl("https://medium.com/@FandomGold", QUrl::TolerantMode));
   }

@@ -180,7 +180,7 @@ private:
 //  Q_SLOT void telegramClicked();  
   Q_SLOT void twitterClicked();
   Q_SLOT void githubClicked();
-  Q_SLOT void redditClicked();
+//  Q_SLOT void redditClicked();
 //  Q_SLOT void mediumClicked();
   Q_SLOT void lockWallet();
   Q_SLOT void exportCSV();

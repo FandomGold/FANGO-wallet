@@ -115,7 +115,8 @@ namespace WalletGui
                   "}"
                   "QPushButton:hover"
                   "{"
-                  "color:#ffcb00;"
+                  "color: black;"
+                  "background-color: #ffcb00;"
                   "}")
                   .arg(baseLargeButtonSize);
     b2Style = QString(
@@ -128,7 +129,7 @@ namespace WalletGui
                   "}"
                   "QPushButton:hover"
                   "{"
-                  "color: #ffcb00;"
+                  "color:#ffcb00;"
                   "}")
                   .arg(baseSmallButtonSize);
     fontStyle = QString("font-size: %1 px;").arg(baseFontSize);

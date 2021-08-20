@@ -3886,7 +3886,7 @@ background: transparent;
 border: none;</string>
               </property>
               <property name="text">
-               <string notr="true">00.00</string>
+               <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffcb00;&quot;&gt;00.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -4594,127 +4594,11 @@ font-size: 10pt;</string>
             <property name="rightMargin">
              <number>0</number>
             </property>
-   <!--         <item row="2" column="6">
-             <widget class="QLabel" name="mediumIcon">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Poppins</family>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">color: #ddd;
-background: transparent;
-
-
-border: none;</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="pixmap">
-               <pixmap resource="../../resources.qrc">:/icons/medium</pixmap>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QPushButton" name="sm_telegramButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-color: #ddd;
-background: transparent;
-
-border: none;
-text-align: left;
-}
-
-QPushButton:hover{
-color: #ffcb00;
-}</string>
-              </property>
-              <property name="text">
-               <string>Telegram</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="m_telegramIcon">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Poppins</family>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">color: #ddd;
-background: transparent;
-
-
-border: none;
-margin-left: 10px;</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="pixmap">
-               <pixmap resource="../../resources.qrc">:/icons/telegram</pixmap>
-              </property>
-             </widget>
-            </item> -->
             <item row="2" column="4">
              <widget class="QPushButton" name="sm_redditButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
                 <horstretch>0</horstretch>
@@ -4747,7 +4631,7 @@ color: #ffcb00;
 }</string>
               </property>
               <property name="text">
-               <string>Reddit</string>
+               <string/>
               </property>
              </widget>
             </item>
@@ -4844,44 +4728,6 @@ margin-left: 10px;</string>
               </property>
              </widget>
             </item>
-        <!--    <item row="2" column="10">
-             <widget class="QPushButton" name="sm_tradeogreButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-color: #ddd;
-background: transparent;
-
-border: none;
-text-align: left;
-}
-
-QPushButton:hover{
-color: #ffcb00;
-}</string>
-              </property>
-              <property name="text">
-               <string>TradeOgre</string>
-              </property>
-             </widget>
-            </item>  -->
             <item row="2" column="3">
              <widget class="QLabel" name="m_redditIcon">
               <property name="sizePolicy">
@@ -4918,7 +4764,7 @@ border: none;</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap resource="../../resources.qrc">:/icons/reddit</pixmap>
+               <pixmap>:/icons/reddit</pixmap>
               </property>
              </widget>
             </item>
@@ -4999,7 +4845,7 @@ border: none;</string>
                <string notr="true">QPushButton {
 color: #ddd;
 background: transparent;
-
+padding-right: 180px;
 border: none;
 text-align: left;
 }
@@ -5053,46 +4899,6 @@ border: none;</string>
               </property>
              </widget>
             </item>
-     <!--       <item row="2" column="12">
-             <widget class="QLabel" name="hotbitIcon">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Poppins</family>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">color: #ddd;
-background: transparent;
-
-
-border: none;</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="pixmap">
-               <pixmap resource="../../resources.qrc">:/icons/hotbit</pixmap>
-              </property>
-             </widget>
-            </item>  -->
             <item row="1" column="4">
              <widget class="QPushButton" name="sm_twitterButton">
               <property name="sizePolicy">
@@ -5127,7 +4933,7 @@ color: #ffcb00;
 }</string>
               </property>
               <property name="text">
-               <string>Twitter</string>
+               <string>Reddit</string>
               </property>
              </widget>
             </item>
@@ -5247,57 +5053,6 @@ color: #ffcb00;
               </property>
              </widget>
             </item>
-      <!--      <item row="2" column="13">
-             <widget class="QPushButton" name="sm_hotbitButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-color: #ddd;
-background: transparent;
-
-border: none;
-text-align: left;
-}
-
-QPushButton:hover{
-color: #ffcb00;
-}</string>
-              </property>
-              <property name="text">
-               <string>Hotbit</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="11">
-             <spacer name="horizontalSpacer_4">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>  -->
             <item row="2" column="9">
              <widget class="QLabel" name="m_depositsUnlockedTitle_18">
               <property name="sizePolicy">
@@ -5333,140 +5088,8 @@ border: none;</string>
               <property name="text">
                <string/>
               </property>
-       <!--       <property name="pixmap">
-               <pixmap resource="../../resources.qrc">:/icons/tradeogre</pixmap>
-              </property> -->
              </widget>
             </item>
-      <!--      <item row="1" column="10">
-             <widget class="QPushButton" name="sm_wikiButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-color: #ddd;
-background: transparent;
-
-border: none;
-text-align: left;
-}
-
-QPushButton:hover{
-color: #ffcb00;
-}</string>
-              </property>
-              <property name="text">
-               <string>Wiki</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="8">
-             <spacer name="horizontalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item row="1" column="9">
-             <widget class="QLabel" name="wikiIcon">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Poppins</family>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">color: #ddd;
-background: transparent;
-
-
-border: none;</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="pixmap">
-               <pixmap resource="../../resources.qrc">:/icons/wiki</pixmap>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="7">
-             <widget class="QPushButton" name="sm_mediumButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-color: #ddd;
-background: transparent;
-
-border: none;
-text-align: left;
-}
-
-QPushButton:hover{
-color: #ffcb00;
-}</string>
-              </property>
-              <property name="text">
-               <string>Medium</string>
-              </property>
-             </widget>
-            </item> -->
             <item row="1" column="14">
              <spacer name="horizontalSpacer_5">
               <property name="orientation">
@@ -6032,8 +5655,8 @@ margin: 0px;</string>
                  <property name="styleSheet">
                   <string notr="true">color: #ddd; 
 font-weight: normal; 
-border-radius: 7px;
-background-color: blue;
+border-radius: 8px;
+background-color: transparent;
 padding: 5px;</string>
                  </property>
                  <property name="title">
@@ -6211,7 +5834,7 @@ padding: 5px;</string>
                      <string notr="true">color: #ccc;  font-weight: normal; border: none; </string>
                     </property>
                     <property name="text">
-                     <string>interestLabel</string>
+                     <string>TBD</string>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -6313,7 +5936,7 @@ padding: 5px;</string>
                      <string notr="true">color: #ccc;  font-weight: normal; border: none; </string>
                     </property>
                     <property name="text">
-                     <string>interestLabel</string>
+                     <string>TBD</string>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -6342,7 +5965,7 @@ padding: 5px;</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: #ddd;
+                     <string notr="true">color: #ffcb00;
 background: transparent;
 
 
@@ -6416,6 +6039,9 @@ text-align: left;
               <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
                 <widget class="QPushButton" name="b1_depositButton_2">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -6443,7 +6069,7 @@ text-align: left;
                   <string notr="true">/* This button style is handled automatically by OverviewFrame:setStyles() (in OverviewFrame.cpp) */</string>
                  </property>
                  <property name="text">
-                  <string>Make Deposit</string>
+                  <string>Coming Soon</string>
                  </property>
                 </widget>
                </item>
@@ -6738,15 +6364,17 @@ font-size: 30px;</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #ddd;
+            <string notr="true">
+color: #ddd;
         background: transparent;
         font-size: 28px;
         font-family: orbitron;
         font-weight: normal;
-  		 border: none;</string>
+  		 border: none;
+</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/banner&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FANGO.MONEY&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
@@ -9540,22 +9168,6 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
    </hints>
   </connection>
   <connection>
-   <sender>b1_depositButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-   <slot>newDepositClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>465</x>
-     <y>589</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>b1_withdrawButton</sender>
    <signal>clicked()</signal>
    <receiver>OverviewFrame</receiver>
@@ -9844,22 +9456,6 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
    </hints>
   </connection>
   <connection>
-<!--   <sender>sm_telegramButton</sender> -->
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-<!--   <slot>telegramClicked()</slot> -->
-   <hints>
-    <hint type="sourcelabel">
-     <x>326</x>
-     <y>628</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>sm_twitterButton</sender>
    <signal>clicked()</signal>
    <receiver>OverviewFrame</receiver>
@@ -9868,38 +9464,6 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
     <hint type="sourcelabel">
      <x>706</x>
      <y>578</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>sm_redditButton</sender>
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-   <slot>redditClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>706</x>
-     <y>628</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-<!--   <sender>sm_mediumButton</sender>-->
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-<!--   <slot>mediumClicked()</slot> -->
-   <hints>
-    <hint type="sourcelabel">
-     <x>1076</x>
-     <y>628</y>
     </hint>
     <hint type="destinationlabel">
      <x>634</x>
@@ -10116,70 +9680,6 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
    </hints>
   </connection>
   <connection>
-   <sender>sm_hotbitButton</sender>
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-   <slot>hotbitClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>976</x>
-     <y>578</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>sm_stexButton</sender>
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-   <slot>stexClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1176</x>
-     <y>578</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>sm_tradeogreButton</sender>
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-   <slot>tradeogreClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>976</x>
-     <y>628</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>sm_wikiButton</sender>
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-   <slot>wikiClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1176</x>
-     <y>628</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>lm_helpButton</sender>
    <signal>clicked()</signal>
    <receiver>OverviewFrame</receiver>
@@ -10387,6 +9887,22 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>sm_finexButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OverviewFrame</receiver>
+   <slot>finexClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1006</x>
+     <y>490</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>634</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>newTransferClicked()</slot>
@@ -10442,20 +9958,15 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
   <slot>discordClicked()</slot>
   <slot>githubClicked()</slot>
   <slot>redditClicked()</slot>
-<!--  <slot>telegramClicked()</slot> -->
   <slot>twitterClicked()</slot>
   <slot>setPercentage25()</slot>
   <slot>setPercentage50()</slot>
   <slot>setPercentage100()</slot>
-<!--  <slot>mediumClicked()</slot> -->
   <slot>lockWallet()</slot>
   <slot>unlockWallet()</slot>
   <slot>encryptWalletClicked()</slot>
   <slot>addressChanged(QString)</slot>
-<!--  <slot>hotbitClicked()</slot>
-  <slot>tradeogreClicked()</slot> -->
   <slot>finexClicked()</slot>
-<!--  <slot>wikiClicked()</slot> -->
   <slot>helpClicked()</slot>
   <slot>exportCSV()</slot>
   <slot>startMaximizedClicked()</slot>

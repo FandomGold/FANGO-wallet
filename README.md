@@ -4,6 +4,8 @@
 Latest Release: v4.0.0 (Dragonbourne)
 
 <b><sub>Maintained by Fandom Gold Society</sub></b>
+
+[![Build check](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml)
 __________________________________________________
 Fango-Desktop is a decentralized blockchain bank & private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a secure way to transfer funds and private messages by using a distributed public ledger which keeps sender & receiver anonymous to the public- a key concern in a post Snowden world.  
 
@@ -13,7 +15,7 @@ Fango-Desktop is an extension of [Fango](https://github.com/fandomgold/fango) (X
 
 ## Resources
 
--   Web: <https://fandom.gold>
+-   Web: <https://fango.money>
 -   GitHub: <https://github.com/fandomgold>
 -   Discord: <https://discord.gg/5UJcJJg>
 -   Twitter: <https://twitter.com/fandomgold>
@@ -117,4 +119,4 @@ cpack
 
 ## Special Thanks
 
-Special thanks goes to developers from Cryptonote, Bytecoin, Conceal, Karbo, Monero, Forknote, XDN, TurtleCoin, and Masari.
+Special thanks to developers from Cryptonote, Bytecoin, Conceal, Karbo, Monero, Forknote, XDN, TurtleCoin, and Masari.

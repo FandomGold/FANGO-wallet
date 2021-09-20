@@ -57,7 +57,7 @@
     </qresource>
     <qresource prefix="/fonts">
         <file alias="Orbitron">fonts/Orbitron-Light.ttf</file>
-        <file alias="Gothamb">fonts/GothamBook.ttf</file>
+        <file alias="Gotham">fonts/GothamBook.ttf</file>
         <file alias="Gothaml">fonts/GothamLight.ttf</file>
         <file alias="Cinzel">fonts/Cinzel-Regular.ttf</file>
         <file alias="Lato">fonts/Lato-Regular.ttf</file>

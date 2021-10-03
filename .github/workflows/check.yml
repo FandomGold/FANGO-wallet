@@ -267,7 +267,7 @@ jobs:
         run: |
           build_folder="build/release"
           xfg_ver=${GITHUB_SHA::7}
-          release_name="fango-desktop-macOS-dev-$xfg_ver"
+          release_name="fango-desktop-macOS11-dev-$xfg_ver"
           app_name="Fango-Wallet.app"
 
           make -j4 build-release

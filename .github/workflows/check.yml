@@ -213,8 +213,8 @@ jobs:
       - name: Clone fango
         run: |
           rm -rf cryptonote
-          git clone -b testnet_1.8 https://github.com/fandomgo-b testnet_1.8 ld/fango.git cryptonote
-
+          git clone -b testnet_1.8 https://github.com/fandomgold/fango.git cryptonote
+          
       - name: Build
         id: build
         run: |
@@ -260,7 +260,7 @@ jobs:
       - name: Clone fango
         run: |
           rm -rf cryptonote
-          git clone -b testnet_1.8 https://github.com/fandomgo-b testnet_1.8 ld/fango.git cryptonote
+          git clone -b testnet_1.8 https://github.com/fandomgold/fango.git cryptonote
 
       - name: Build
         id: build

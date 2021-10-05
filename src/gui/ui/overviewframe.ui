@@ -1729,8 +1729,8 @@ border: none;</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>722</width>
-                 <height>15042</height>
+                 <width>643</width>
+                 <height>13372</height>
                 </rect>
                </property>
                <property name="sizePolicy">
@@ -2608,8 +2608,8 @@ Public License instead of this License.  But first, please read
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>468</width>
-                 <height>233</height>
+                 <width>476</width>
+                 <height>197</height>
                 </rect>
                </property>
                <property name="sizePolicy">
@@ -2672,8 +2672,8 @@ Public License instead of this License.  But first, please read
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>468</width>
-                 <height>278</height>
+                 <width>476</width>
+                 <height>313</height>
                 </rect>
                </property>
                <property name="sizePolicy">
@@ -3217,8 +3217,8 @@ padding-left: 5px</string>
             <string notr="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Poppins'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.Helvetica Neue DeskInterface'; font-size:13pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Poppins'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.Helvetica Neue DeskInterface';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="acceptRichText">
             <bool>false</bool>
@@ -6069,7 +6069,7 @@ text-align: left;
                   <string notr="true">/* This button style is handled automatically by OverviewFrame:setStyles() (in OverviewFrame.cpp) */</string>
                  </property>
                  <property name="text">
-                  <string>Coming Soon</string>
+                  <string>Create Deposit</string>
                  </property>
                 </widget>
                </item>
@@ -6360,7 +6360,10 @@ font-size: 30px;</string>
              <family>orbitron</family>
              <pointsize>-1</pointsize>
              <weight>50</weight>
+             <italic>false</italic>
              <bold>false</bold>
+             <underline>false</underline>
+             <strikeout>false</strikeout>
             </font>
            </property>
            <property name="styleSheet">
@@ -6375,6 +6378,9 @@ color: #ddd;
            </property>
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FANGO.MONEY&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="indent">
+            <number>0</number>
            </property>
           </widget>
          </item>
@@ -6418,7 +6424,7 @@ padding: 5px;
 QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;}</string>
            </property>
            <property name="text">
-            <string notr="true">Address: ccx7Qiv.......1zkdyteASK</string>
+            <string notr="true">Address: fango8v.......1zkdyteASK</string>
            </property>
            <property name="checkable">
             <bool>false</bool>
@@ -9896,6 +9902,22 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
     <hint type="sourcelabel">
      <x>1006</x>
      <y>490</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>634</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>b1_depositButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>OverviewFrame</receiver>
+   <slot>newDepositClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>530</y>
     </hint>
     <hint type="destinationlabel">
      <x>634</x>

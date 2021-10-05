@@ -24,7 +24,7 @@ jobs:
       - name: Clone fango
         run: |
           rm -rf cryptonote
-          git clone https://github.com/FandomGold/fango.git cryptonote
+          git clone -b master https://github.com/FandomGold/fango.git cryptonote
 
       - name: Build
         id: build

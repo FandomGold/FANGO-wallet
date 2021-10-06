@@ -38,10 +38,6 @@ namespace WalletGui
     {
       id = QFontDatabase::addApplicationFont(":/fonts/Cinzel-Regular.ttf");
     }
-    else if (fontName == "Gothaml")
-    {
-      id = QFontDatabase::addApplicationFont(":/fonts/GothamLight.ttf");
-    }
     else if (fontName == "Lato")
     {
       id = QFontDatabase::addApplicationFont(":/fonts/Lato-Regular.ttf");

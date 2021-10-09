@@ -1,17 +1,22 @@
-![image](https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/fangobgs.png)
+<center><img src="https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/2048.png" alt="Fango" height="500" width="500"></center>
 
-# Fango Desktop (Private Bank & Messenger Wallet)
+# Fango Desktop
+
+## Private Banking Wallet 
+
+### Untraceable messaging and Certificate Of Ledger Deposits
+
 Latest Release: v4.0.0 (Dragonbourne)
 
 <b><sub>Maintained by Fandom Gold Society</sub></b>
 
 [![Build check](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml)
 __________________________________________________
-Fango-Desktop is a decentralized blockchain bank & private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a secure way to transfer funds and private messages by using a distributed public ledger which keeps sender & receiver anonymous to the public- a key concern in a post Snowden world.  
+Fango Desktop Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and  transaction amounts anonymous to the public.
 
-All Fango transactions and messages are private by default.
+All Fango transactions and messages are private by default - a key concern in a post Snowden world.  
 
-Fango-Desktop is an extension of [Fango](https://github.com/fandomgold/fango) (XFG) - a secure peer-to-peer blockchain network based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
+Fango Desktop is an extension of [Fango](https://github.com/fandomgold/fango) (XFG) - a secure peer-to-peer network and blockchain settlement layer based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
 
 ## Resources
 
@@ -23,7 +28,7 @@ Fango-Desktop is an extension of [Fango](https://github.com/fandomgold/fango) (X
 -   Medium: <https://medium.com/@fandomgold>
 -   Bitcoin Talk: <https://bitcointalk.org/index.php?topic=2712001>
 
-## Compiling Fango-Desktop from source
+## Compiling Fango Desktop from source
 
 ### Linux / Ubuntu
 

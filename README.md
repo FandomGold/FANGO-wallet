@@ -16,7 +16,7 @@ Fango Desktop Wallet is a decentralized blockchain banking interface with privat
 
 All Fango transactions and messages are private by default - a key concern in a post Snowden world.  
 
-Fango Desktop is an extension of [Fango](https://github.com/fandomgold/fango) (XFG) - a secure peer-to-peer network and blockchain settlement layer based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
+Fango Desktop is an extension of [Fango](https://github.com/fandomgold/fango) ($XFG) - a secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
 
 ## Resources
 

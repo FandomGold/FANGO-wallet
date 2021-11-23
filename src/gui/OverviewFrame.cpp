@@ -91,7 +91,7 @@ namespace WalletGui
   {
 
     int maxPeriod = 13;
-    uint32_t blocksPerDeposit = 80;
+    uint32_t blocksPerDeposit = 2;
 
     QString resTempate("%1 %2");
     if (_months < maxPeriod)

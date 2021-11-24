@@ -1584,7 +1584,7 @@ namespace WalletGui
       return;
     }
 
-    uint32_t blocksPerDeposit = 80;
+    uint32_t blocksPerDeposit = 2; //testnet
     quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
 
     /* Warn the user */
@@ -1597,7 +1597,7 @@ namespace WalletGui
     }
 
     /* Initiate the desposit */
-    WalletAdapter::instance().deposit(term, amount, BASE_FEE, 4);
+    WalletAdapter::instance().deposit(term, amount, BASE_FEE, 4);  //try minBankingFee?
 
     /* Remote node fee */
     QVector<CryptoNote::WalletLegacyTransfer> walletTransfers;

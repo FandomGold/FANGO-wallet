@@ -1,4 +1,4 @@
-<center><img src="https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/2048.png" alt="Fango" height="500" width="500"></center>
+![image](https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/fangobgs.png)
 
 # Fango Desktop
 

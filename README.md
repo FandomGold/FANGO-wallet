@@ -7,11 +7,11 @@ Latest Release: v4.0.0 (Dragonbourne)
 
 [![Build check](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml)
 __________________________________________________
-Fango Wallet is a decentralized p2p blockchain banking interface & private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a secure way to transfer funds and private messages by using a distributed public ledger which keeps sender & receiver anonymous to the public.
+Fango Wallet is a decentralized blockchain banking interface & p2p private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a secure & private way to store & transfer funds and private messages by using a distributed public ledger.
 
 All Fango transactions and messages are private by default.
 
-Fango-Desktop is an extension of [Fango](https://github.com/fandomgold/fango) (XFG) - a secure peer-to-peer blockchain network based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
+Fango Wallet is an extension of [Fango](https://github.com/fandomgold/fango) (XFG) - a secure peer-to-peer blockchain network based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
 
 ## Resources
 

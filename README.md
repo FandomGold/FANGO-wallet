@@ -7,7 +7,7 @@ Latest Release: v4.0.0 (Dragonbourne)
 
 [![Build check](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml)
 __________________________________________________
-Fango-Desktop is a decentralized blockchain bank & private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a secure way to transfer funds and private messages by using a distributed public ledger which keeps sender & receiver anonymous to the public.
+Fango Wallet is a decentralized p2p blockchain banking interface & private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a secure way to transfer funds and private messages by using a distributed public ledger which keeps sender & receiver anonymous to the public.
 
 All Fango transactions and messages are private by default.
 

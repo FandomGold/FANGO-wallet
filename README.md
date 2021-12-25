@@ -4,7 +4,7 @@
 
 ## Private Banking Wallet 
 
-### Untraceable messaging and Certificate Of Ledger Deposits
+### [Certificate Of Ledger Deposits](https://cold.finance) and Untraceable Messaging
 
 Latest Release: v4.0.0 (Dragonbourne)
 

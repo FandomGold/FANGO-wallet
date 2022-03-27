@@ -202,12 +202,12 @@ namespace WalletGui
 
     if (!m_settings.contains(OPTION_FONT))
     {
-      m_settings.insert(OPTION_FONT, "Poppins");
+      m_settings.insert(OPTION_FONT, "Gotham");
     }
 
     if (!m_settings.contains(OPTION_CONNECTION))
     {
-      m_settings.insert(OPTION_CONNECTION, "embedded");
+      m_settings.insert(OPTION_CONNECTION, "autoremote");
     }
 
     if (!m_settings.contains(OPTION_CURRENCY))

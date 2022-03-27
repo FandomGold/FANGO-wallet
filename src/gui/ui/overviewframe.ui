@@ -3467,7 +3467,7 @@ QSlider::sub-page:horizontal#m_ttlSlider {
                <string notr="true">/* This button style is handled automatically by OverviewFrame:setStyles() (in OverviewFrame.cpp) */</string>
               </property>
               <property name="text">
-               <string>Send</string>
+               <string>Coming Soon</string>
               </property>
              </widget>
             </item>
@@ -6418,7 +6418,7 @@ padding: 5px;
 QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;}</string>
            </property>
            <property name="text">
-            <string notr="true">Address: ccx7Qiv.......1zkdyteASK</string>
+            <string notr="true">Address: fango7Qiv.......1zkdyteASK</string>
            </property>
            <property name="checkable">
             <bool>false</bool>
@@ -6690,7 +6690,7 @@ color: #aaa;</string>
                <string notr="true">color: #aaa; border: none;  </string>
               </property>
               <property name="text">
-               <string>Automatic Remote &amp;Node</string>
+               <string>Automatic E&amp;lder Node</string>
               </property>
               <property name="checked">
                <bool>false</bool>
@@ -6761,6 +6761,9 @@ border: 0px;
             </item>
             <item row="1" column="1">
              <widget class="QRadioButton" name="radioButton_2">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -6782,7 +6785,10 @@ border: 0px;
                <string notr="true">color: #aaa; border: none;  </string>
               </property>
               <property name="text">
-               <string>Bui&amp;lt-in Node</string>
+               <string/>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
               </property>
               <property name="checked">
                <bool>false</bool>
@@ -7330,7 +7336,7 @@ font-size: 18px;
  border: 0px;</string>
                 </property>
                 <property name="text">
-                 <string>Chinese</string>
+                 <string>Chi&amp;nese</string>
                 </property>
                 <property name="icon">
                  <iconset resource="../../resources.qrc">
@@ -9056,22 +9062,6 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
    </hints>
   </connection>
   <connection>
-   <sender>b1_sendMessageButton</sender>
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-   <slot>sendMessageClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>309</x>
-     <y>617</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>b1_clearMessageButton</sender>
    <signal>clicked()</signal>
    <receiver>OverviewFrame</receiver>
@@ -9976,7 +9966,7 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
   <slot>openSslLicenseClicked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

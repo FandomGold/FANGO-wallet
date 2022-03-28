@@ -160,7 +160,7 @@ bool NodeAdapter::init()
     /* Pull a random node from the node pool list */
     auto *nam = new QNetworkAccessManager(this);
     connect(nam, &QNetworkAccessManager::finished, this, &NodeAdapter::downloadFinished);
-    const QUrl url = QUrl::fromUserInput("https://fangotango.hopto.org/pool/random?hasFeeAddr=true&isReachable=true&isSynced=true");
+    const QUrl url = QUrl::fromUserInput("https://fangotango.hopto.org/nodes/pool/random?hasFeeAddr=true&isReachable=true&isSynced=true");
     QNetworkRequest request(url);
     nam->get(request);
   }

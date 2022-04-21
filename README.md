@@ -2,7 +2,7 @@
 
 # Fango Desktop
 
-## Private Banking Wallet 
+## Privacy Banking Wallet 
 
 ### [Certificate Of Ledger Deposits](https://cold.finance) and Untraceable Messaging
 

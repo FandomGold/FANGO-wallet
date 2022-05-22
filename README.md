@@ -4,7 +4,7 @@
 
 ## Privacy Banking Wallet 
 
-### [Certificate Of Ledger Deposits](https://cold.finance) and Untraceable Messaging
+### [Certificate Of Ledger Deposits](https://github.com/FandomGold/COLD-DAO/blob/main/README.md) and Untraceable Messaging
 
 Latest Release: v4.0.0 (Dragonbourne)
 

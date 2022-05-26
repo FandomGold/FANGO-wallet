@@ -83,15 +83,15 @@ namespace WalletGui
   Q_DECL_CONSTEXPR int MIN_TTL = 5 * MINUTE_SECONDS;
   Q_DECL_CONSTEXPR int MAX_TTL = 14 * HOUR_SECONDS;
   Q_DECL_CONSTEXPR int TTL_STEP = 5 * MINUTE_SECONDS;
-  Q_DECL_CONSTEXPR int BASE_FEE = 80000;
-  Q_DECL_CONSTEXPR int REMOTE_FEE = 800000;
+  Q_DECL_CONSTEXPR int BASE_FEE = 80000;  /* 0.008 XFG  */
+  Q_DECL_CONSTEXPR int REMOTE_FEE = 800000; /* 0.08 XFG  */
 
   /* Convert months to the number of blocks */
   QString monthsToBlocks(int _months)
   {
 
     int maxPeriod = 13;
-    uint32_t blocksPerDeposit = 80;
+    uint32_t blocksPerDeposit = 5480;
 
     QString resTempate("%1 %2");
     if (_months < maxPeriod)
@@ -227,7 +227,7 @@ namespace WalletGui
     m_ui->m_messagesView->setModel(m_visibleMessagesModel.data());
 
     m_ui->m_timeSpin->setSuffix(QString(" %1").arg(tr("Month(s)")));
-    m_ui->m_timeSpin->setMaximum(12);
+    m_ui->m_timeSpin->setMaximum(1);
     timeChanged(1);
 
     m_ui->darkness->hide();
@@ -1584,7 +1584,7 @@ namespace WalletGui
       return;
     }
 
-    uint32_t blocksPerDeposit = 80;
+    uint32_t blocksPerDeposit = 5480;
     quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
 
     /* Warn the user */
@@ -1636,7 +1636,7 @@ namespace WalletGui
 
   void OverviewFrame::depositParamsChanged()
   {
-    uint32_t blocksPerDeposit = 80;
+    uint32_t blocksPerDeposit = 5480;
     quint64 amount = CurrencyAdapter::instance().parseAmount(m_ui->m_amountSpin->cleanText());
     quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
     quint64 interest = CurrencyAdapter::instance().calculateInterest(amount, term, NodeAdapter::instance().getLastKnownBlockHeight());
@@ -2076,12 +2076,12 @@ namespace WalletGui
   {
     QDesktopServices::openUrl(QUrl("https://medium.com/@FandomGold", QUrl::TolerantMode));
   }
-
-  void OverviewFrame::hotbitClicked()
-  {
-    QDesktopServices::openUrl(QUrl("https://www.hotbit.io/exchange?symbol=CCX_BTC", QUrl::TolerantMode));
-  }
 */
+  void OverviewFrame::exbitronClicked()
+  {
+    QDesktopServices::openUrl(QUrl("https://www.exbitron.com/trading/xfgusdt", QUrl::TolerantMode));
+  }
+
   void OverviewFrame::finexClicked()
   {
     QDesktopServices::openUrl(QUrl("https://www.finexbox.com/market/pair/XFG-USDT", QUrl::TolerantMode));

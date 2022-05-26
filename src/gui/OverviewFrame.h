@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2017 The Cryptonote developers
 // Copyright (c) 2018 The Circle Foundation
 // Copyright (c) 2018-2021 Conceal Network & Conceal Devs
+// Copyright (c) 2018-2022 Fango Developers
 //
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -187,7 +188,7 @@ private:
   Q_SLOT void unlockWallet();
   Q_SLOT void encryptWalletClicked();
   Q_SLOT void finexClicked();
-//  Q_SLOT void hotbitClicked();
+  Q_SLOT void exbitronClicked();
 //  Q_SLOT void tradeogreClicked();
 //  Q_SLOT void wikiClicked();
   Q_SLOT void helpClicked();

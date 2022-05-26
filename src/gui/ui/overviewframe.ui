@@ -3446,6 +3446,9 @@ QSlider::sub-page:horizontal#m_ttlSlider {
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
              <widget class="QPushButton" name="b1_sendMessageButton">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="minimumSize">
                <size>
                 <width>180</width>
@@ -3467,7 +3470,7 @@ QSlider::sub-page:horizontal#m_ttlSlider {
                <string notr="true">/* This button style is handled automatically by OverviewFrame:setStyles() (in OverviewFrame.cpp) */</string>
               </property>
               <property name="text">
-               <string>Coming Soon</string>
+               <string>Send Message</string>
               </property>
              </widget>
             </item>
@@ -3913,14 +3916,14 @@ border: none;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #ddd;
+               <string notr="true">color: rgb(237, 212, 0);
 background: transparent;
 border: none;
 text-align: left;
 </string>
               </property>
               <property name="text">
-               <string>MARKET INFORMATION</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;MARKET INFORMATION&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -6069,7 +6072,7 @@ text-align: left;
                   <string notr="true">/* This button style is handled automatically by OverviewFrame:setStyles() (in OverviewFrame.cpp) */</string>
                  </property>
                  <property name="text">
-                  <string>Coming Soon</string>
+                  <string>Create Deposit</string>
                  </property>
                 </widget>
                </item>
@@ -9893,6 +9896,38 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>b1_depositButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>OverviewFrame</receiver>
+   <slot>newDepositClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>336</x>
+     <y>536</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>634</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>b1_sendMessageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OverviewFrame</receiver>
+   <slot>sendMessageClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>309</x>
+     <y>617</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>634</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>newTransferClicked()</slot>
@@ -9966,7 +10001,7 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
   <slot>openSslLicenseClicked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_3"/>
  </buttongroups>
 </ui>

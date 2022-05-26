@@ -1639,10 +1639,10 @@ namespace WalletGui
     uint32_t blocksPerDeposit = 5480;
     quint64 amount = CurrencyAdapter::instance().parseAmount(m_ui->m_amountSpin->cleanText());
     quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
-    quint64 interest = CurrencyAdapter::instance().calculateInterest(amount, term, NodeAdapter::instance().getLastKnownBlockHeight());
-    qreal termRate = DepositModel::calculateRate(amount, interest);
-    m_ui->m_interestEarnedLabel->setText(QString("%1 %2").arg(CurrencyAdapter::instance().formatAmount(interest)).arg(CurrencyAdapter::instance().getCurrencyTicker().toUpper()));
-    m_ui->m_interestRateLabel->setText(QString("%3 %").arg(QString::number(termRate * 100, 'f', 4)));
+    qreal termRate = 80; /*DepositModel::calculateRate(amount, interest); */
+    quint64 interest = (amount * termRate) / 1000000 ; /*CurrencyAdapter::instance().calculateInterest(amount, term, NodeAdapter::instance().getLastKnownBlockHeight());*/
+    m_ui->m_interestEarnedLabel->setText(QString("%1 %2").arg(CurrencyAdapter::instance().formatAmount(interest)).arg(CurrencyAdapter::instance().getCOLDTicker().toUpper()));
+    m_ui->m_interestRateLabel->setText(QString("%3 %").arg(QString::number(termRate, 'f', 4)));
   }
 
   void OverviewFrame::timeChanged(int _value)

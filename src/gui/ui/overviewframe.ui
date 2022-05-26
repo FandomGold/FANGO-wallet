@@ -3446,9 +3446,6 @@ QSlider::sub-page:horizontal#m_ttlSlider {
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
              <widget class="QPushButton" name="b1_sendMessageButton">
-              <property name="enabled">
-               <bool>true</bool>
-              </property>
               <property name="minimumSize">
                <size>
                 <width>180</width>
@@ -5491,7 +5488,7 @@ border-radius: 5px;
                   <number>0</number>
                  </property>
                  <property name="minimum">
-                  <double>0.000000000000000</double>
+                  <double>800.000000000000000</double>
                  </property>
                  <property name="maximum">
                   <double>8000000.000000000000000</double>
@@ -9065,6 +9062,22 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
    </hints>
   </connection>
   <connection>
+   <sender>b1_sendMessageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OverviewFrame</receiver>
+   <slot>sendMessageClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>309</x>
+     <y>617</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>634</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>b1_clearMessageButton</sender>
    <signal>clicked()</signal>
    <receiver>OverviewFrame</receiver>
@@ -9912,22 +9925,6 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>b1_sendMessageButton</sender>
-   <signal>clicked()</signal>
-   <receiver>OverviewFrame</receiver>
-   <slot>sendMessageClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>309</x>
-     <y>617</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>634</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
  <slots>
   <slot>newTransferClicked()</slot>
@@ -10001,7 +9998,7 @@ QToolTip { color: #eeeeee; background-color: #000000; border: 0px; padding: 8px;
   <slot>openSslLicenseClicked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

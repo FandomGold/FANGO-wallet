@@ -44,6 +44,10 @@ QString CurrencyAdapter::getCurrencyTicker() const {
   return WALLET_CURRENCY_TICKER;
 }
 
+QString CurrencyAdapter::getCOLDTicker() const {
+  return "COLD";
+}
+
 quint64 CurrencyAdapter::calculateInterest(quint64 _amount, quint32 _term, uint32_t height) const {
   return m_currency.calculateInterest(_amount, _term, height);
 }

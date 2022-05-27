@@ -1640,7 +1640,7 @@ namespace WalletGui
     quint64 amount = CurrencyAdapter::instance().parseAmount(m_ui->m_amountSpin->cleanText());
     quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
     qreal termRate = 80; /*DepositModel::calculateRate(amount, interest); */
-    quint64 interest = (amount * termRate) / 1000000 ; /*CurrencyAdapter::instance().calculateInterest(amount, term, NodeAdapter::instance().getLastKnownBlockHeight());*/
+    quint64 interest = (amount * termRate) / 10000000 ; /*CurrencyAdapter::instance().calculateInterest(amount, term, NodeAdapter::instance().getLastKnownBlockHeight());*/
     m_ui->m_interestEarnedLabel->setText(QString("%1 %2").arg(CurrencyAdapter::instance().formatAmount(interest)).arg(CurrencyAdapter::instance().getCOLDTicker().toUpper()));
     m_ui->m_interestRateLabel->setText(QString("%3 %").arg(QString::number(termRate, 'f', 4)));
   }

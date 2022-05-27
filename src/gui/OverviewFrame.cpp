@@ -841,7 +841,7 @@ namespace WalletGui
 
     double currency = result[selectedCurrency].toDouble();
     ccxfiat = (float)currency;
-    QString ccx = QLocale(QLocale::system()).toString(currency, 'f', 2);
+    QString ccx = QLocale(QLocale::system()).toString(currency, 'f', 4);
     double market_cap = result[marketCapCurrency].toDouble();
     QString ccx_market_cap = QLocale(QLocale::system()).toString(market_cap, 'f', 0);
     double c24h_volume = result[volumeCurrency].toDouble();

@@ -47,8 +47,8 @@ InstallDir "$PROGRAMFILES\Fango Wallet"
 !define MUI_ABORTWARNING
 !define MUI_UNABORTWARNING
 
-!define MUI_ICON "src\images\appicon\conceal.ico"
-!define MUI_UNICON "src\images\appicon\conceal.ico"
+!define MUI_ICON "src\images\appicon\fango.ico"
+!define MUI_UNICON "src\images\appicon\fango.ico"
 
 !define MUI_WELCOMEFINISHPAGE_BITMAP "src\images\installer\conceal-welcome.bmp"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "src\images\installer\conceal-welcome.bmp"

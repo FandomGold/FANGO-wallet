@@ -6,7 +6,7 @@
 
 !define APP_NAME "Fango Wallet"
 !define COMP_NAME "Fango Network"
-!define WEB_SITE "https://fandom.gold"
+!define WEB_SITE "https://fango.money"
 !define VERSION "06.01.02.00"
 !define COPYRIGHT "Fandom Gold Society 2021"
 !define DESCRIPTION "Fango Wallet"

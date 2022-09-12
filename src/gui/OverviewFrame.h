@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2017 The Cryptonote developers
 // Copyright (c) 2018 The Circle Foundation
 // Copyright (c) 2018-2021 Conceal Network & Conceal Devs
-// Copyright (c) 2018-2022 Fango Developers
+// Copyright (c) 2017-2022 Fuego Developers
 //
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.

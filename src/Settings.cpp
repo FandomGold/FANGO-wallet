@@ -653,6 +653,6 @@ namespace WalletGui
     }
   }
 
-  QString Settings::getDefaultWalletPath() const { return QDir::homePath() + "/fango.wallet"; }
+  QString Settings::getDefaultWalletPath() const { return QDir::homePath() + "/fuego.wallet"; }
 
 } // namespace WalletGui

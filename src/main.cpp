@@ -53,7 +53,7 @@ int main(int argc, char* argv[])
   QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif*/
   QApplication app(argc, argv);
-  QApplication::setApplicationName("Fango Desktop Wallet");
+  QApplication::setApplicationName("Fuego Desktop Wallet");
   QApplication::setApplicationVersion(Settings::instance().getVersion());
   QApplication::setQuitOnLastWindowClosed(false);
 
@@ -122,7 +122,7 @@ int main(int argc, char* argv[])
   splashScreen->show();
 
   LogFileWatcher* logWatcher = new LogFileWatcher(
-      Settings::instance().getDataDir().absoluteFilePath("Fangowallet.log"), &app);
+      Settings::instance().getDataDir().absoluteFilePath("Fuegowallet.log"), &app);
   QObject::connect(logWatcher, &LogFileWatcher::newLogStringSignal, &app, &newLogString);
 
   QApplication::processEvents();

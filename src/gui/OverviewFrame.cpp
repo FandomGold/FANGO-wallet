@@ -906,7 +906,7 @@ namespace WalletGui
   void OverviewFrame::dashboardClicked()
   {
     m_ui->darkness->hide();
-    m_ui->m_myConcealWalletTitle->setText(tr("FANGO.MONEY"));
+    m_ui->m_myConcealWalletTitle->setText(tr("FUEGO.MONEY"));
     m_ui->m_titleIcon->setPixmap(QPixmap(":/icons/icon-home"));
     m_ui->overviewBox->raise();
     m_ui->lm_newTransferButton->show();
@@ -1405,15 +1405,15 @@ namespace WalletGui
     m_exchangeProvider->getExchange(_address);
   }
 
-  /* Prevent users from sending message over 260 characters */
+  /* Prevent users from sending message over 300 characters */
   void OverviewFrame::recalculateMessageLength()
   {
 
-    if (m_ui->m_messageTextEdit->toPlainText().length() > 261)
+    if (m_ui->m_messageTextEdit->toPlainText().length() > 301)
     {
       m_ui->m_messageTextEdit->setPlainText(m_ui->m_messageTextEdit->toPlainText().left(m_ui->m_messageTextEdit->toPlainText().length() - 1));
       m_ui->m_messageTextEdit->moveCursor(QTextCursor::End);
-      Q_EMIT notifySignal(tr("Warning: you have reached the maximum message size of 260 characters."));
+      Q_EMIT notifySignal(tr("Warning: you have reached the maximum message size of 300 characters."));
     }
 
     QString messageText = m_ui->m_messageTextEdit->toPlainText();
@@ -1531,9 +1531,9 @@ namespace WalletGui
       --messageSize;
     }
 
-    if (messageSize > 260)
+    if (messageSize > 300)
     {
-      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Message too long. Please ensure that the message is less than 260 characters."), QtCriticalMsg));
+      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Message too long. Please ensure that the message is less than 300 characters."), QtCriticalMsg));
       return;
     }
 

@@ -69,7 +69,7 @@ std::istream& operator>>(std::istream& str, Version::VersionDigit& digit)
 
 void Updater::checkForUpdate()
 {
-  const QUrl url = QUrl::fromUserInput("https://raw.githubusercontent.com/FandomGold/fango-wallet/master/update.txt");
+  const QUrl url = QUrl::fromUserInput("https://raw.githubusercontent.com/FandomGold/fuego-wallet/master/update.txt");
   QNetworkRequest request(url);
   manager->get(request);
 }
@@ -93,12 +93,12 @@ void Updater::replyFinished(QNetworkReply* reply)
     if (ourVersion < remoteVersion)
     {
       if (QMessageBox::warning(
-              &MainWindow::instance(), QObject::tr("Fango Wallet Update"),
-              QObject::tr("There is an update to the wallet available.\nWould you like to go to "
+              &MainWindow::instance(), QObject::tr("Fuego Wallet Update"),
+              QObject::tr("There is an updated wallet version available.\nWould you like to go to "
                           "the download page?"),
               QMessageBox::Ok, QMessageBox::Cancel) == QMessageBox::Ok)
       {
-        QString link = "https://github.com/FandomGold/fango-wallet/releases";
+        QString link = "https://github.com/FandomGold/fuego-wallet/releases";
         QDesktopServices::openUrl(QUrl(link));
       }
     }

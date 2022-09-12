@@ -10,7 +10,7 @@
 SplashScreen::SplashScreen(QWidget* parent) : QWidget(parent)
 {
   QFont splashFont;
-  splashFont.setFamily("Arial");
+  splashFont.setFamily("Cinzel");
   splashFont.setBold(true);
   splashFont.setPixelSize(9);
   splashFont.setStretch(125);

@@ -218,7 +218,7 @@ if (WIN32)
 
   set(PLATFORM_DIR Windows)
   set(BUILD_PLATFORM WIN32)
-  set(BUILD_RESOURCES fango.rc)
+  set(BUILD_RESOURCES fuego.rc)
   set(QTMAIN Qt5::WinMain)
 
 elseif (UNIX)
@@ -242,8 +242,8 @@ elseif (UNIX)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11 ${ARCH_FLAG} -maes -D_DARWIN_C_SOURCE")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -framework Cocoa -framework OpenGL -framework CoreFoundation -framework Carbon -framework IOKit -L/usr/lib")
 
-    set(MACOSX_BUNDLE_ICON_FILE fango.icns)
-    set(APPLICATION_ICON src/images/appicon/fango.icns)
+    set(MACOSX_BUNDLE_ICON_FILE fuego.icns)
+    set(APPLICATION_ICON src/images/appicon/fuego.icns)
     set_source_files_properties(${APPLICATION_ICON} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 
     set(BUILD_PLATFORM MACOSX_BUNDLE)
@@ -307,13 +307,13 @@ if (APPLE)
     set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}.-${VERSION_RELEASE}")
 elseif (UNIX)
     install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
-    install(FILES src/fangowallet.desktop DESTINATION share/applications)
-    install(FILES src/images/fango.png DESTINATION share/pixmaps)
-    install(FILES COPYRIGHT DESTINATION share/doc/fangowallet)
+    install(FILES src/fuegowallet.desktop DESTINATION share/applications)
+    install(FILES src/images/fuego.png DESTINATION share/pixmaps)
+    install(FILES COPYRIGHT DESTINATION share/doc/fuegowallet)
 
 	SET(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
 	SET(CPACK_PACKAGE_DESCRIPTION_FILE "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
-	SET(CPACK_PACKAGE_ICON src/images/fango.png)
+	SET(CPACK_PACKAGE_ICON src/images/fuego.png)
 	
     if (NOT PACKRPM)
         set(CPACK_GENERATOR DEB)
@@ -322,10 +322,10 @@ elseif (UNIX)
         set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <fandomgold@pm.me>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Fango Wallet
- Fango is a decentrilized privacy protected peer-to-peer
- untraceable cryptocurrency. Fango is
- open-source; its design is public, nobody owns or controls the network and
+        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Fuego Wallet
+ Fuego is a decentralized privacy protected peer-to-peer
+ untraceable cryptocurrency. Fuego is
+ open-source; its design is public, no one owns or controls the network and
  everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}.${CPACK_SYSTEM_NAME}")
 	else ()
@@ -335,11 +335,11 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_LICENSE "GPL3")
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
-        set(CPACK_RPM_PACKAGE_SUMMARY "Fango Wallet")
-        set(CPACK_RPM_PACKAGE_DESCRIPTION "Open-source Fango wallet
- Fango is a decentrilized privacy protected peer-to-peer
- untraceable cryptocurrency. Fango is
- open-source; its design is public, nobody owns or controls the network and
+        set(CPACK_RPM_PACKAGE_SUMMARY "Fuego Wallet")
+        set(CPACK_RPM_PACKAGE_DESCRIPTION "Open-source Fuego wallet
+ Fuego is a decentralized privacy protected peer-to-peer
+ untraceable cryptocurrency. Fuego is
+ open-source; its design is public, no one owns or controls the network and
  everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}.${CPACK_SYSTEM_NAME}")
     endif ()

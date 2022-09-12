@@ -2,7 +2,8 @@
 // Copyright (c) 2014-2017 XDN developers 
 // Copyright (c) 2018 The Circle Foundation & Conceal Devs
 // Copyright (c) 2018-2019 Conceal Network & Conceal Devs
-//
+// Copyright (c) 2017-2022 Fuego Developers
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,8 +18,8 @@
 
 namespace WalletGui {
 
-Q_DECL_CONSTEXPR char ALIAS_OBJECT_NAME[] = "Fango";
-Q_DECL_CONSTEXPR char ALIAS_NAME_TAG[] = "fango";
+Q_DECL_CONSTEXPR char ALIAS_OBJECT_NAME[] = "Fuego";
+Q_DECL_CONSTEXPR char ALIAS_NAME_TAG[] = "fuego";
 Q_DECL_CONSTEXPR char ALIAS_ADDRESS_TAG[] = "XFG";
 
 AliasProvider::AliasProvider(QObject *parent) : QObject(parent), m_networkManager() {

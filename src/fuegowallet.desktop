@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fuego Desktop
+Comment=Fuego Desktop
+Exec=FUEGO-GUI
+Terminal=false
+Type=Application
+Icon=fango.png
+MimeType=x-scheme-handler/fuegowallet;
+Categories=Office;Finance;Cryptocurrency;
+Name[en_US]=fuegowallet.desktop

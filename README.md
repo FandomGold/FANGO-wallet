@@ -1,32 +1,34 @@
 ![image](https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/fangobgs.png)
 
-# Fango Desktop
+# Fuego Desktop
 
 ## Privacy Banking Wallet 
 
 ### [Certificate Of Ledger Deposits](https://github.com/FandomGold/COLD-DAO/blob/main/README.md) and Untraceable Messaging
 
-[Latest Release:](https://github.com/FandomGold/fango-wallet/releases) v4.1.0 Dragonborne
+Latest Release: v4.1.0 (Dragonbourne)
 
 <b><sub>Maintained by Fandom Gold Society</sub></b>
 
-[![Build check](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/FandomGold/fango-desktop/actions/workflows/check.yml)
+[![Build check](https://github.com/FandomGold/fuego-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/FandomGold/fuego-desktop/actions/workflows/check.yml)
 __________________________________________________
-Fango Desktop Wallet is a decentralized blockchain banking interface with built-in private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public. All Fango transactions and messages are private by default - a key concern in a post Snowden world.  
+Fuego Desktop Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public.
 
-Fango Desktop Wallet is an extension of [Fango](https://github.com/fandomgold/fango) ($XFG) - a secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
+All Fuego transactions and messages are private by default - a key concern in a post Snowden world.  
+
+Fuego Desktop is an extension of [Fuego](https://github.com/fandomgold/fuego) ($XFG) - a secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
 
 ## Resources
 
 -   Web: <https://fango.money>
 -   GitHub: <https://github.com/fandomgold>
 -   Discord: <https://discord.gg/5UJcJJg>
--   Twitter: <https://twitter.com/fandomgold>
+-   Twitter: <https://twitter.com/usexfg>
 -   Reddit: <https://www.reddit.com/r/Fango>
--   Medium: <https://medium.com/@fandomgold>
+-   Medium: <https://medium.com/@usexfg>
 -   Bitcoin Talk: <https://bitcointalk.org/index.php?topic=2712001>
 
-## Compiling Fango Desktop from source
+## Compiling Fuego Desktop from source
 
 ### Linux / Ubuntu
 
@@ -51,10 +53,10 @@ sudo apt install git gcc make cmake libboost-all-dev qt5-default
 To acquire the source via git and build the release version, run the following commands:
 
 ```bash
-git clone https://github.com/FandomGold/fango-desktop
-cd fango-desktop
+git clone https://github.com/FandomGold/fuego-desktop
+cd fuego-desktop
 rm -rf cryptonote
-git clone https://github.com/FandomGold/fango cryptonote
+git clone https://github.com/FandomGold/fuego cryptonote
 make 
 ```
 
@@ -74,14 +76,14 @@ If the build is successful the binary will be in the `build/release` folder.
 
 -   From the start menu, open 'x64 Native Tools Command Prompt for vs2017' or run "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\Tools\\VsMSBuildCmd.bat" from any command prompt.
 -   Edit the CMakeLists.txt file and set the path to QT cmake folder. For example: set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\").
--   `git clone https://github.com/FandomGold/fango`
--   `git clone https://github.com/FandomGold/fango-desktop`
--   Copy the contents of fango folder into fango-wallet\\cryptonote
--   `cd fango-desktop`
+-   `git clone https://github.com/FandomGold/fuego`
+-   `git clone https://github.com/FandomGold/fuego-desktop`
+-   Copy the contents of fuego folder into fuego-wallet\\cryptonote
+-   `cd fuego-desktop`
 -   `mkdir build`
 -   `cd build`
 -   `cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..` (Or your boost installed dir.)
--   `msbuild FANGO-GUI.sln /p:Configuration=Release`
+-   `msbuild FUEGO-GUI.sln /p:Configuration=Release`
 
 If the build is successful the binaries will be in the `Release` folder.
 
@@ -89,9 +91,9 @@ If the build is successful the binaries will be in the `Release` folder.
 
 #### Prerequisites
 
-First, we need to install the same dependencies as [fango](https://github.com/FandomGold/fango#macos).
+First, we need to install the same dependencies as [fuego](https://github.com/FandomGold/fuego#macos).
 
-Once fango dependencies are installed, we need to install Qt5, open a Terminal and run the following commands:
+Once fuego dependencies are installed, we need to install Qt5, open a Terminal and run the following commands:
 
 ```bash
 brew install qt5
@@ -100,26 +102,26 @@ export PATH="/usr/local/opt/qt/bin:$PATH"
 
 #### Building
 
-When all dependencies are installed, build Fango Desktop with the following commands: 
+When all dependencies are installed, build Fuego Desktop with the following commands: 
 
 ```bash
-git clone https://github.com/FandomGold/fango-desktop
-cd fango-desktop
+git clone https://github.com/FandomGold/fuego-desktop
+cd fuego-desktop
 rm -rf cryptonote
-git clone https://github.com/FandomGold/fango cryptonote
+git clone https://github.com/FandomGold/fuego cryptonote
 make build-release
 ```
 
-If the build is successful the binary will be `build/release/FANGO-GUI.app`
+If the build is successful the binary will be `build/release/FUEGO-GUI.app`
 
 It is also possible to deploy the application as a `.dmg` by using these commands after the build:
 
 ```bash
 cd build/release
-macdeployqt FANGO-GUI.app
+macdeployqt FUEGO-GUI.app
 cpack
 ```
 
 ## Special Thanks
 
-Special thanks to developers from Cryptonote, Bytecoin, Conceal, Karbo, Monero, Forknote, XDN, TurtleCoin, and Masari.
+Special thanks to developers from Cryptonote, Bytecoin, Conceal, Karbo, Monero, Forknote, XDN, TurtleCoin, Ryo, and Masari.

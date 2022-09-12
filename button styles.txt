@@ -1,4 +1,4 @@
-//Fango yellow border white text (when not hovered)
+//Fuego yellow border white text (when not hovered)
 
 QPushButton#m_varName
 {
@@ -18,14 +18,15 @@ QPushButton#m_varName:hover
     font-family: 'Gotham';
 }
 
-//Fango yellow on Fango yellow
+//Fuego yellow on Fuego yellow
 
 QPushButton#m_varName
 {
     color: #ffcb00;
     border: 1px solid #ffcb00;
     font-size: 14px;
-    border-radius: 5px; font-family: 'Gotham';
+    border-radius: 5px; 
+    font-family: 'Gotham';
 }
 
 QPushButton#m_varName:hover
@@ -44,8 +45,8 @@ QPushButton#m_varName
     color: #ccc;
     border: 1px solid #444;
     font-size: 14px;
-    border-radius:
-    5px;font-family: 'Gotham';
+    border-radius: 5px;
+    font-family: 'Gotham';
 }
 
 QPushButton#m_varName:hover

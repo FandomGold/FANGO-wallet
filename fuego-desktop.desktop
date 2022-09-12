@@ -1,0 +1,20 @@
+# This file is an example of how to add Fuego Desktop in Applications list.
+# Edit this file and copy it to ~/.local/share/applications
+# Once copied you will be able to find Fuego Desktop in Applications list.
+# If you are not able to find Fuego Desktop check that Exec and Icon are correct.
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fuego Desktop
+Comment=Fuego Desktop Wallet 🔥
+# Change the Exec value to match Fuego-GUI path
+# example : Exec=/home/fuego/apps/fuego/Fuego-GUI
+Exec=<change-this-value>
+Terminal=false
+Type=Application
+# Change the Icon value to match fuego icon path
+# example : Icon=/home/fuego/apps/fuego/icon/fuego.png
+Icon=icon/fuego.png
+MimeType=x-scheme-handler/fangowallet;
+Categories=Office;Finance;Cryptocurrency;
+Name[en_US]=fuego-desktop.desktop

@@ -1,4 +1,4 @@
-![image](https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/fangobgs.png)
+<img height="100px" width="800px" src="https://cdn.discordapp.com/attachments/666275125724839976/1014700582633734224/D0AE2DD9-0B7A-47E6-B1C2-60D39D13005D.gif"><img/>![image height=500px width=800px](https://raw.githubusercontent.com/FandomGold/fuego-wallet/master/src/images/splash.png)
 
 # Fuego Desktop
 

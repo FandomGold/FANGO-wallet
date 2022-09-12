@@ -17,24 +17,24 @@ jobs:
           sudo apt update -y
           sudo apt install -y qt5-default qttools5-dev qttools5-dev-tools libqt5charts5-dev libboost-all-dev
 
-      - name: Clone fango
+      - name: Clone fuego
         run: |
           rm -rf cryptonote
-          git clone https://github.com/FandomGold/fango.git cryptonote
+          git clone https://github.com/FandomGold/fuego.git cryptonote
 
       - name: Build
         id: build
         run: |
           xfg_version=$(echo "$GITHUB_REF" | sed 's|refs/tags/||')
-          release_name=fango-desktop-ubuntu-2004-v"$xfg_version"
+          release_name=fuego-desktop-ubuntu-2004-v"$xfg_version"
           build_folder="build/release"
 
           make -j4 build-release
           mkdir $release_name
           mkdir -p $release_name/icon
-          mv $build_folder/FANGO-GUI $release_name
-          cp fango-desktop.desktop $release_name
-          cp src/images/fango.png $release_name/icon
+          mv $build_folder/FUEGO-GUI $release_name
+          cp fuego-desktop.desktop $release_name
+          cp src/images/fuego.png $release_name/icon
           tar -czf "$release_name".tar.gz "$release_name"
           sha256=$(shasum -a 256 "$release_name".tar.gz | awk '{print toupper($1)}')
 
@@ -46,7 +46,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ${{ steps.build.outputs.release_name }}
-          name: Fango Desktop v${{ steps.build.outputs.xfg_version }}
+          name: Fuego Desktop v${{ steps.build.outputs.xfg_version }}
           body: |
             <img src="https://image.flaticon.com/icons/svg/25/25719.svg" width="16"> [Download for Ubuntu 20.04](../../releases/download/${{ steps.build.outputs.xfg_version }}/${{ steps.build.outputs.release_name }}) **${{ steps.build.outputs.release_name }}**
             `SHA256 : ${{ steps.build.outputs.sha256 }}`

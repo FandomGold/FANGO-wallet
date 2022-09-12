@@ -40,7 +40,7 @@ jobs:
         shell: powershell
         run: |
           Remove-Item cryptonote -Recurse -Force -ErrorAction Ignore
-          git clone -b master https://github.com/fandomgold/fango.git cryptonote
+          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
 
       - name: Pre-build setup
         shell: powershell
@@ -70,7 +70,7 @@ jobs:
           $release_folder = "Release"
           $sha = "${{ github.sha }}"
           $xfg_version = $sha.SubString(0,7)
-          $release_name = "fango-desktop-win64-dev-$xfg_version"
+          $release_name = "fuego-desktop-win64-dev-$xfg_version"
 
           New-Item "$build_folder\$release_folder" -ItemType Directory
           cd "$build_folder"
@@ -95,7 +95,7 @@ jobs:
           choco install openssl -y
           cp "C:\Program Files\OpenSSL-Win64\libcrypto*.dll" "Final/"
           cp "C:\Program Files\OpenSSL-Win64\libssl*.dll" "Final/"
-          windeployqt --release Fango-Wallet.exe --dir "Final/" --no-translations --no-opengl-sw
+          windeployqt --release Fuego-Wallet.exe --dir "Final/" --no-translations --no-opengl-sw
           cd ../../
           makensis FangoWallet.nsi
           cd "$build_folder/$release_folder"
@@ -127,7 +127,7 @@ jobs:
       - name: Clone fango
         run: |
           rm -rf cryptonote
-          git clone -b master https://github.com/fandomgold/fango.git cryptonote
+          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
 
       - name: Build
         id: build
@@ -138,7 +138,7 @@ jobs:
           make -j4 build-release
           mkdir $release_name
           mkdir -p $release_name/icon
-          mv build/release/Fango-Wallet $release_name
+          mv build/release/Fuego-Wallet $release_name
           cp fango-desktop.desktop $release_name
           cp src/images/fango.png $release_name/icon
           tar -czf "$release_name".tar.gz "$release_name"
@@ -168,20 +168,20 @@ jobs:
       - name: Clone fango
         run: |
           rm -rf cryptonote
-          git clone -b master https://github.com/fandomgold/fango.git cryptonote
+          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
 
       - name: Build
         id: build
         run: |
           xfg_version=${GITHUB_SHA::7}
-          release_name=fango-desktop-ubuntu-2004-dev-"$xfg_version"
+          release_name=fuego-desktop-ubuntu-2004-dev-"$xfg_version"
 
           make -j4 build-release
           mkdir $release_name
           mkdir -p $release_name/icon
-          mv build/release/Fango-Wallet $release_name
-          cp fango-desktop.desktop $release_name
-          cp src/images/fango.png $release_name/icon
+          mv build/release/Fuego-Wallet $release_name
+          cp fuego-desktop.desktop $release_name
+          cp src/images/fuego.png $release_name/icon
           tar -czf "$release_name".tar.gz "$release_name"
 
           echo "::set-output name=release_name::${release_name}"
@@ -210,18 +210,18 @@ jobs:
         run: |
           brew install boost
 
-      - name: Clone fango
+      - name: Clone fuego
         run: |
           rm -rf cryptonote
-          git clone -b master https://github.com/fandomgold/fango.git cryptonote
+          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
 
       - name: Build
         id: build
         run: |
           build_folder="build/release"
           xfg_ver=${GITHUB_SHA::7}
-          release_name="fango-desktop-macOS-dev-$xfg_ver"
-          app_name="Fango-Wallet.app"
+          release_name="fuego-desktop-macOS-dev-$xfg_ver"
+          app_name="Fuego-Wallet.app"
 
           make -j4 build-release
           cd "$build_folder"
@@ -258,18 +258,18 @@ jobs:
         run: |
           brew install boost
 
-      - name: Clone fango
+      - name: Clone fuego
         run: |
           rm -rf cryptonote
-          git clone -b master https://github.com/fandomgold/fango.git cryptonote
+          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
 
       - name: Build
         id: build
         run: |
           build_folder="build/release"
           xfg_ver=${GITHUB_SHA::7}
-          release_name="fango-desktop-macOS11-$xfg_ver"
-          app_name="Fango-Wallet.app"
+          release_name="fuego-desktop-macOS11-$xfg_ver"
+          app_name="Fuego-Wallet.app"
 
           make -j4 build-release
           cd "$build_folder"

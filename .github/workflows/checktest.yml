@@ -20,23 +20,24 @@ jobs:
           apt update -y
           apt install -y qt5-default qttools5-dev qttools5-dev-tools libqt5charts5-dev libboost-all-dev git
 
-      - name: Clone fango
+      - name: Clone fuego
         run: |
           rm -rf cryptonote
-          git clone https://github.com/fandomgold/fango.git cryptonote
+          git clone https://github.com/fandomgold/fuego.git cryptonote
 
       - name: Build
         id: build
         run: |
           xfg_version=${GITHUB_SHA::7}
-          release_name=fango-desktop-ubuntu-1804-dev-"$xfg_version"
+          release_name=fuego-desktop-ubuntu-1804-dev-"$xfg_version"
 
           make -j4 build-release
           mkdir $release_name
           mkdir -p $release_name/icon
-          mv build/release/Fango-Wallet $release_name
-          cp fango-desktop.desktop $release_name
-          cp src/images/fango.png $release_name/icon
+          mv build/release/
+          -Wallet $release_name
+          cp fuego-desktop.desktop $release_name
+          cp src/images/fuego.png $release_name/icon
           tar -czf "$release_name".tar.gz "$release_name"
 
           echo "::set-output name=release_name::${release_name}"

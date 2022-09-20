@@ -20,7 +20,7 @@ jobs:
       - name: Clone Fuego
         run: |
           rm -rf cryptonote
-          git clone https://github.com/FandomGold/fuego.git cryptonote
+          git clone https://github.com/usexfg/fuego.git cryptonote
 
       - name: Build
         id: build

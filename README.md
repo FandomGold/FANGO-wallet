@@ -1,26 +1,26 @@
-<img height="500px" width="800px" src="https://raw.githubusercontent.com/FandomGold/fuego-wallet/master/src/images/splash.png"><img/>
+<img height="500px" width="800px" src="https://raw.githubusercontent.com/usexfg/fuego-wallet/master/src/images/splash.png"><img/>
 # Fuego Desktop
 
 ## Privacy Banking Wallet 
 
-### [Certificate Of Ledger Deposits](https://github.com/FandomGold/COLD-DAO/blob/main/README.md) and Untraceable Messaging
+### [Certificate Of Ledger Deposits](https://github.com/usexfg/COLD-DAO/blob/main/README.md) and Untraceable Messaging
 
 Latest Release: v4.1.0 (Dragonbourne)
 
-<b><sub>Maintained by Fandom Gold Society</sub></b>
+<b><sub>Maintained by Eldernode Society</sub></b>
 
-[![Build check](https://github.com/FandomGold/fuego-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/FandomGold/fuego-desktop/actions/workflows/check.yml)
+[![Build check](https://github.com/FandomGold/fuego-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml)
 __________________________________________________
 Fuego Desktop Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public.
 
 All Fuego transactions and messages are private by default - a key concern in a post Snowden world.  
 
-Fuego Desktop is an extension of [Fuego](https://github.com/fandomgold/fuego) ($XFG) - a secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
+Fuego Desktop is an extension of [Fuego](https://github.com/usexfg/fuego) ($XFG) - a secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
 
 ## Resources
 
 -   Web: <https://fango.money>
--   GitHub: <https://github.com/fandomgold>
+-   GitHub: <https://github.com/usexfg>
 -   Discord: <https://discord.gg/5UJcJJg>
 -   Twitter: <https://twitter.com/usexfg>
 -   Reddit: <https://www.reddit.com/r/Fango>
@@ -52,10 +52,10 @@ sudo apt install git gcc make cmake libboost-all-dev qt5-default
 To acquire the source via git and build the release version, run the following commands:
 
 ```bash
-git clone https://github.com/FandomGold/fuego-desktop
+git clone https://github.com/usexfg/fuego-desktop
 cd fuego-desktop
 rm -rf cryptonote
-git clone https://github.com/FandomGold/fuego cryptonote
+git clone https://github.com/usexfg/fuego cryptonote
 make 
 ```
 
@@ -75,8 +75,8 @@ If the build is successful the binary will be in the `build/release` folder.
 
 -   From the start menu, open 'x64 Native Tools Command Prompt for vs2017' or run "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\Tools\\VsMSBuildCmd.bat" from any command prompt.
 -   Edit the CMakeLists.txt file and set the path to QT cmake folder. For example: set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\").
--   `git clone https://github.com/FandomGold/fuego`
--   `git clone https://github.com/FandomGold/fuego-desktop`
+-   `git clone https://github.com/usexfg/fuego`
+-   `git clone https://github.com/usexfg/fuego-desktop`
 -   Copy the contents of fuego folder into fuego-wallet\\cryptonote
 -   `cd fuego-desktop`
 -   `mkdir build`
@@ -90,7 +90,7 @@ If the build is successful the binaries will be in the `Release` folder.
 
 #### Prerequisites
 
-First, we need to install the same dependencies as [fuego](https://github.com/FandomGold/fuego#macos).
+First, we need to install the same dependencies as [fuego](https://github.com/usexfg/fuego#macos).
 
 Once fuego dependencies are installed, we need to install Qt5, open a Terminal and run the following commands:
 
@@ -104,10 +104,10 @@ export PATH="/usr/local/opt/qt/bin:$PATH"
 When all dependencies are installed, build Fuego Desktop with the following commands: 
 
 ```bash
-git clone https://github.com/FandomGold/fuego-desktop
+git clone https://github.com/usexfg/fuego-desktop
 cd fuego-desktop
 rm -rf cryptonote
-git clone https://github.com/FandomGold/fuego cryptonote
+git clone https://github.com/usexfg/fuego cryptonote
 make build-release
 ```
 

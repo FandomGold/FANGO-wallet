@@ -36,7 +36,7 @@ jobs:
         shell: powershell
         run: |
           Remove-Item cryptonote -Recurse -Force -ErrorAction Ignore
-          git clone https://github.com/fandomgold/fuego cryptonote
+          git clone https://github.com/usexfg/fuego cryptonote
 
       - name: Pre-build setup
         shell: powershell

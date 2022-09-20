@@ -40,7 +40,7 @@ jobs:
         shell: powershell
         run: |
           Remove-Item cryptonote -Recurse -Force -ErrorAction Ignore
-          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
+          git clone -b master https://github.com/usexfg/fuego.git cryptonote
 
       - name: Pre-build setup
         shell: powershell
@@ -127,7 +127,7 @@ jobs:
       - name: Clone fango
         run: |
           rm -rf cryptonote
-          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
+          git clone -b master https://github.com/usexfg/fuego.git cryptonote
 
       - name: Build
         id: build
@@ -168,7 +168,7 @@ jobs:
       - name: Clone fango
         run: |
           rm -rf cryptonote
-          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
+          git clone -b master https://github.com/usexfg/fuego.git cryptonote
 
       - name: Build
         id: build
@@ -213,7 +213,7 @@ jobs:
       - name: Clone fuego
         run: |
           rm -rf cryptonote
-          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
+          git clone -b master https://github.com/usexfg/fuego.git cryptonote
 
       - name: Build
         id: build
@@ -261,7 +261,7 @@ jobs:
       - name: Clone fuego
         run: |
           rm -rf cryptonote
-          git clone -b master https://github.com/fandomgold/fuego.git cryptonote
+          git clone -b master https://github.com/usexfg/fuego.git cryptonote
 
       - name: Build
         id: build

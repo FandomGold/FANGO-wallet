@@ -42,7 +42,7 @@
         <file alias="folder">icons/folder.png</file>
     </qresource>
     <qresource prefix="/images">
-        <file alias="conceal-logo">images/fango.png</file>
+        <file alias="conceal-logo">images/fuego.png</file>
         <file alias="splash">images/splash.png</file>
         <file alias="clock">images/clock.gif</file>
         <file alias="lock">images/lock.png</file>

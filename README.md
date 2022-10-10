@@ -1,21 +1,21 @@
 <img height="500px" width="800px" src="https://raw.githubusercontent.com/usexfg/fuego-wallet/master/src/images/splash.png"><img/>
-# Fuego Desktop
+# Fuego Wallet
 
-## Privacy Banking Wallet 
+## Privacy Desktop Banking App 
 
 ### [Certificate Of Ledger Deposits](https://github.com/usexfg/COLD-DAO/blob/main/README.md) and Untraceable Messaging
 
 Latest Release: v4.1.0 (Dragonbourne)
 
-<b><sub>Maintained by Eldernode Society</sub></b>
+<b><sub>Maintained by Elder Node Society</sub></b>
 
-[![Build check](https://github.com/FandomGold/fuego-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml)
+[![Build check](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml)
 __________________________________________________
-Fuego Desktop Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public.
+Fuego Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public.
 
 All Fuego transactions and messages are private by default - a key concern in a post Snowden world.  
 
-Fuego Desktop is an extension of [Fuego](https://github.com/usexfg/fuego) ($XFG) - a secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol and operates with no central authority. Allowing you the freedom (and responsibility) of full control over the private keys to your funds.
+Fuego Wallet Desktop is an extension of [Fuego](https://github.com/usexfg/fuego) ($XFG) - a secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol. Fuego network operates with no central authority, allowing you the freedom (and responsibility) of full control over the private keys to your funds.
 
 ## Resources
 

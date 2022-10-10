@@ -9,7 +9,7 @@ Latest Release: v4.1.0 (Dragonbourne)
 
 <b><sub>Maintained by Elder Node Society</sub></b>
 
-[![Build check](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml/badge.svg)](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml)
+[![Build check](https://github.com/usexfg/fuego-wallet/actions/workflows/check.yml/badge.svg)](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml)
 __________________________________________________
 Fuego Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public.
 

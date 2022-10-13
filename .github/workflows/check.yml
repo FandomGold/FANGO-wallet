@@ -249,14 +249,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Qt
-        uses: jurplel/install-qt-action@v2
-        with:
-          modules: "qtcharts"
-
       - name: Install dependencies
         run: |
-          brew install boost
+          brew install boost qt@5
 
       - name: Clone fuego
         run: |
@@ -266,6 +261,7 @@ jobs:
       - name: Build
         id: build
         run: |
+          export PATH="/usr/local/opt/qt@5/bin:$PATH"
           build_folder="build/release"
           xfg_ver=${GITHUB_SHA::7}
           release_name="fuego-desktop-macOS11-$xfg_ver"

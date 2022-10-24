@@ -1,21 +1,19 @@
 <img height="500px" width="800px" src="https://raw.githubusercontent.com/usexfg/fuego-wallet/master/src/images/splash.png"><img/>
-# Fuego Wallet
+# 🔥 Fuego Wallet
 
 ## Privacy Desktop Banking App 
 
 ### [Certificate Of Ledger Deposits](https://github.com/usexfg/COLD-DAO/blob/main/README.md) and Untraceable Messaging
 
-Latest Release: v4.1.0 (Dragonbourne)
+Latest Release: v4.2.0 (Godflame)
 
-<b><sub>Maintained by Elder Node Society</sub></b>
+<b><sub>Maintained by Elder Node Council</sub></b>
 
 [![Build check](https://github.com/usexfg/fuego-wallet/actions/workflows/check.yml/badge.svg)](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml)
 __________________________________________________
-Fuego Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public.
+Fuego Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public. All Fuego transactions and messages are private by default.  
 
-All Fuego transactions and messages are private by default - a key concern in a post Snowden world.  
-
-Fuego Wallet Desktop is an extension of [Fuego](https://github.com/usexfg/fuego) ($XFG) - a secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol. Fuego network operates with no central authority, allowing you the freedom (and responsibility) of full control over the private keys to your funds.
+Fuego-Wallet-desktop is an extension of the [Fuego](https://github.com/usexfg/fuego) ($XFG) secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol. Fuego network operates with no central authority, enabling you the full freedom (and responsibility) of control over the private keys to your funds. Please write all your wallet seed phrases down and store them somewhere safe.
 
 ## Resources
 
@@ -76,9 +74,9 @@ If the build is successful the binary will be in the `build/release` folder.
 -   From the start menu, open 'x64 Native Tools Command Prompt for vs2017' or run "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\Tools\\VsMSBuildCmd.bat" from any command prompt.
 -   Edit the CMakeLists.txt file and set the path to QT cmake folder. For example: set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\").
 -   `git clone https://github.com/usexfg/fuego`
--   `git clone https://github.com/usexfg/fuego-desktop`
--   Copy the contents of fuego folder into fuego-wallet\\cryptonote
--   `cd fuego-desktop`
+-   `git clone https://github.com/usexfg/fuego-wallet`
+-   Copy the contents of fuego folder into fuego-wallet\cryptonote
+-   `cd fuego-wallet`
 -   `mkdir build`
 -   `cd build`
 -   `cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..` (Or your boost installed dir.)
@@ -101,10 +99,10 @@ export PATH="/usr/local/opt/qt/bin:$PATH"
 
 #### Building
 
-When all dependencies are installed, build Fuego Desktop with the following commands: 
+When all dependencies are installed, build Fuego-Wallet-Desktop with the following commands: 
 
 ```bash
-git clone https://github.com/usexfg/fuego-desktop
+git clone https://github.com/usexfg/fuego-wallet
 cd fuego-desktop
 rm -rf cryptonote
 git clone https://github.com/usexfg/fuego cryptonote

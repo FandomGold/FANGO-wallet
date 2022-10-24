@@ -33,7 +33,7 @@ jobs:
           make -j1 build-release
           mkdir $release_name
           mkdir -p $release_name/icon
-          mv $build_folder/FUEGO-GUI $release_name
+          mv build/release/Fuego-Wallet $release_name
           cp fuego-desktop.desktop $release_name
           cp src/images/fuego.png $release_name/icon
           tar -czf "$release_name".tar.gz "$release_name"

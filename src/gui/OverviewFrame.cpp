@@ -2064,7 +2064,7 @@ namespace WalletGui
 
   void OverviewFrame::githubClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://github.com/FandomGold", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://github.com/usexfg", QUrl::TolerantMode));
   }
 /*
   void OverviewFrame::redditClicked()

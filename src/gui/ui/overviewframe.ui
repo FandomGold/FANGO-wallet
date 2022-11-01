@@ -5528,7 +5528,7 @@ border-radius: 5px;
 border: none;</string>
                  </property>
                  <property name="text">
-                  <string>How long should your deposit last?</string>
+                  <string>C.O.L.D. standard term of deposit lasts </string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>

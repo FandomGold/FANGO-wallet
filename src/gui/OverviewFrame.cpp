@@ -90,8 +90,8 @@ namespace WalletGui
   QString monthsToBlocks(int _months)
   {
 
-    int maxPeriod = 13;
-    uint32_t blocksPerDeposit = 5480;
+    int maxPeriod = 1;
+    uint32_t blocksPerDeposit = 16440;
 
     QString resTempate("%1 %2");
     if (_months < maxPeriod)
@@ -227,8 +227,8 @@ namespace WalletGui
     m_ui->m_messagesView->setModel(m_visibleMessagesModel.data());
 
     m_ui->m_timeSpin->setSuffix(QString(" %1").arg(tr("Month(s)")));
-    m_ui->m_timeSpin->setMaximum(1);
-    timeChanged(1);
+    m_ui->m_timeSpin->setMaximum(3);
+    timeChanged(3);
 
     m_ui->darkness->hide();
     m_ui->lockBox->hide();
@@ -1584,8 +1584,8 @@ namespace WalletGui
       return;
     }
 
-    uint32_t blocksPerDeposit = 5480;
-    quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
+    uint32_t blocksPerDeposit = 16440;
+    quint32 term = blocksPerDeposit;
 
     /* Warn the user */
     if (QMessageBox::warning(&MainWindow::instance(), tr("Deposit Confirmation"),
@@ -1636,9 +1636,9 @@ namespace WalletGui
 
   void OverviewFrame::depositParamsChanged()
   {
-    uint32_t blocksPerDeposit = 5480;
+    uint32_t blocksPerDeposit = 16440;
     quint64 amount = CurrencyAdapter::instance().parseAmount(m_ui->m_amountSpin->cleanText());
-    quint32 term = m_ui->m_timeSpin->value() * blocksPerDeposit;
+    quint32 term = blocksPerDeposit;
     qreal termRate = 80; /*DepositModel::calculateRate(amount, interest); */
     quint64 interest = (amount * termRate) / 10000000 ; /*CurrencyAdapter::instance().calculateInterest(amount, term, NodeAdapter::instance().getLastKnownBlockHeight());*/
     m_ui->m_interestEarnedLabel->setText(QString("%1 %2").arg(CurrencyAdapter::instance().formatAmount(interest)).arg(CurrencyAdapter::instance().getCOLDTicker().toUpper()));

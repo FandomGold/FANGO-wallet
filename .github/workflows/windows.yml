@@ -78,19 +78,18 @@ jobs:
           # msbuild FUEGO-GUI.sln /p:Configuration=Release /m:2
           msbuild Fuego-Wallet.sln /p:Configuration=Release /m:2
 
-          # echo "::set-output name=build_folder::${build_folder}"
-          echo "build_folder=${build_folder} >> $GITHUB_OUTPUT
+          echo "::set-output name=build_folder::${build_folder}"
+          # echo "build_folder=${build_folder} >> $GITHUB_OUTPUT
           
-          # echo "::set-output name=release_folder::${release_folder}"
-          echo "release_folder=${release_folder} >> $GITHUB_OUTPUT
+          echo "::set-output name=release_folder::${release_folder}"
+          # echo "release_folder=${release_folder} >> $GITHUB_OUTPUT
           
-          # echo "::set-output name=release_name::${release_name}"
-          echo "release_name=${release_name} >> $GITHUB_OUTPUT
+          echo "::set-output name=release_name::${release_name}"
+          # echo "release_name=${release_name} >> $GITHUB_OUTPUT
           
-          # echo "::set-output name=xfg_version::${xfg_version}"
-          echo "xfg_version=${xfg_version} >> $GITHUB_OUTPUT
+          echo "::set-output name=xfg_version::${xfg_version}"
+          # echo "xfg_version=${xfg_version} >> $GITHUB_OUTPUT
           
-          echo $GITHUB_OUTPUT
 
       - name: Pack
         shell: powershell

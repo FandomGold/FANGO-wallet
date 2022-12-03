@@ -68,7 +68,9 @@ jobs:
         run: |
           $build_folder = "build"
           $release_folder = "Release"
-          $xfg_version = "${{ github.ref }}" -replace 'refs/tags/'
+          # $xfg_version = "${{ github.ref }}" -replace 'refs/tags/'
+          $sha = "${{ github.sha }}"
+          $xfg_version = $sha.SubString(0,7)
           $release_name = "fuego-desktop-win64-v$xfg_version"
 
           New-Item "$build_folder\$release_folder" -ItemType Directory

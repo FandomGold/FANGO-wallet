@@ -28,7 +28,7 @@ jobs:
           build_folder="build/release"
           xfg_ver=$(echo ${{ github.ref }} | sed 's|refs/tags/||')
           release_name="fuego-desktop-macOS-v$xfg_ver"
-          app_name="FUEGO-GUI.app"
+          app_name="Fuego-Wallet.app"
 
           make -j4 build-release
           cd "$build_folder"

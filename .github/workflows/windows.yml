@@ -124,7 +124,7 @@ jobs:
           files: ${{ steps.pack.outputs.asset_path }}
           name: Fuego Desktop v${{ steps.build.outputs.xfg_version }}
           body: |
-            <img src="https://image.flaticon.com/icons/svg/25/25412.svg" width="16"> [Download for Windows](../../releases/download/${{ steps.build.outputs.xfg_version }}/${{ steps.pack.outputs.release_name }}) **${{ steps.pack.outputs.release_name }}**
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226771.png" width="16"> [Download for Windows](../../releases/download/${{ steps.build.outputs.xfg_version }}/${{ steps.pack.outputs.release_name }}) ${{ steps.pack.outputs.release_name }}
             `SHA256 : ${{ steps.pack.outputs.sha256 }}`
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

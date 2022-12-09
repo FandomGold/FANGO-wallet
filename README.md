@@ -5,7 +5,7 @@
 
 ### [Certificate Of Ledger Deposits](https://github.com/usexfg/COLD-DAO/blob/main/README.md) and Untraceable Messaging
 
-Latest Release: v4.2.0 (Godflame)
+Latest Release: v4.2.0.1 (Godflame Point)
 
 <b><sub>Maintained by Elder Node Council</sub></b>
 
@@ -17,7 +17,7 @@ Fuego-Wallet-desktop is an extension of the [Fuego](https://github.com/usexfg/fu
 
 ## Resources
 
--   Web: <https://fango.money>
+-   Web: <https://fuego.money>
 -   GitHub: <https://github.com/usexfg>
 -   Discord: <https://discord.gg/5UJcJJg>
 -   Twitter: <https://twitter.com/usexfg>

@@ -11,9 +11,9 @@ Latest Release: v4.2.0.1 (Godflame Point)
 
 [![Build check](https://github.com/usexfg/fuego-wallet/actions/workflows/check.yml/badge.svg)](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml)
 __________________________________________________
-Fuego Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of financial institutions. Enabling a private way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public. All Fuego transactions and messages are private by default.  
+Fuego Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of corporations or financial institutions. Enabling an untraceable way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public. All Fuego transactions and messages are private by default.  
 
-Fuego-Wallet-desktop is an extension of the [Fuego](https://github.com/usexfg/fuego) ($XFG) secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol. Fuego network operates with no central authority, enabling you the full freedom (and responsibility) of control over the private keys to your funds. Please write all your wallet seed phrases down and store them somewhere safe.
+This GUI wallet is an extension of the [Fuego](https://github.com/usexfg/fuego) ($XFG) secure peer-to-peer payment network and blockchain settlement layer based on the CryptoNote protocol. Fuego network operates with no central authority, enabling you the full freedom (and responsibility) of control over the private keys to your funds. Please write all your wallet seed phrases down and store them somewhere safe.
 
 ## Resources
 

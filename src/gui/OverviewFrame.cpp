@@ -2084,7 +2084,7 @@ namespace WalletGui
 
   void OverviewFrame::finexClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://www.finexbox.com/market/pair/XFG-USDT", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://trade.exbitron.com/#/", QUrl::TolerantMode));
   }
 /*
   void OverviewFrame::tradeogreClicked()

@@ -2084,7 +2084,7 @@ namespace WalletGui
 
   void OverviewFrame::finexClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://trade.exbitron.com/#/", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("http://fuego.spaceportx.net/", QUrl::TolerantMode));
   }
 /*
   void OverviewFrame::tradeogreClicked()

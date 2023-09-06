@@ -113,47 +113,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
-  build-ubuntu18:
-    name: Ubuntu 18.04
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: |
-          sudo apt update -y
-          sudo apt install -y qt5-default qttools5-dev qttools5-dev-tools libqt5charts5-dev libboost-all-dev
-
-      - name: Clone fuego
-        run: |
-          rm -rf cryptonote
-          git clone -b master https://github.com/usexfg/fuego.git cryptonote
-
-      - name: Build
-        id: build
-        run: |
-          xfg_version=${GITHUB_SHA::7}
-          release_name=fuego-desktop-ubuntu-1804-dev-"$xfg_version"
-
-          make -j4 build-release
-          mkdir $release_name
-          mkdir -p $release_name/icon
-          mv build/release/Fuego-Wallet $release_name
-          cp fuego-desktop.desktop $release_name
-          cp src/images/fuego.png $release_name/icon
-          tar -czf "$release_name".tar.gz "$release_name"
-
-          echo "::set-output name=release_name::${release_name}"
-          echo "::set-output name=artifact_path::$release_name.tar.gz"
-
-      - name: Upload To GH Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ steps.build.outputs.release_name }}
-          path: ${{ steps.build.outputs.artifact_path }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
   build-ubuntu20:
     name: Ubuntu 20.04
     runs-on: ubuntu-20.04

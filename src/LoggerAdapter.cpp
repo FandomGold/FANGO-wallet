@@ -29,7 +29,7 @@ void LoggerAdapter::init() {
   Common::JsonValue& cfgLoggers = loggerConfiguration.insert("loggers", Common::JsonValue::ARRAY);
   Common::JsonValue& fileLogger = cfgLoggers.pushBack(Common::JsonValue::OBJECT);
   fileLogger.insert("type", "file");
-  fileLogger.insert("filename", Settings::instance().getDataDir().absoluteFilePath("Fangowallet.log").toStdString());
+  fileLogger.insert("filename", Settings::instance().getDataDir().absoluteFilePath("Fuegowallet.log").toStdString());
   fileLogger.insert("level", logLevel);
   m_logManager.configure(loggerConfiguration);
 }

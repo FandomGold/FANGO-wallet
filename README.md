@@ -9,7 +9,13 @@ Latest Release: v4.2.0.1 (Godflame Point)
 
 <b><sub>Maintained by Elder Node Council</sub></b>
 
-[![Build check](https://github.com/usexfg/fuego-wallet/actions/workflows/check.yml/badge.svg)](https://github.com/usexfg/fuego-desktop/actions/workflows/check.yml)
+[![macOS](https://github.com/usexfg/fuego-wallet/actions/workflows/macOS.yml/badge.svg)](https://github.com/usexfg/fuego-wallet/actions/workflows/macOS.yml)
+
+[![Ubuntu 20.04](https://github.com/usexfg/fuego-wallet/actions/workflows/ubuntu20.yml/badge.svg)](https://github.com/usexfg/fuego-wallet/actions/workflows/ubuntu20.yml)
+
+[![Ubuntu 22.04](https://github.com/usexfg/fuego-wallet/actions/workflows/ubuntu22.yml/badge.svg)](https://github.com/usexfg/fuego-wallet/actions/workflows/ubuntu22.yml)
+
+[![Windows](https://github.com/usexfg/fuego-wallet/actions/workflows/windows.yml/badge.svg)](https://github.com/usexfg/fuego-wallet/actions/workflows/windows.yml)
 __________________________________________________
 Fuego Wallet is a decentralized blockchain banking interface with private messenger powered by 100% open source code - without involvement of corporations or financial institutions. Enabling an untraceable way to transfer funds and messages by using a distributed public ledger which keeps sender & receiver addresses hidden and transaction amounts anonymous to the public. All Fuego transactions and messages are private by default.  
 

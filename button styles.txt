@@ -1,9 +1,9 @@
-//Fuego yellow border white text (when not hovered)
+//Fuego #ff8000 border white text (when not hovered)
 
 QPushButton#m_varName
 {
     color: #fff;
-    border: 1px solid #ffcb00;
+    border: 1px solid #ff8000;
     font-size: 14px;
     border-radius: 5px;
     font-family: 'Gotham';
@@ -11,19 +11,19 @@ QPushButton#m_varName
 
 QPushButton#m_varName:hover
 {
-    color: #ffcb00;
-    border: 1px solid #ffcb00;
+    color: #ff8000;
+    border: 1px solid #ff8000;
     font-size: 14px;
     border-radius: 5px;
     font-family: 'Gotham';
 }
 
-//Fuego yellow on Fuego yellow
+//Fuego orange on Fuego orange
 
 QPushButton#m_varName
 {
-    color: #ffcb00;
-    border: 1px solid #ffcb00;
+    color: #ff8000;
+    border: 1px solid #ff8000;
     font-size: 14px;
     border-radius: 5px; 
     font-family: 'Gotham';
@@ -32,9 +32,9 @@ QPushButton#m_varName
 QPushButton#m_varName:hover
 {
     color: black;
-    border: 1px solid #ffcb00;
+    border: 1px solid #ff8000;
     font-size: 14px;
-    background-color: #ffcb00;
+    background-color: #ff8000;
     border-radius: 5px;
     font-family: 'Gotham';
 }

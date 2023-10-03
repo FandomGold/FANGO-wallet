@@ -80,13 +80,13 @@ jobs:
           # msbuild FUEGO-GUI.sln /p:Configuration=Release /m:2
           msbuild Fuego-Wallet.sln /p:Configuration=Release /m:2
 
-          echo "build_folder=${build_folder} >> $env:GITHUB_OUTPUT
+          echo "build_folder=${build_folder}" >> $env:GITHUB_OUTPUT
           
-          echo "release_folder=${release_folder} >> $env:GITHUB_OUTPUT
+          echo "release_folder=${release_folder}" >> $env:GITHUB_OUTPUT
           
-          echo "release_name=${release_name} >> $env:GITHUB_OUTPUT
+          echo "release_name=${release_name}" >> $env:GITHUB_OUTPUT
           
-          echo "xfg_version=${xfg_version} >> $env:GITHUB_OUTPUT
+          echo "xfg_version=${xfg_version}" >> $env:GITHUB_OUTPUT
           
 
       - name: Pack

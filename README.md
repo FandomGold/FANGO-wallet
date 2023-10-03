@@ -7,7 +7,7 @@
 
 Latest Release: v4.2.0.1 (Godflame Point)
 
-<b><sub>Maintained by Elder Node Council</sub></b>
+<b><sub>Maintained by Fuego Elder Council</sub></b>
 
 [![macOS](https://github.com/usexfg/fuego-wallet/actions/workflows/macOS.yml/badge.svg)](https://github.com/usexfg/fuego-wallet/actions/workflows/macOS.yml)
 

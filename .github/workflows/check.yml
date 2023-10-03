@@ -78,9 +78,9 @@ jobs:
           cmake -G "Visual Studio 16 2019" ..
           msbuild Fuego-Wallet.sln /p:Configuration=Release /m:2
 
-          echo "build_folder=${build_folder}" >> $env:GITHUB_TOKEN
-          echo "release_folder=${release_folder}" >> $env:GITHUB_TOKEN
-          echo "release_name=${release_name}" >> $env:GITHUB_TOKEN
+          echo "build_folder=${build_folder}" >> $env:GITHUB_OUTPUT
+          echo "release_folder=${release_folder}" >> $env:GITHUB_OUTPUT
+          echo "release_name=${release_name}" >> $env:GITHUB_OUTPUT
 
       - name: Pack
         shell: powershell
@@ -102,7 +102,7 @@ jobs:
           Compress-Archive -Path FUEGO-Setup.exe -DestinationPath "$release_name.zip"
 
           $artifact_path = "$build_folder/$release_folder/$release_name.zip"
-          echo "artifact_path=${artifact_path}" >> $env:GITHUB_TOKEN
+          echo "artifact_path=${artifact_path}" >> $env:GITHUB_OUTPUT
 
       - name: Upload To GH Artifacts
         uses: actions/upload-artifact@v2
@@ -143,8 +143,8 @@ jobs:
           cp src/images/fuego.png $release_name/icon
           tar -czf "$release_name".tar.gz "$release_name"
 
-          echo "release_name=${release_name}" >> $GITHUB_TOKEN
-          echo "artifact_path=${release_name}.tar.gz" >> $GITHUB_TOKEN
+          echo "release_name=${release_name}" >> $GITHUB_OUTPUT
+          echo "artifact_path=${release_name}.tar.gz" >> $GITHUB_OUTPUT
 
       - name: Upload To GH Artifacts
         uses: actions/upload-artifact@v2
@@ -190,8 +190,8 @@ jobs:
           mv *.dmg "$release_name".dmg
           mv "$release_name".dmg "$release_name"
 
-          echo "release_name::${release_name}" >> $GITHUB_TOKEN
-          echo "artifact_path=${build_folder}/${release_name}" >> $GITHUB_TOKEN
+          echo "release_name::${release_name}" >> $GITHUB_OUTPUT
+          echo "artifact_path=${build_folder}/${release_name}" >> $GITHUB_OUTPUT
 
       - name: Upload To GH Artifacts
         uses: actions/upload-artifact@v2
@@ -234,8 +234,8 @@ jobs:
           mv *.dmg "$release_name".dmg
           mv "$release_name".dmg "$release_name"
 
-          echo "release_name=${release_name}" >> $GITHUB_TOKEN
-          echo "artifact_path=${build_folder}/${release_name}" >> $GITHUB_TOKEN
+          echo "release_name=${release_name}" >> $GITHUB_OUTPUT
+          echo "artifact_path=${build_folder}/${release_name}" >> $GITHUB_OUTPUT
 
       - name: Upload To GH Artifacts
         uses: actions/upload-artifact@v2

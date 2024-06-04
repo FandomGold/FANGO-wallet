@@ -169,7 +169,7 @@ void MainWindow::initUi()
     QAction* showAction = new QAction(tr("Show"), this);
     connect(showAction, &QAction::triggered, this, &MainWindow::restoreFromTray);
 
-    QAction* quitAction = new QAction(tr("Quit Fuego Desktop"), this);
+    QAction* quitAction = new QAction(tr("Quit Fuego Wallet"), this);
     connect(quitAction, &QAction::triggered, qApp, &QCoreApplication::quit);
 
     QMenu* trayIconMenu = new QMenu(this);

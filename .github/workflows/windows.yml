@@ -29,7 +29,7 @@ jobs:
           Start-Process -Wait -FilePath "$env:TEMP\boost.exe" "/SILENT","/SP-","/SUPPRESSMSGBOXES","/DIR=${env:BOOST_ROOT}"
           
       - name: Install Qt
-        uses: jurplel/install-qt-action@v2
+        uses: jurplel/install-qt-action@v4
         with:
           host: "windows"
           target: "desktop"
@@ -116,7 +116,7 @@ jobs:
           echo "asset_path=${asset_path}" >> $env:GITHUB_OUTPUT
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v4
         with:
           files: ${{ steps.pack.outputs.asset_path }}
           name: Fuego Desktop v${{ steps.build.outputs.xfg_version }}

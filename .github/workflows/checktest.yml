@@ -13,7 +13,7 @@ jobs:
     name: Ubuntu 20.04
     runs-on: self_ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Install dependencies
         run: |
@@ -44,7 +44,7 @@ jobs:
           echo "artifact_path=${release_name}.tar.gz" >> $GITHUB_OUTPUT
 
       - name: Upload To GH Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.build.outputs.release_name }}
           path: ${{ steps.build.outputs.artifact_path }}

@@ -10,7 +10,7 @@ jobs:
     name: macOS
     runs-on: macos-11
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Install dependencies
         run: |
@@ -45,7 +45,7 @@ jobs:
           echo "xfg_version=${xfg_version}" >> $GITHUB_OUTPUT
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v4
         with:
           files: ${{ steps.build.outputs.asset_path }}
           name: Fuego Desktop v${{ steps.build.outputs.xfg_ver }}
